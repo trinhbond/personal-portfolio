@@ -1,0 +1,16 @@
+.Error {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.Error p {
+    font-size: 62px;
+}
+button {
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    width: fit-content;
+}

@@ -1,0 +1,23 @@
+.container {
+    padding: 15px 10%;
+}
+h1, p {
+    margin-bottom: 0;
+}
+h1 {
+    font-size: 40px;
+}
+p {
+    font-size: 20px;
+}
+#description{
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+.container button {
+    border: 1px solid black;
+    color: white;
+    background-color: black;
+    border-radius: 14px;
+    padding: 8px;
+}

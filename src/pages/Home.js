@@ -1,9 +1,10 @@
 import React from 'react';
 
  function Home() {
-  return (
+    document.title = "Home";
+    return (
     <div>
-        Home
+      This is the home page.
     </div>
   )
 }

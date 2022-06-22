@@ -1,0 +1,59 @@
+.App {
+  font-family: sans-serif;
+}
+#root {
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 100px;
+}
+.App-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10%;
+  background-color: rgb(255, 224, 121);
+}
+.App-header #Header-logo {
+  font-size: 28px;
+  font-weight: bold;
+  pointer-events: none;
+}
+.App-nav {
+  padding: 15px;
+}
+.App-nav ul {
+  list-style: none;  
+  text-decoration: none;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  font-size: 20px;
+}
+.App-nav ul li {
+  margin-left: 44px;
+}
+a:-webkit-any-link {
+  text-decoration: none;
+  color: inherit;
+}
+.App-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(255, 224, 121);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.App-footer p {
+  margin-top: 0; 
+  padding: 15px;
+}
+@media screen and (max-width: 768px) {
+  .App-nav ul  {
+    display: none;
+  }
+  .App-nav {
+    padding: 25px;
+  }
+}
