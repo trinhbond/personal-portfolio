@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import"../styles/Header.css"
+import React from 'react';
+import"../styles/Header.css";
 import AboutMe from "../pages/AboutMe";
 import Home from "../pages/Home";
 import Projects from '../pages/Projects';
@@ -27,9 +27,6 @@ const Header = () => {
             <Route path="/projects" element={<Projects />} />
             <Route path="*" element={<NoSuchPage/>} />
           </Routes>
-          <footer className="App-footer">
-            <p>&copy; 2022 Bond Trinh</p>
-          </footer>
         </div>
       </Router>
     )

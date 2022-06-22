@@ -1,0 +1,13 @@
+.App-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(255, 224, 121);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.App-footer p {
+    margin-top: 0; 
+    padding: 15px;
+}
