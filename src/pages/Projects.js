@@ -30,6 +30,13 @@ export default function Projects() {
             </p>
             <button className="btn"><a href="/Projects/assign1.7z" download>Download Source Code</a></button>
         </section>
+        <section>
+            <h1>Portfolio Website (2022 - Present)</h1>
+            <p>Created using React, Javascript, and HTML supported by GitHub</p>
+            <p id="description">The purpose of this website is to showcase my projects and skills, and tell you a little about myself.
+            </p>
+            <button className="btn"><a href="https://github.com/bondtrinh1/personal-portfolio" target="blank">View GitHub Repository</a></button>
+        </section>
     </div>
     )
 }

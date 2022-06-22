@@ -1,3 +1,6 @@
+* {
+    font-family: sans-serif;
+}
 .App-footer {
     position: absolute;
     bottom: 0;
@@ -10,4 +13,11 @@
 .App-footer p {
     margin-top: 0; 
     padding: 15px;
+    font-size: 16px;
+}
+.icons {
+    margin-top: 15px;
+}
+.icons svg {
+    margin: 8px;
 }
