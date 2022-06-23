@@ -31,7 +31,14 @@ export default function Projects() {
             <button className="btn"><a href="/Projects/assign1.7z" download>Download Source Code</a></button>
         </section>
         <section>
-            <h1>Portfolio Website (2022 - Present)</h1>
+            <h1>Mern Stack Application for a Books List (2022)</h1>
+            <p>Created using React supported by GitHub and deployed with Heroku</p>
+            <p id="description">The purpose of this website is to showcase my projects and skills, and tell you a little about myself.
+            </p>
+            <button className="btn"><a href="https://heroku-mern-app.herokuapp.com/" target="blank">View Heroku Application</a></button>
+        </section>
+        <section>
+            <h1>This Website (2022)</h1>
             <p>Created using React, Javascript, and HTML supported by GitHub</p>
             <p id="description">The purpose of this website is to showcase my projects and skills, and tell you a little about myself.
             </p>

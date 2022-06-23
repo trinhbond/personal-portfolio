@@ -7,13 +7,9 @@
     text-align: center;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 .Error p {
     font-size: 62px;
-}
-button {
-    padding: 15px;
-    border: none;
-    border-radius: 12px;
-    width: fit-content;
+    margin: 0;
 }

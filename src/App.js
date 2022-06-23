@@ -1,6 +1,7 @@
 import "./styles/App.css";
 import Header from './components/Header';
 import Footer from './components/Footer';
+
 function App() {
   document.title="App";
   return (

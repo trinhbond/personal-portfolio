@@ -3,15 +3,16 @@
 }
 .container {
     padding: 15px 10%;
+    padding-bottom: 150px;
 }
 h1, p {
     margin-bottom: 0;
 }
 h1 {
-    font-size: 40px;
+    font-size: 34px;
 }
 p {
-    font-size: 20px;
+    font-size: 18px;
 }
 #description {
     margin-top: 0;
@@ -23,4 +24,7 @@ p {
     background-color: black;
     border-radius: 14px;
     padding: 8px;
+}
+section {
+    margin-bottom: 50px;
 }
