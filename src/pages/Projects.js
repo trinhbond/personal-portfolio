@@ -6,7 +6,7 @@ export default function Projects() {
     return (
     <div className="container">
         <section>
-            <h1>Technical School App (2020)</h1>
+            <h1>Technical School Application (2020)</h1>
             <p>Language: Java</p>
             <p id="description">The Technical School App determines whether or not a student is certified, 
                 their transcript is checked against a certification criterion. Consists of 
