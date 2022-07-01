@@ -1,6 +1,35 @@
 * {
     font-family: sans-serif;
 }
+#root {
+    position: relative;
+    min-height: 100vh;
+}
 .About-Me {
     padding: 15px 10%;
+}
+.About-Me h1 {
+    text-transform: uppercase;
+    font-size: 5rem;
+}
+.About-Me #aboutMeParagraph {
+    line-height: 1.6em;
+    font-size: 1.2rem;
+}
+.About-Me ul {
+    display: inline;
+}
+.About-Me ul li {
+    list-style-type: style type circle;;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    margin-left: 40px;
+}
+.About-Me #listHeading {
+    margin: 0;
+}
+@media screen and (max-width: 768px) {
+    .About-Me {
+        padding-bottom: 200px;
+    }
 }

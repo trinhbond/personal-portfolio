@@ -1,13 +1,14 @@
-import React from 'react';
 import "../styles/404.css";
 
-function NoSuchPage() {
-  document.title = "404";
-  return (
-  <div className="Error">
-    <p>This page does not exist</p>
-  </div>
-  )
-}
+function PageNotFound() {
+    document.title = "Page Not Found | Bond Trinh";
+  
+    return (
+    <div className="Error">
+      <h1>404</h1>
+      <p>Page Not Found</p>
+    </div>
+    )
+  }
 
-export default NoSuchPage;
+  export default PageNotFound;

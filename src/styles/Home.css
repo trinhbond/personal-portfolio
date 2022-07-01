@@ -3,4 +3,37 @@
 }
 .Home {
     padding: 15px 10%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+.Home h1 {
+    text-transform: uppercase;
+    font-size: 5rem;
+    margin-top: 50px;
+}
+.Home #hiParagraph {
+    position: relative;
+    top: 40px;
+    left: 6px;
+}
+.Home p {
+    font-size: 1.2rem;
+}
+.Home #welcomeParagraph {
+    line-height: 1.6em;
+}
+.Home .icons {
+
+}
+.Home svg {
+    color: black;
+}
+@media screen and (max-width: 768px) {
+    .Home {
+        padding-bottom: 200px;
+    }
 }
