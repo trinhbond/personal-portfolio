@@ -20,7 +20,8 @@ p {
     margin-bottom: 25px;
 }
 section {
-    margin-bottom: 50px;
+    margin-right: 12px;
+    display: inline-block;
 }
 section button {
     text-decoration: none;

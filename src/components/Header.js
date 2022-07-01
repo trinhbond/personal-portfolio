@@ -13,6 +13,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 
 const drawerWidth = 240;
 const navItems = ['Home', 'Projects', 'About', 'Contact'];
