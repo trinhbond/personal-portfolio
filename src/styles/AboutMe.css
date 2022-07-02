@@ -7,6 +7,9 @@
 }
 .About-Me {
     padding: 15px 10%;
+    padding-bottom: 200px;
+    overflow: hidden;    
+
 }
 .About-Me h1 {
     text-transform: uppercase;

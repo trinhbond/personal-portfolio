@@ -1,5 +1,6 @@
 import React from 'react';
 import "../styles/Home.css";
+import { Container, Box } from "@mui/material"
 
 function Home() {
   document.title = "Home - Bond Trinh";
@@ -9,6 +10,7 @@ function Home() {
     <p id="hiParagraph">Hello, my name is</p>
     <h1>Bond Trinh</h1>
     <p id="welcomeParagraph">Welcome to my portfolio.</p>
+    <button id="resumeButton">Resume</button>
     <div className="icons">
       <a href="https://github.com/bondtrinh1/personal-portfolio" target="blank">
           <svg 

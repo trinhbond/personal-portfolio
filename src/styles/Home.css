@@ -19,13 +19,17 @@
     position: relative;
     top: 40px;
     left: 6px;
-    
 }
 .Home p {
     font-size: 1.2rem;
 }
 .Home #welcomeParagraph {
     text-align: center;
+}
+.Home #resumeButton {
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 75px;
 }
 .Home .icons {
     border-bottom: 1px solid black;

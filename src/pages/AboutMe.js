@@ -12,12 +12,23 @@ function AboutMe() {
       with friends, I enjoy creating meaningful projects such as this website. I am currently focusing on a Research and Development Project 
       where I am working with 6 other members to develop a proof of concept android application for Kumeu River Wines. The application 
       will use real-time climatic data to predict dangerous weather events such as frost that are damaging to their vineyards.</p>
-    <p id="listHeading">Here are a few technologies I've been working with recently:</p>
+    <p id="listHeading">Technologies I've worked with:</p>
     <ul>
+      <li>JavaScript (ES5)</li>
+      <li>HTML</li>
+      <li>CSS</li>
       <li>React</li>
       <li>Node.js</li>
-      <li>JavaScript (ES5)</li>
+      <li>jQuery</li>
+      <li>Bootstrap</li>
+      <li>Material-UI</li>
       <li>Android Studio</li>
+      <li>Java</li>
+      <li>C</li>
+      <li>C#</li>
+      <li>GitHub</li>
+      <li>MySQL</li>
+      <li>Firebase</li>
     </ul>
   </div>
   )
