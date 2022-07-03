@@ -45,7 +45,7 @@ export default function Projects() {
                 <Typography variant="body2" sx={{ textAlign: "center", marginTop: "15px", marginBottom: "30px" }}>
                 These are projects that have helped me learn multiple technologies.
                 </Typography>
-                <Grid container rowSpacing={2} columnSpacing={{ xs: 1, sm: 2, md: 4 }}>
+                <Grid container rowSpacing={4} columnSpacing={{ xs: 1, sm: 2, md: 4 }}>
                     <Grid item xs={6} sx={{ maxWidth: 400, display: "flex", flexWrap: "wrap" }}>
                         <Card>
                             <CardActionArea>
