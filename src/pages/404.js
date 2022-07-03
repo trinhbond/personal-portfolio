@@ -1,13 +1,20 @@
 import "../styles/404.css";
+import { Container, Typography, Box } from  '@mui/material';
 
 function PageNotFound() {
     document.title = "Page Not Found | Bond Trinh";
   
     return (
-    <div className="Error">
-      <h1>404</h1>
-      <p>Page Not Found</p>
-    </div>
+    <Container className="Error">
+      <Box>
+        <Typography variant="h1" component="h1">
+          404
+        </Typography>
+        <Typography variant="body2">
+          Page Not Found
+        </Typography>
+      </Box>
+    </Container>
     )
   }
 
