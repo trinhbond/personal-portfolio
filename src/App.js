@@ -12,7 +12,7 @@ import PageNotFound from './pages/404';
 import { Routes, Route } from "react-router-dom";
 
 function App() {
-  document.title="App";
+  document.title="Home - Bond Trinh";
   
   return (
   <React.Fragment>
@@ -29,7 +29,7 @@ function App() {
       <Route path="/Projects" element={<Projects />} />
       <Route path="/Contact" element={<Contact />} />
       <Route path="*" element={<PageNotFound />} />
-    </Routes>
+    </Routes> 
   </React.Fragment>
   );
 }

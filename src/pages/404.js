@@ -1,5 +1,5 @@
 import "../styles/404.css";
-import { Container, Typography, Box } from  '@mui/material';
+import { Container, Typography, Box } from "@mui/material";
 
 function PageNotFound() {
     document.title = "Page Not Found | Bond Trinh";

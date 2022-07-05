@@ -16,7 +16,7 @@
 }
 .Home #hiParagraph {
     position: relative;
-    top: 30px;
+    top: 15px;
     left: 6px;
 }
 .Home p {
@@ -30,7 +30,7 @@
 .Home #resumeButton {
     margin: 0 auto;
     display: block;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     border: 1px solid black;
     background-color: black;
     color: white;
@@ -50,5 +50,50 @@
         text-transform: uppercase;
         margin-top: 50px;
         font-size: 5rem;
+    }
+    .Home .icons {
+        border-bottom: 1px solid black;
+        width: fit-content;
+        margin: 0 auto;
+        position: relative;
+        top: 0px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .Home h1 {
+        text-transform: uppercase;
+        margin-top: 20px;
+        font-size: 4rem;
+    }
+    .Home #hiParagraph {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+    }
+    .Home p {
+        font-size: 1.2rem;
+    }
+    .Home #welcomeParagraph {
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 25px;
+    }
+    .Home #resumeButton {
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 30px;
+        border: 1px solid black;
+        background-color: black;
+        color: white;
+        padding: 5px;
+        font-weight: bolder;
+    }
+    .Home .icons {
+        border-bottom: 1px solid black;
+        width: fit-content;
+        margin: 0 auto;
+        position: relative;
+        bottom: 30px;
     }
 }

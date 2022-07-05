@@ -13,7 +13,7 @@
 }
 .About-Me h1 {
     text-transform: uppercase;
-    text-align: left;
+    text-align: start;
 }
 .About-Me #aboutMeParagraph {
     margin-top: 20px;

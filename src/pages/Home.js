@@ -1,16 +1,16 @@
-import React from 'react';
+import React from "react";
 import "../styles/Home.css";
-import { Container, Box, Typography, Button } from "@mui/material"
+import { Container, Box, Typography, Button } from "@mui/material";
 
 function Home() {
   document.title = "Home - Bond Trinh";
   
   return (
-  <Container className="Home" sx={{justifyContent: "center", textAlign: "center"}}>
+  <Container className="Home" sx={{ justifyContent: "center", textAlign: "center" }}>
     <Typography variant="body2" id="hiParagraph">
     Hello, my name is
     </Typography>
-    <Typography variant="h1" sx={{fontWeight: "bold"}}>
+    <Typography variant="h1" sx={{ fontWeight: "bold" }}>
     Bond Trinh
     </Typography>
     <Typography variant="body2" id="welcomeParagraph">

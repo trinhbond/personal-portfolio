@@ -1,7 +1,7 @@
-import React from 'react'
+import React from "react";
 import "../styles/Contact.css";
-import { Container, Box } from '@mui/system';
-import { Typography, Button } from '@mui/material';
+import { Container, Box } from "@mui/system";
+import { Typography, Button } from "@mui/material";
 
 export default function Contact() {
     document.title="Contact - Bond Trinh"
