@@ -32,7 +32,7 @@ export default function Projects() {
     });
     
     return (
-    <Container className="projectsContainer" sx={{
+    <Container className="ProjectsContainer" sx={{
         display: "flex", 
         justifyContent: "center", 
         alignItems: "center",
@@ -55,8 +55,8 @@ export default function Projects() {
                                     <Typography gutterBottom variant="h6" component="div" sx={{ fontWeight: "bold" }} className="CardTitle">
                                     MERN Stack Application for a Books List
                                     </Typography>
-                                    <Button size="small" color="primary" sx={{ backgroundColor: "black", marginBottom: '12px' }}>
-                                        <a href="https://heroku-mern-app.herokuapp.com/" target="blank">View Application</a>
+                                    <Button className="ButtonLink" size="small" color="primary" sx={{ backgroundColor: "black", marginBottom: '12px' }} href="https://heroku-mern-app.herokuapp.com/" target="blank">
+                                        View Application
                                     </Button>
                                     <Typography variant="body2" color="text.secondary">
                                     A simple application using MERN stack that provides the functionality to create a book and add it to a list. The application uses HTTP methods 
@@ -101,8 +101,8 @@ export default function Projects() {
                                     <Typography gutterBottom variant="h6" component="div" sx={{ fontWeight: "bold" }} className="CardTitle">
                                     Booking Application for Cabs
                                     </Typography>
-                                    <Button size="small" color="primary" sx={{ backgroundColor: "black", marginBottom: "12px" }}>
-                                        <a href="/Projects/assign1.7z" download>Download Source Code</a>
+                                    <Button className="ButtonLink" size="small" color="primary" sx={{ backgroundColor: "black", marginBottom: "12px" }} href="/Projects/assign1.7z" download>
+                                        Download Source Code
                                     </Button>
                                     <Typography variant="body2" color="text.secondary">
                                     The application allows users to book a cab by entering their personal details
@@ -145,8 +145,8 @@ export default function Projects() {
                                     <Typography gutterBottom variant="h6" component="div" sx={{ fontWeight: "bold" }}  className="CardTitle">
                                     Diary System for a Social Networking Site
                                     </Typography>
-                                    <Button size="small" color="primary" sx={{ backgroundColor: "black", marginBottom: "12px" }}>
-                                        <a href="/Projects/assign1.7z" download>Source Code</a>
+                                    <Button className="ButtonLink" size="small" color="primary" sx={{ backgroundColor: "black", marginBottom: "12px" }} href="/Projects/assign1.7z" download>
+                                        Source Code
                                     </Button>
                                     <Typography variant="body2" color="text.secondary">
                                     The diary system allows users to post their status and save it to a database.
@@ -189,8 +189,8 @@ export default function Projects() {
                                     <Typography gutterBottom variant="h6" component="div" sx={{ fontWeight: "bold" }}  className="CardTitle">
                                     This Website
                                     </Typography>
-                                    <Button size="small" color="primary" sx={{ backgroundColor: "black", marginBottom: "12px" }}>
-                                        <a href="https://github.com/bondtrinh1/personal-portfolio" target="blank">GitHub Source Code</a>
+                                    <Button className="ButtonLink" size="small" color="primary" sx={{ backgroundColor: "black", marginBottom: "12px" }} href="https://github.com/bondtrinh1/personal-portfolio" target="blank">
+                                        GitHub Source Code
                                     </Button>
                                     <Typography variant="body2" color="text.secondary">
                                     This application is an online portfolio showcasing my skills and projects as a Software Developer. This project is also an opportunity
@@ -229,8 +229,8 @@ export default function Projects() {
                                     <Typography gutterBottom variant="h6" component="div" sx={{ fontWeight: "bold" }}  className="CardTitle">
                                     Technical School Application
                                     </Typography>
-                                    <Button size="small" color="primary" sx={{ backgroundColor: "black", marginBottom: "12px" }}>
-                                        <a href="/Projects/TechnicalSchoolApp.7z" download>Download Source Code</a>
+                                    <Button className="ButtonLink" size="small" color="primary" sx={{ backgroundColor: "black", marginBottom: "12px" }} href="/Projects/TechnicalSchoolApp.7z" download>
+                                        Download Source Code
                                     </Button>
                                     <Typography variant="body2" color="text.secondary">
                                     The Technical School App determines whether or not a student is certified, 
