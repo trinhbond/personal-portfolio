@@ -22,7 +22,7 @@ function App() {
       <Footer />
     </Container>
     <Routes>
-    <Route path="/" element={<App />}/>
+    <Route path="/" element={<App />} />
     <Route index element={<Home />} />
       <Route path="/Home" element={<Home />} />
       <Route path="/About" element={<AboutMe />} />

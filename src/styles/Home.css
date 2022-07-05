@@ -42,9 +42,11 @@
     width: fit-content;
     margin: 0 auto;
     padding-top: 10px;
+    display: flex;
 }
 .Home svg {
     color: black;
+    display: block;
 }
 @media screen and (max-width: 768px) {
     .Home h1 {
@@ -64,9 +66,10 @@
     .Home h1 {
         text-transform: uppercase;
         margin-top: 20px;
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
     .Home #hiParagraph {
+        font-size: 0.9rem;
         position: relative;
         top: 0px;
         left: 0px;
@@ -76,6 +79,7 @@
         font-size: 1.2rem;
     }
     .Home #welcomeParagraph {
+        font-size: 0.9rem;
         text-align: center;
         margin-top: 15px;
         margin-bottom: 25px;
@@ -96,5 +100,7 @@
         margin: 0 auto;
         position: relative;
         bottom: 35px;
+        padding-left: 0;
+        padding-right: 0;
     }
 }

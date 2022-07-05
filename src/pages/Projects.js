@@ -52,7 +52,7 @@ export default function Projects() {
                         />
                             <CardActionArea>
                                 <CardContent>
-                                    <Typography gutterBottom variant="h6" component="div" sx={{ fontWeight: "bold" }}>
+                                    <Typography gutterBottom variant="h6" component="div" sx={{ fontWeight: "bold" }} className="CardTitle">
                                     MERN Stack Application for a Books List
                                     </Typography>
                                     <Button size="small" color="primary" sx={{ backgroundColor: "black", marginBottom: '12px' }}>
@@ -98,7 +98,7 @@ export default function Projects() {
                             />
                             <CardActionArea>
                                 <CardContent>
-                                    <Typography gutterBottom variant="h6" component="div" sx={{ fontWeight: "bold" }}>
+                                    <Typography gutterBottom variant="h6" component="div" sx={{ fontWeight: "bold" }} className="CardTitle">
                                     Booking Application for Cabs
                                     </Typography>
                                     <Button size="small" color="primary" sx={{ backgroundColor: "black", marginBottom: "12px" }}>
@@ -142,7 +142,7 @@ export default function Projects() {
                                 />
                             <CardActionArea>
                                 <CardContent>
-                                    <Typography gutterBottom variant="h6" component="div" sx={{ fontWeight: "bold" }}>
+                                    <Typography gutterBottom variant="h6" component="div" sx={{ fontWeight: "bold" }}  className="CardTitle">
                                     Diary System for a Social Networking Site
                                     </Typography>
                                     <Button size="small" color="primary" sx={{ backgroundColor: "black", marginBottom: "12px" }}>
@@ -186,7 +186,7 @@ export default function Projects() {
                                 />
                             <CardActionArea>
                                 <CardContent>
-                                    <Typography gutterBottom variant="h6" component="div" sx={{ fontWeight: "bold" }}>
+                                    <Typography gutterBottom variant="h6" component="div" sx={{ fontWeight: "bold" }}  className="CardTitle">
                                     This Website
                                     </Typography>
                                     <Button size="small" color="primary" sx={{ backgroundColor: "black", marginBottom: "12px" }}>
@@ -226,7 +226,7 @@ export default function Projects() {
                         <Card sx={{ backgroundColor: "#caede8" }}>
                             <CardActionArea>
                                 <CardContent>
-                                    <Typography gutterBottom variant="h6" component="div" sx={{ fontWeight: "bold" }}>
+                                    <Typography gutterBottom variant="h6" component="div" sx={{ fontWeight: "bold" }}  className="CardTitle">
                                     Technical School Application
                                     </Typography>
                                     <Button size="small" color="primary" sx={{ backgroundColor: "black", marginBottom: "12px" }}>
