@@ -109,7 +109,7 @@ export default function DrawerAppBar(props: Props) {
           }}
           sx={{
             display: { xs: "block", sm: "none" },
-            "& .MuiDrawer-paper": { boxSizing: "border-box", width: drawerWidth, backgroundColor: "bisque" },
+            "& .MuiDrawer-paper": { boxSizing: "border-box", width: drawerWidth, backgroundColor: "#caede8" },
           }}
         >
           {drawer}
