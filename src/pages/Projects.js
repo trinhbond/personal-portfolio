@@ -140,6 +140,7 @@ export default function Projects() {
                                     image="/Projects/Diary.png"
                                     alt="Diary System for a Social Networking Site Image"
                                 />
+                                <img src={"/Projects/Diary.png"} height={300} alt="test"/>
                             <CardActionArea>
                                 <CardContent>
                                     <Typography gutterBottom variant="h6" component="div" sx={{ fontWeight: "bold" }}  className="CardTitle">
