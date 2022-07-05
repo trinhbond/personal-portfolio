@@ -14,10 +14,10 @@ import {
     Container,
     Button,
 } from "@mui/material";
-import MernImage from "../Mern.PNG"
+import Mern from "../Mern.PNG"
 import CabsOnline from "../CabsOnline.PNG"
 import Diary from "../Diary.PNG"
-import Portfolio from "../Portfolio.PNG"
+import Portfolio from "../PortfolioWebsite.PNG"
 
 export default function Projects() {
     document.title = "Projects - Bond Trinh";
@@ -51,7 +51,7 @@ export default function Projects() {
                         <CardMedia
                             component="img"
                             height="250"
-                            image={MernImage}
+                            image={Mern}
                             alt="Mern Stack Application Image"
                         />
                             <CardActionArea>
@@ -97,7 +97,7 @@ export default function Projects() {
                             <CardMedia
                                 component="img"
                                 height="250"
-                                image="/Projects/CabsOnline.png"
+                                image={CabsOnline}
                                 alt="Book Application for Cabs Image"
                             />
                             <CardActionArea>
@@ -141,7 +141,7 @@ export default function Projects() {
                             <CardMedia
                                     component="img"
                                     height="250"
-                                    image="/Projects/Diary.png"
+                                    image={Diary}
                                     alt="Diary System for a Social Networking Site Image"
                                 />
                             <CardActionArea>
@@ -185,7 +185,7 @@ export default function Projects() {
                         <CardMedia
                                     component="img"
                                     height="250"
-                                    image="/Projects/Portfolio.png"
+                                    image={Portfolio}
                                     alt="This Website Image"
                                 />
                             <CardActionArea>
