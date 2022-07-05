@@ -18,7 +18,7 @@ function Home() {
     </Typography>
     <Button id="resumeButton">Resume</Button>
     <Box className="icons">
-      <a href="https://github.com/bondtrinh1/personal-portfolio" target="blank" style={{margin: "12px"}}>
+      <a href="https://github.com/bondtrinh1" target="blank" style={{margin: "12px"}}>
           <svg 
             xmlns="http://www.w3.org/2000/svg" 
             width="21" 
