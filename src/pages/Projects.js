@@ -47,7 +47,7 @@ export default function Projects() {
                         <CardMedia
                             component="img"
                             height="250"
-                            image="/Mern.png"
+                            image="/Projects/Mern.png"
                             alt="Mern Stack Application Image"
                         />
                             <CardActionArea>
@@ -93,7 +93,7 @@ export default function Projects() {
                             <CardMedia
                                 component="img"
                                 height="250"
-                                image="/CabsOnline.png"
+                                image="/Projects/CabsOnline.png"
                                 alt="Book Application for Cabs Image"
                             />
                             <CardActionArea>
@@ -137,7 +137,7 @@ export default function Projects() {
                             <CardMedia
                                     component="img"
                                     height="250"
-                                    image="/Diary.png"
+                                    image="/Projects/Diary.png"
                                     alt="Diary System for a Social Networking Site Image"
                                 />
                             <CardActionArea>
@@ -181,7 +181,7 @@ export default function Projects() {
                         <CardMedia
                                     component="img"
                                     height="250"
-                                    image="/Portfolio.png"
+                                    image="/Projects/Portfolio.png"
                                     alt="This Website Image"
                                 />
                             <CardActionArea>
