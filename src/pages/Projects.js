@@ -15,6 +15,9 @@ import {
     Button,
 } from "@mui/material";
 import MernImage from "../Mern.PNG"
+import CabsOnline from "../CabsOnline.PNG"
+import Diary from "../Diary.PNG"
+import Portfolio from "../Portfolio.PNG"
 
 export default function Projects() {
     document.title = "Projects - Bond Trinh";
