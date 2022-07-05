@@ -14,6 +14,7 @@ import {
     Container,
     Button,
 } from "@mui/material";
+import MernImage from "../Mern.PNG"
 
 export default function Projects() {
     document.title = "Projects - Bond Trinh";
@@ -47,7 +48,7 @@ export default function Projects() {
                         <CardMedia
                             component="img"
                             height="250"
-                            image="/Projects/Mern.png"
+                            image={MernImage}
                             alt="Mern Stack Application Image"
                         />
                             <CardActionArea>
