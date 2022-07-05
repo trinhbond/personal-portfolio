@@ -15,7 +15,7 @@ const Footer = () => {
         bottom: "0", 
         textAlign: "center", 
         justifyContent: "center", 
-        backgroundColor: "bisque" 
+        backgroundColor: "#caede8",
       }}>
       <Typography sx={{ color: "#000000" }}>&copy; 2022 Bond Trinh</Typography>
     </AppBar>

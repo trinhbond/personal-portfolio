@@ -69,7 +69,7 @@ export default function DrawerAppBar(props: Props) {
 
   return (
     <Box sx={{ display: "flex" }}>
-      <AppBar position="absolute" component="nav" style={{ padding: "15px 10%", backgroundColor: "bisque", color: "#000000" }}>
+      <AppBar position="absolute" component="nav" style={{ padding: "15px 10%", backgroundColor: "#caede8", color: "#000000" }}>
         <Toolbar>
           <IconButton
             color="inherit"

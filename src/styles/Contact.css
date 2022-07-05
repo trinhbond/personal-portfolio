@@ -4,7 +4,6 @@
 #root {
     position: relative;
     min-height: 100vh;
-    background-color: #ffe4c4;
 }
 .Content {
     padding: 15px 10%;
@@ -16,6 +15,7 @@
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
+    background-color: #caede8;
 }
 .Content p {
     text-align: center;

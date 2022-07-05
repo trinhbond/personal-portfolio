@@ -42,8 +42,8 @@ export default function Projects() {
         <ThemeProvider theme={theme}>
             <Box sx={{ width: "75%" }} className="Box">
                 <Grid container rowSpacing={4} columnSpacing={{ xs: 1, sm: 2, md: 4 }} className="Grid">
-                    <Grid item xs={6} sx={{ maxWidth: 400, display: "flex", flexWrap: "wrap" }}>
-                        <Card sx={{ backgroundColor: "bisque" }}>
+                    <Grid item xs={6} sx={{ maxWidth: 400, display: "flex", flexWrap: "wrap" }} className="GridItem">
+                        <Card sx={{ backgroundColor: "#caede8" }}>
                         <CardMedia
                             component="img"
                             height="250"
@@ -88,8 +88,8 @@ export default function Projects() {
                             </CardActions>
                         </Card>
                     </Grid>
-                    <Grid item xs={6} sx={{ maxWidth: 400, display: "flex", flexWrap: "wrap" }}>
-                        <Card sx={{ backgroundColor: "bisque" }}>
+                    <Grid item xs={6} sx={{ maxWidth: 400, display: "flex", flexWrap: "wrap" }} className="GridItem">
+                        <Card sx={{ backgroundColor: "#caede8" }}>
                             <CardMedia
                                 component="img"
                                 height="250"
@@ -132,8 +132,8 @@ export default function Projects() {
                             </CardActions>
                         </Card>
                     </Grid>
-                    <Grid item xs={6} sx={{ maxWidth: 400, display: "flex", flexWrap: "wrap" }}>
-                        <Card sx={{ backgroundColor: "bisque" }}>
+                    <Grid item xs={6} sx={{ maxWidth: 400, display: "flex", flexWrap: "wrap" }} className="GridItem">
+                        <Card sx={{ backgroundColor: "#caede8" }}>
                             <CardMedia
                                     component="img"
                                     height="250"
@@ -176,8 +176,8 @@ export default function Projects() {
                             </CardActions>
                         </Card>
                     </Grid>
-                    <Grid item xs={6} sx={{ maxWidth: 400, display: "flex", flexWrap: "wrap" }}>
-                        <Card sx={{ backgroundColor: "bisque" }}>
+                    <Grid item xs={6} sx={{ maxWidth: 400, display: "flex", flexWrap: "wrap" }} className="GridItem">
+                        <Card sx={{ backgroundColor: "#caede8" }}>
                         <CardMedia
                                     component="img"
                                     height="250"
@@ -222,8 +222,8 @@ export default function Projects() {
                             </CardActions>
                         </Card>
                     </Grid>
-                    <Grid item xs={6} sx={{ maxWidth: 400, display: "flex", flexWrap: "wrap" }}>
-                        <Card sx={{ backgroundColor: "bisque" }}>
+                    <Grid item xs={6} sx={{ maxWidth: 400, display: "flex", flexWrap: "wrap" }} className="GridItem">
+                        <Card sx={{ backgroundColor: "#caede8" }}>
                             <CardActionArea>
                                 <CardContent>
                                     <Typography gutterBottom variant="h6" component="div" sx={{ fontWeight: "bold" }}>
