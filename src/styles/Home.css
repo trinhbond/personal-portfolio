@@ -41,6 +41,7 @@
     border-bottom: 1px solid black;
     width: fit-content;
     margin: 0 auto;
+    padding-top: 10px;
 }
 .Home svg {
     color: black;
@@ -90,7 +91,7 @@
         font-weight: bolder;
     }
     .Home .icons {
-        border: none;
+        border-bottom: 1px solid black;
         width: fit-content;
         margin: 0 auto;
         position: relative;
