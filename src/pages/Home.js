@@ -6,23 +6,23 @@ function Home() {
   document.title = "Home - Bond Trinh";
   
   return (
-  <Container className="Home" sx={{ justifyContent: "center", textAlign: "center" }}>
+  <Container className="Home">
     <Typography variant="body2" id="hiParagraph">
     Hello, my name is
     </Typography>
-    <Typography variant="h1" sx={{ fontWeight: "bold" }}>
+    <Typography variant="h1">
     Bond Trinh
     </Typography>
     <Typography variant="body2" id="welcomeParagraph">
-    Welcome to my portfolio.
+    I am a final year student at Auckland University of Technology studying Software Development
     </Typography>
     <Button id="resumeButton">Resume</Button>
     <Box className="icons">
       <a href="https://github.com/bondtrinh1" target="blank" style={{margin: "12px"}}>
           <svg 
             xmlns="http://www.w3.org/2000/svg" 
-            width="21" 
-            height="21" 
+            width="24" 
+            height="24" 
             fill="currentColor" 
             className="bi bi-github" 
             viewBox="0 0 16 16">
@@ -32,8 +32,8 @@ function Home() {
       <a href="https://www.linkedin.com/in/bond-nick-trinh-a015b420a/" target="blank" style={{margin: "12px"}}>
         <svg 
           xmlns="http://www.w3.org/2000/svg" 
-          width="21" 
-          height="21" 
+          width="24" 
+          height="24" 
           fill="currentColor" 
           className="bi bi-linkedin" 
           viewBox="0 0 16 16">

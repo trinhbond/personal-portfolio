@@ -8,8 +8,8 @@ export default function Contact() {
     return (
     <Container className="Content">
       <Box>        
-        <Typography variant="h1" component="h1" sx={{ fontWeight: "bold", textAlign: "center" }}>
-          GET IN TOUCH
+        <Typography variant="h1" component="h1">
+          Get In Touch
         </Typography>
         <Typography variant="body2">
         For work opportunities or inquiries, feel free to contact me 
