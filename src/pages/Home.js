@@ -16,7 +16,7 @@ function Home() {
     <Typography variant="body2" id="welcomeParagraph">
     I am a final year student at Auckland University of Technology studying Software Development
     </Typography>
-    <Button id="resumeButton">Resume</Button>
+    <Button sx={{ width: "fit-content" }} id="resumeButton" href="/Projects/Bond_Nick Trinh_Resume_08-07-2022-02-04-55.pdf" download>Resume</Button>
     <Box className="icons">
       <a href="https://github.com/bondtrinh1" target="blank" style={{margin: "12px"}}>
           <svg 
