@@ -103,7 +103,7 @@ export default function Projects() {
                                     Diary System for a Social Networking Site
                                     </Typography>
                                     <Button className="ButtonLink" size="small" color="primary" sx={{ backgroundColor: "black", marginBottom: "12px" }} href="/Projects/assign1.7z" download>
-                                        Source Code
+                                        Download Source Code
                                     </Button>
                                     <Typography variant="body2" color="text.secondary">
                                     An application that allows a user to post their status and save it to a database. The input is validated through backend code using PHP
