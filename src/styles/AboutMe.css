@@ -3,53 +3,54 @@
     min-height: 100vh;
 }
 .About-Me {
-    padding: 15px 10%;
     padding-bottom: 200px;
     overflow: hidden;    
-    padding-top: 75px;
+    padding-top: 60px;
 }
 .About-Me h1 {
     text-align: start;
 }
+.About-Me p {
+    font-size: 1.2rem;
+}
 .About-Me #aboutMeParagraph {
     margin-top: 20px;
     line-height: 1.6em;
-    font-size: 1.2rem;
-}
-.About-Me p {
-    font-size: 1.2rem;
-
 }
 .About-Me ul {
     display: inline;
 }
 .About-Me ul li {
     list-style-type: style type circle;;
-    font-size: 1.2rem;
     margin-bottom: 0.5rem;
     margin-left: 40px;
 }
 .About-Me #listHeading {
     margin-top: 20px;
-    font-size: 1.2rem;
 }
 @media screen and (max-width: 768px) {
     .About-Me {
-        padding: 15px 10%;
-        padding-bottom: 140px;
+        padding-bottom: 160px;
         overflow: hidden;    
         padding-top: 25px;
     }
     .About-Me h1 {
-        font-size: 4rem;
+        font-size: 4.5rem;
     }
-    .About-Me #aboutMeParagraph {
-        font-size: 0.75rem;
-    }
-    .About-Me #listHeading {
-        font-size: 0.75rem;
-    }    
     .About-Me p {
-        font-size: 0.75rem;
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    .About-Me {
+        padding-bottom: 160px;
+        overflow: hidden;    
+        padding-top: 25px;
+    }
+    .About-Me h1 {
+        font-size: 3rem;
+    }
+    .About-Me p {
+        font-size: 0.8rem;
     }
 }

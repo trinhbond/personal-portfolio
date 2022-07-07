@@ -41,6 +41,12 @@ function AboutMe() {
             primary={<Typography type="body2">CSS</Typography>}
             />
         </ListItem>        
+        <ListItem sx={{ paddingTop: 0, paddingBottom: 0 }}>
+          <ListItemText
+            disableTypography
+            primary={<Typography type="body2">PHP</Typography>}
+          />
+        </ListItem>
           <ListItem sx={{ paddingTop: 0, paddingBottom: 0 }}>
             <ListItemText
               disableTypography
@@ -56,7 +62,7 @@ function AboutMe() {
           <ListItem sx={{ paddingTop: 0, paddingBottom: 0 }}>
             <ListItemText
               disableTypography
-              primary={<Typography type="body2">Node JS</Typography>}
+              primary={<Typography type="body2">Node.js</Typography>}
             />
           </ListItem>
           <ListItem sx={{ paddingTop: 0, paddingBottom: 0 }}>
