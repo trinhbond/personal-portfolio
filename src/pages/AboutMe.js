@@ -26,103 +26,109 @@ function AboutMe() {
         <ListItem sx={{ paddingBottom: 0 }} className="text">
           <ListItemText
             disableTypography
-            primary={<Typography type="body2" sx={{ fontSize: "1.2rem" }}>JavaScript</Typography>}
+            primary={<Typography type="body2">JavaScript</Typography>}
           />
         </ListItem>
         <ListItem sx={{ paddingTop: 0, paddingBottom: 0 }}>
           <ListItemText
             disableTypography
-            primary={<Typography type="body2" sx={{ fontSize: "1.2rem" }}>HTML</Typography>}
+            primary={<Typography type="body2">HTML</Typography>}
           />
         </ListItem>
         <ListItem sx={{ paddingTop: 0, paddingBottom: 0 }}>
           <ListItemText
             disableTypography
-            primary={<Typography type="body2" sx={{ fontSize: "1.2rem" }}>CSS</Typography>}
+            primary={<Typography type="body2">CSS</Typography>}
             />
         </ListItem>        
           <ListItem sx={{ paddingTop: 0, paddingBottom: 0 }}>
             <ListItemText
               disableTypography
-              primary={<Typography type="body2" sx={{ fontSize: "1.2rem" }}>React</Typography>}
+              primary={<Typography type="body2">React</Typography>}
             />
-          </ListItem>        
+          </ListItem>     
           <ListItem sx={{ paddingTop: 0, paddingBottom: 0 }}>
             <ListItemText
               disableTypography
-              primary={<Typography type="body2" sx={{ fontSize: "1.2rem" }}>Node JS</Typography>}
+              primary={<Typography type="body2">React Native</Typography>}
             />
-          </ListItem>
+          </ListItem>      
           <ListItem sx={{ paddingTop: 0, paddingBottom: 0 }}>
             <ListItemText
               disableTypography
-              primary={<Typography type="body2" sx={{ fontSize: "1.2rem" }}>jQuery</Typography>}
-            />
-          </ListItem>
-          <ListItem sx={{ paddingTop: 0, paddingBottom: 0 }}>
-            <ListItemText
-              disableTypography
-              primary={<Typography type="body2" sx={{ fontSize: "1.2rem" }}>Bootstrap</Typography>}
+              primary={<Typography type="body2">Node JS</Typography>}
             />
           </ListItem>
           <ListItem sx={{ paddingTop: 0, paddingBottom: 0 }}>
             <ListItemText
               disableTypography
-              primary={<Typography type="body2" sx={{ fontSize: "1.2rem" }}>Material UI</Typography>}
+              primary={<Typography type="body2">jQuery</Typography>}
             />
           </ListItem>
           <ListItem sx={{ paddingTop: 0, paddingBottom: 0 }}>
             <ListItemText
               disableTypography
-              primary={<Typography type="body2" sx={{ fontSize: "1.2rem" }}>Java</Typography>}
+              primary={<Typography type="body2">Bootstrap</Typography>}
             />
           </ListItem>
           <ListItem sx={{ paddingTop: 0, paddingBottom: 0 }}>
             <ListItemText
               disableTypography
-              primary={<Typography type="body2" sx={{ fontSize: "1.2rem" }}>C</Typography>}
+              primary={<Typography type="body2">Material UI</Typography>}
             />
           </ListItem>
           <ListItem sx={{ paddingTop: 0, paddingBottom: 0 }}>
             <ListItemText
               disableTypography
-              primary={<Typography type="body2" sx={{ fontSize: "1.2rem" }}>C#</Typography>}
+              primary={<Typography type="body2">Java</Typography>}
             />
           </ListItem>
           <ListItem sx={{ paddingTop: 0, paddingBottom: 0 }}>
             <ListItemText
               disableTypography
-              primary={<Typography type="body2" sx={{ fontSize: "1.2rem" }}>GitHub</Typography>}
+              primary={<Typography type="body2">C</Typography>}
             />
           </ListItem>
           <ListItem sx={{ paddingTop: 0, paddingBottom: 0 }}>
             <ListItemText
               disableTypography
-              primary={<Typography type="body2" sx={{ fontSize: "1.2rem" }}>MySQL</Typography>}
+              primary={<Typography type="body2">C#</Typography>}
+            />
+          </ListItem>
+          <ListItem sx={{ paddingTop: 0, paddingBottom: 0 }}>
+            <ListItemText
+              disableTypography
+              primary={<Typography type="body2">GitHub</Typography>}
+            />
+          </ListItem>
+          <ListItem sx={{ paddingTop: 0, paddingBottom: 0 }}>
+            <ListItemText
+              disableTypography
+              primary={<Typography type="body2">MySQL</Typography>}
             />
           </ListItem>
           <ListItem sx={{ paddingTop: 0, paddingBottom: 0 }}>
           <ListItemText
               disableTypography
-              primary={<Typography type="body2" sx={{ fontSize: "1.2rem" }}>Firebase</Typography>}
+              primary={<Typography type="body2">Firebase</Typography>}
             />
           </ListItem>
           <ListItem sx={{ paddingTop: 0, paddingBottom: 0 }}>
             <ListItemText
                 disableTypography
-                primary={<Typography type="body2" sx={{ fontSize: "1.2rem" }}>Android Studio</Typography>}
+                primary={<Typography type="body2">Android Studio</Typography>}
               />
           </ListItem>
           <ListItem sx={{ paddingTop: 0, paddingBottom: 0 }}>
             <ListItemText
                 disableTypography
-                primary={<Typography type="body2" sx={{ fontSize: "1.2rem" }}>Express</Typography>}
+                primary={<Typography type="body2">Express</Typography>}
               />
           </ListItem>
           <ListItem sx={{ paddingTop: 0, paddingBottom: 0 }}>
             <ListItemText
                 disableTypography
-                primary={<Typography type="body2" sx={{ fontSize: "1.2rem" }}>MongoDB</Typography>}
+                primary={<Typography type="body2">MongoDB</Typography>}
               />
           </ListItem>
       </List>

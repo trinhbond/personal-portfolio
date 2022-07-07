@@ -18,6 +18,9 @@ import Mern from "../Mern.PNG"
 import CabsOnline from "../CabsOnline.PNG"
 import Diary from "../Diary.PNG"
 import Portfolio from "../PortfolioWebsite.PNG"
+import BooksList from "../BooksList.PNG"
+import CabsApplications from "../CabApplication.PNG"
+import Website from "../Website.PNG"
 
 export default function Projects() {
     document.title = "Projects - Bond Trinh";
@@ -44,74 +47,27 @@ export default function Projects() {
         paddingBottom: "145px",
         }}>
         <ThemeProvider theme={theme}>
-            <Box sx={{ width: "75%" }} className="Box">
-                <Grid container rowSpacing={4} columnSpacing={{ xs: 1, sm: 2, md: 4 }} className="Grid">
-                    <Grid item xs={6} sx={{ maxWidth: 400, display: "flex", flexWrap: "wrap" }} className="GridItem">
-                        <Card sx={{ backgroundColor: "#caede8" }}>
-                        <CardMedia
-                            component="img"
-                            height="250"
-                            image={Mern}
-                            alt="Mern Stack Application Image"
-                        />
-                            <CardActionArea>
-                                <CardContent>
-                                    <Typography gutterBottom variant="h6" component="div" sx={{ fontWeight: "bold" }} className="CardTitle">
-                                    MERN Stack Application for a Books List
-                                    </Typography>
-                                    <Button className="ButtonLink" size="small" color="primary" sx={{ backgroundColor: "black", marginBottom: '12px' }} href="https://heroku-mern-app.herokuapp.com/" target="blank">
-                                        View Application
-                                    </Button>
-                                    <Typography variant="body2" color="text.secondary">
-                                    A simple application using MERN stack that provides the functionality to create a book and add it to a list. The application uses HTTP methods 
-                                    to add a book to a list and fetch the list of data that is displayed using a Mongoose model. 
-                                    </Typography>
-                                </CardContent>
-                            </CardActionArea>
-                            <CardActions>
-                                <Grid sx={{ textAlign: "start", padding: "5px" }} container spacing={3}>
-                                    <Grid item xs>
-                                        <Typography variant="body2">React</Typography>
-                                    </Grid>
-                                    <Grid item xs>
-                                        <Typography variant="body2">Express</Typography>
-                                    </Grid>
-                                    <Grid item xs>
-                                        <Typography variant="body2">JavaScript</Typography>
-                                    </Grid>                    
-                                    <Grid item xs>
-                                        <Typography variant="body2">HTML</Typography>
-                                    </Grid>
-                                    <Grid item xs>
-                                        <Typography variant="body2">CSS</Typography>
-                                    </Grid>
-                                    <Grid item xs>
-                                        <Typography variant="body2">GitHub</Typography>
-                                    </Grid>
-                                </Grid>
-                            </CardActions>
-                        </Card>
-                    </Grid>
+            <Box className="Box">
+                <Grid className="Grid" container rowSpacing={4} columnSpacing={{ xs: 1, sm: 2, md: 4 }}>
                     <Grid item xs={6} sx={{ maxWidth: 400, display: "flex", flexWrap: "wrap" }} className="GridItem">
                         <Card sx={{ backgroundColor: "#caede8" }}>
                             <CardMedia
                                 component="img"
                                 height="250"
-                                image={CabsOnline}
+                                image={CabsApplications}
                                 alt="Book Application for Cabs Image"
                             />
                             <CardActionArea>
                                 <CardContent>
-                                    <Typography gutterBottom variant="h6" component="div" sx={{ fontWeight: "bold" }} className="CardTitle">
+                                    <Typography className="CardTitle" gutterBottom variant="h6" component="div" sx={{ fontWeight: "bold" }}>
                                     Booking Application for Cabs
                                     </Typography>
                                     <Button className="ButtonLink" size="small" color="primary" sx={{ backgroundColor: "black", marginBottom: "12px" }} href="/Projects/assign2.7z" download>
                                         Download Source Code
                                     </Button>
                                     <Typography variant="body2" color="text.secondary">
-                                    The application allows users to book a cab by entering their personal details
-                                    and time of choosing. These booking details can also be retrieved using text matching
-                                    and bookings scheduled for 2 hours ahead of the current time can be viewed.
+                                    An application that allows a user to book a cab online. The input is handled using AJAX and is validated through backend code using PHP while maintaining a database with MySQL. The booking details can be retrieved using text matching
+                                    and bookings scheduled for 2 hours ahead of the current time can be viewed with a button.
                                     </Typography>
                                 </CardContent>
                             </CardActionArea>
@@ -146,15 +102,16 @@ export default function Projects() {
                                 />
                             <CardActionArea>
                                 <CardContent>
-                                    <Typography gutterBottom variant="h6" component="div" sx={{ fontWeight: "bold" }}  className="CardTitle">
+                                    <Typography className="CardTitle" gutterBottom variant="h6" component="div" sx={{ fontWeight: "bold" }}>
                                     Diary System for a Social Networking Site
                                     </Typography>
                                     <Button className="ButtonLink" size="small" color="primary" sx={{ backgroundColor: "black", marginBottom: "12px" }} href="/Projects/assign1.7z" download>
                                         Source Code
                                     </Button>
                                     <Typography variant="body2" color="text.secondary">
-                                    The diary system allows users to post their status and save it to a database.
-                                    These posted details can also be retrieved using text matching and all matched
+                                    An application that allows a user to post their status and save it to a database. The input is validated through backend code using PHP
+                                    and also maintains the database with MySQL.
+                                    These posted details can be retrieved using text matching and all matched
                                     status reports can be viewed in the order they are posted.
                                     </Typography>
                                 </CardContent>
@@ -180,25 +137,68 @@ export default function Projects() {
                             </CardActions>
                         </Card>
                     </Grid>
-                    <Grid item xs={6} sx={{ maxWidth: 400, display: "flex", flexWrap: "wrap" }} className="GridItem">
+                    <Grid className="GridItem" item xs={6} sx={{ maxWidth: 400, display: "flex", flexWrap: "wrap" }}>
                         <Card sx={{ backgroundColor: "#caede8" }}>
                         <CardMedia
-                                    component="img"
-                                    height="250"
-                                    image={Portfolio}
-                                    alt="This Website Image"
-                                />
+                            component="img"
+                            height="250"
+                            image={BooksList}
+                            alt="Mern Stack Application Image"
+                        />
                             <CardActionArea>
                                 <CardContent>
-                                    <Typography gutterBottom variant="h6" component="div" sx={{ fontWeight: "bold" }}  className="CardTitle">
+                                    <Typography className="CardTitle" gutterBottom variant="h6" component="div" sx={{ fontWeight: "bold" }}>
+                                    MERN Stack Application for a Books List
+                                    </Typography>
+                                    <Button className="ButtonLink" size="small" color="primary" sx={{ backgroundColor: "black", marginBottom: '12px' }} href="https://heroku-mern-app.herokuapp.com/" target="blank">
+                                        View Application
+                                    </Button>
+                                    <Typography variant="body2" color="text.secondary">
+                                    A web simple application that provides the functionality to create a book and add it to a list. 
+                                    The application uses MERN stack to construct a 3-tier architecture that includes frontend, backend and database.
+                                    </Typography>
+                                </CardContent>
+                            </CardActionArea>
+                            <CardActions>
+                                <Grid sx={{ textAlign: "start", padding: "5px" }} container spacing={3}>
+                                    <Grid item xs>
+                                        <Typography variant="body2">React</Typography>
+                                    </Grid>
+                                    <Grid item xs>
+                                        <Typography variant="body2">JavaScript</Typography>
+                                    </Grid>                    
+                                    <Grid item xs>
+                                        <Typography variant="body2">HTML</Typography>
+                                    </Grid>
+                                    <Grid item xs>
+                                        <Typography variant="body2">CSS</Typography>
+                                    </Grid>
+                                    <Grid item xs>
+                                        <Typography variant="body2">GitHub</Typography>
+                                    </Grid>
+                                </Grid>
+                            </CardActions>
+                        </Card>
+                    </Grid>
+                    <Grid className="GridItem" item xs={6} sx={{ maxWidth: 400, display: "flex", flexWrap: "wrap" }}>
+                        <Card sx={{ backgroundColor: "#caede8" }}>
+                        <CardMedia
+                            component="img"
+                            height="250"
+                            image={Website}
+                            alt="This Website Image"
+                        />
+                            <CardActionArea>
+                                <CardContent>
+                                    <Typography className="CardTitle" gutterBottom variant="h6" component="div" sx={{ fontWeight: "bold" }}>
                                     This Website
                                     </Typography>
                                     <Button className="ButtonLink" size="small" color="primary" sx={{ backgroundColor: "black", marginBottom: "12px" }} href="https://github.com/bondtrinh1/personal-portfolio" target="blank">
                                         GitHub Source Code
                                     </Button>
                                     <Typography variant="body2" color="text.secondary">
-                                    This application is an online portfolio showcasing my skills and projects as a Software Developer. This project is also an opportunity
-                                    for me to strengthen my skills in React, HTML, CSS and other technologies. 
+                                    A web application hosted by Vercel that showcases my skills and projects through the use of multiple technologies. 
+                                    This project was also an opportunity for me to improve my knowledge in frontend development.    
                                     </Typography>
                                 </CardContent>
                             </CardActionArea>
@@ -226,20 +226,18 @@ export default function Projects() {
                             </CardActions>
                         </Card>
                     </Grid>
-                    <Grid item xs={6} sx={{ maxWidth: 400, display: "flex", flexWrap: "wrap" }} className="GridItem">
+                    <Grid className="GridItem" item xs={6} sx={{ maxWidth: 400, display: "flex", flexWrap: "wrap" }}>
                         <Card sx={{ backgroundColor: "#caede8" }}>
                             <CardActionArea>
                                 <CardContent>
-                                    <Typography gutterBottom variant="h6" component="div" sx={{ fontWeight: "bold" }}  className="CardTitle">
+                                    <Typography className="CardTitle" gutterBottom variant="h6" component="div" sx={{ fontWeight: "bold" }}>
                                     Technical School Application
                                     </Typography>
                                     <Button className="ButtonLink" size="small" color="primary" sx={{ backgroundColor: "black", marginBottom: "12px" }} href="/Projects/TechnicalSchoolApp.7z" download>
                                         Download Source Code
                                     </Button>
                                     <Typography variant="body2" color="text.secondary">
-                                    The Technical School App determines whether or not a student is certified, 
-                                    their transcript is checked against a certification criterion. Consists of 
-                                    classes to store data for modules, students, and their transcripts.
+                                    The Technical School application determines whether or not a student is certified by checking their transcript against a certification criterion.
                                     </Typography>
                                 </CardContent>
                             </CardActionArea>

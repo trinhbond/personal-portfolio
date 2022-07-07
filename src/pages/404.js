@@ -5,7 +5,7 @@ function PageNotFound() {
     document.title = "Page Not Found | Bond Trinh";
   
     return (
-    <Container className="Error">
+    <Container className="PageNotFound">
       <Box>
         <Typography variant="h1" component="h1">
           404
