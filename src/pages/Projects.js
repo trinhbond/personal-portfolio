@@ -14,10 +14,7 @@ import {
     Container,
     Button,
 } from "@mui/material";
-import Mern from "../Mern.PNG"
-import CabsOnline from "../CabsOnline.PNG"
 import Diary from "../Diary.PNG"
-import Portfolio from "../PortfolioWebsite.PNG"
 import BooksList from "../BooksList.PNG"
 import CabsApplications from "../CabApplication.PNG"
 import Website from "../Website.PNG"
@@ -49,7 +46,7 @@ export default function Projects() {
         <ThemeProvider theme={theme}>
             <Box className="Box">
                 <Grid className="Grid" container rowSpacing={4} columnSpacing={{ xs: 1, sm: 2, md: 4 }}>
-                    <Grid item xs={6} sx={{ maxWidth: 400, display: "flex", flexWrap: "wrap" }} className="GridItem">
+                    <Grid className="GridItem" item xs={6} sx={{ maxWidth: 400, display: "flex", flexWrap: "wrap" }}>
                         <Card sx={{ backgroundColor: "#caede8" }}>
                             <CardMedia
                                 component="img"
@@ -92,7 +89,7 @@ export default function Projects() {
                             </CardActions>
                         </Card>
                     </Grid>
-                    <Grid item xs={6} sx={{ maxWidth: 400, display: "flex", flexWrap: "wrap" }} className="GridItem">
+                    <Grid className="GridItem" item xs={6} sx={{ maxWidth: 400, display: "flex", flexWrap: "wrap" }}>
                         <Card sx={{ backgroundColor: "#caede8" }}>
                             <CardMedia
                                     component="img"
