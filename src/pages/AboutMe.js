@@ -16,7 +16,7 @@ function AboutMe() {
       I am a Software Development major in my final year at Auckland University of Technology
         studying a Bachelor of Computer and Information Sciences. During my second year at AUT, I realised that my passion lies in web development. Since then, I have been able to learn a lot about frontend and backend development by working with technologies such as React. Apart from playing video games and hanging out 
         with friends in my spare time, I enjoy creating meaningful projects such as this website. I am currently focusing on a Research and Development Project 
-        where I am working with 6 other members to develop a proof of concept android application (using React Native, Android Studio) for Kumeu River Wines. The application 
+        where I am working with 6 other members to develop a proof of concept android application for Kumeu River Wines. The application 
         will use real-time climatic data to predict dangerous weather events such as frost that are damaging to their vineyards.
       </Typography>
       <Typography variant="body2" id="listHeading">
