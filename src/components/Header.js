@@ -45,8 +45,8 @@ export default function DrawerAppBar(props: Props) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <Typography variant="h6" sx={{ my: 2, pointerEvents: "none", cursor: "pointer", userSelect: "none" }}>
-        BT
+      <Typography variant="h6" sx={{ my: 2, userSelect: "none" }}>
+        Bond Trinh
       </Typography>
       <Divider />
       <List>
@@ -69,7 +69,7 @@ export default function DrawerAppBar(props: Props) {
 
   return (
     <Box sx={{ display: "flex" }}>
-      <AppBar position="absolute" component="nav" style={{ padding: "15px 10%", backgroundColor: "#caede8", color: "#000000" }}>
+      <AppBar position="absolute" component="nav" style={{ padding: "10px 10%", backgroundColor: "#caede8", color: "#000000" }}>
         <Toolbar>
           <IconButton
             color="inherit"
@@ -83,13 +83,13 @@ export default function DrawerAppBar(props: Props) {
           <Typography
             variant="h6"
             component="div"
-            sx={{ flexGrow: 1, display: { xs: "none", sm: "block", fontSize: "24px", color: "#000000", pointerEvents: "none", cursor: "pointer", userSelect: "none"  } }}
+            sx={{ flexGrow: 1, display: { xs: "none", sm: "block", fontSize: "1rem", color: "#000000", userSelect: "none", fontWeight: "bold" } }}
           >
-            BT
+            Bond Trinh
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item) => (
-              <Button key={item} sx={{ color: "#fff" }} style={{letterSpacing: 0, marginLeft: "14px", textTransform: "capitalize", fontSize: "16px" }}>
+              <Button key={item} sx={{ color: "#fff" }} style={{ letterSpacing: 0, marginLeft: "14px", textTransform: "capitalize", fontSize: "1rem" }}>
                 <CustomLink to={`/${item}`}>
                     {item}
                 </CustomLink>

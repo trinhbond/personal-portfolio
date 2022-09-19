@@ -7,16 +7,16 @@ function Home() {
   
   return (
   <Container className="Home">
-    <Typography variant="body2" id="hiParagraph">
+    {/* <Typography variant="body2" id="hiParagraph">
     Hello, my name is
-    </Typography>
+    </Typography> */}
     <Typography variant="h1">
     Bond Trinh
     </Typography>
     <Typography variant="body2" id="welcomeParagraph">
-    I am a final year student at Auckland University of Technology studying Software Development
+    Software Development major @ Auckland University of Technology
     </Typography>
-    <Button sx={{ width: "fit-content" }} id="resumeButton" href="/Projects/Bond_Nick Trinh_Resume_08-07-2022-02-04-55.pdf" download>Resume</Button>
+    <Button sx={{ width: "fit-content" }} id="resumeButton" href="/Projects/Bond_Nick Trinh_Resume.pdf" download>Resume</Button>
     <Box className="icons">
       <a href="https://github.com/bondtrinh1" target="blank" style={{margin: "12px"}}>
           <svg 

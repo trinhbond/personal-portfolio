@@ -17,7 +17,7 @@ function App() {
   return (
   <React.Fragment>
     <CssBaseline />
-    <Container maxWidth="100vw" style={{paddingLeft:"0", paddingRight: "0", bgcolor: '#cfe8fc'}}>
+    <Container maxWidth="100vw" style={{ paddingLeft: "0", paddingRight: "0", bgcolor: "#cfe8fc" }}>
       <Header />
       <Footer />
     </Container>

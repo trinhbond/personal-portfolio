@@ -14,10 +14,12 @@ import {
     Container,
     Button,
 } from "@mui/material";
-import Diary from "../Diary.PNG"
-import BooksList from "../BooksList.PNG"
-import CabsApplications from "../CabApplication.PNG"
-import Website from "../Website.PNG"
+import Diary from "../Diary.PNG";
+import BooksList from "../BooksList.PNG";
+import CabsApplications from "../CabApplication.PNG";
+import Website from "../Website.PNG";
+import Pokedex from "../Pokedex.PNG";
+import Blank from "../Blank.PNG";
 
 export default function Projects() {
     document.title = "Projects - Bond Trinh";
@@ -46,6 +48,55 @@ export default function Projects() {
         <ThemeProvider theme={theme}>
             <Box className="Box">
                 <Grid className="Grid" container rowSpacing={4} columnSpacing={{ xs: 1, sm: 2, md: 4 }}>
+                    <Grid className="GridItem" item xs={6} sx={{ maxWidth: 400, display: "flex", flexWrap: "wrap" }}>
+                        <Card sx={{ backgroundColor: "#caede8" }}>
+                            <CardMedia
+                                component="img"
+                                height="250"
+                                image={Pokedex}
+                                alt="Pokedex Website Image"
+                            />
+                            <CardActionArea>
+                                <CardContent>
+                                    <Typography className="CardTitle" gutterBottom variant="h6" component="div" sx={{ fontWeight: "bold" }}>
+                                    Pokemon List
+                                    </Typography>
+                                    <Button className="ButtonLink" size="small" color="primary" sx={{ backgroundColor: "black", marginBottom: "12px" }} href="https://github.com/bondtrinh1/pokedex" target="blank">
+                                        GitHub Source Code
+                                    </Button>
+                                    <Button className="ButtonLink" size="small" color="primary" sx={{ backgroundColor: "black", marginBottom: "12px", marginLeft: "10px" }} href="https://pokedex-sepia-ten.vercel.app/" target="blank">
+                                        View Application
+                                    </Button>
+                                    <Typography variant="body2" color="text.secondary">
+                                    An application that fetches a list of Pokemons from PokeAPI and displays them in a Grid form. The user can learn more about a Pokemon by clicking on a Pokemon of their choice, 
+                                    and their details will be displayed in another page.
+                                    </Typography>
+                                </CardContent>
+                            </CardActionArea>
+                            <CardActions>
+                                <Grid sx={{ textAlign:"start", padding: "5px" }} container spacing={3}>
+                                    <Grid item xs>
+                                        <Typography variant="body2">JavaScript</Typography>
+                                    </Grid>
+                                    <Grid item xs>
+                                        <Typography variant="body2">HTML</Typography>
+                                    </Grid>
+                                    <Grid item xs>
+                                        <Typography variant="body2">CSS</Typography>
+                                    </Grid>
+                                    <Grid item xs>
+                                        <Typography variant="body2">Material UI</Typography>
+                                    </Grid>    
+                                    <Grid item xs>
+                                        <Typography variant="body2">React Query</Typography>
+                                    </Grid>          
+                                    <Grid item xs>
+                                        <Typography variant="body2">React Router</Typography>
+                                    </Grid>                
+                                </Grid>
+                            </CardActions>
+                        </Card>
+                    </Grid>
                     <Grid className="GridItem" item xs={6} sx={{ maxWidth: 400, display: "flex", flexWrap: "wrap" }}>
                         <Card sx={{ backgroundColor: "#caede8" }}>
                             <CardMedia
@@ -225,6 +276,12 @@ export default function Projects() {
                     </Grid>
                     <Grid className="GridItem" item xs={6} sx={{ maxWidth: 400, display: "flex", flexWrap: "wrap" }}>
                         <Card sx={{ backgroundColor: "#caede8" }}>
+                        <CardMedia
+                            component="img"
+                            height="250"
+                            image={Blank}
+                            alt="Blank image"
+                        />
                             <CardActionArea>
                                 <CardContent>
                                     <Typography className="CardTitle" gutterBottom variant="h6" component="div" sx={{ fontWeight: "bold" }}>

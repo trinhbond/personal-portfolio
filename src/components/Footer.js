@@ -10,7 +10,6 @@ const Footer = () => {
     <AppBar 
       component="footer" 
       style={{
-        padding: "15px 10%", 
         position: "absolute", 
         bottom: "0", 
         textAlign: "center", 
@@ -19,7 +18,7 @@ const Footer = () => {
       }}>
       <Typography sx={{ color: "#000000" }}>&copy; 2022 Bond Trinh</Typography>
     </AppBar>
-    <Box component="main" sx={{ p: 3 }}>
+    <Box component="main" sx={{ p: 1 }}>
       <Toolbar />
     </Box>
   </Box>
