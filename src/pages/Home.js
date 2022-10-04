@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/Home.css";
 import { Container, Box, Typography, Button } from "@mui/material";
 
+
 function Home() {
   document.title = "Home - Bond Trinh";
   
@@ -16,7 +17,7 @@ function Home() {
     <Typography variant="body2" id="welcomeParagraph">
     Software Development major @ Auckland University of Technology
     </Typography>
-    <Button sx={{ width: "fit-content" }} id="resumeButton" href="/Projects/Bond_Nick Trinh_Resume.pdf" download>Resume</Button>
+    <Button sx={{ width: "fit-content" }} id="resumeButton" href="/Projects/Bond_Nick_Trinh_Resume.pdf" download>Resume</Button>
     <Box className="icons">
       <a href="https://github.com/bondtrinh1" target="blank" style={{margin: "12px"}}>
           <svg 
