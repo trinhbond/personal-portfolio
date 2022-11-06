@@ -45,7 +45,7 @@ function Home() {
             <Avatar
               alt="Bond Trinh"
               variant="rounded"
-              // src="avatar.jpg"
+              src="avatar.jpg"
               sx={{ 
                 width: 300, 
                 height: 300, 
