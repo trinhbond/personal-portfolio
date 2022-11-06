@@ -21,7 +21,7 @@ import Website from "../Website.PNG";
 import Pokedex from "../Pokedex.PNG";
 import Blank from "../Blank.PNG";
 
-export default function Projects() {
+function Projects() {
 
     const theme = createTheme({
         breakpoints: {
@@ -309,3 +309,5 @@ export default function Projects() {
     </Container>
     )
 }
+
+export default Projects;
