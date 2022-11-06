@@ -2,8 +2,7 @@ import "../styles/404.css";
 import { Container, Typography, Box } from "@mui/material";
 
 function PageNotFound() {
-    document.title = "Page Not Found | Bond Trinh";
-  
+    
     return (
     <Container className="PageNotFound">
       <Box>

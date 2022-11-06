@@ -1,49 +1,190 @@
-import React from "react";
-import "../styles/Home.css";
-import { Container, Box, Typography, Button } from "@mui/material";
-
+import React from 'react';
+import '../styles/home.css';
+import { Box, Typography, Link } from "@mui/material";
+import Avatar from "@mui/material/Avatar";
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import EmailIcon from '@mui/icons-material/Email';
+import { Link as Redirect } from 'react-router-dom';
 
 function Home() {
-  document.title = "Home - Bond Trinh";
-  
   return (
-  <Container className="Home">
-    {/* <Typography variant="body2" id="hiParagraph">
-    Hello, my name is
-    </Typography> */}
-    <Typography variant="h1">
-    Bond Trinh
-    </Typography>
-    <Typography variant="body2" id="welcomeParagraph">
-    Software Development major @ Auckland University of Technology
-    </Typography>
-    <Button sx={{ width: "fit-content" }} id="resumeButton" href="/Projects/Bond_Nick_Trinh_Resume.pdf" download>Resume</Button>
-    <Box className="icons">
-      <a href="https://github.com/bondtrinh1" target="blank" style={{margin: "12px"}}>
-          <svg 
-            xmlns="http://www.w3.org/2000/svg" 
-            width="24" 
-            height="24" 
-            fill="currentColor" 
-            className="bi bi-github" 
-            viewBox="0 0 16 16">
-            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-          </svg>
-      </a>
-      <a href="https://www.linkedin.com/in/bond-nick-trinh-a015b420a/" target="blank" style={{margin: "12px"}}>
-        <svg 
-          xmlns="http://www.w3.org/2000/svg" 
-          width="24" 
-          height="24" 
-          fill="currentColor" 
-          className="bi bi-linkedin" 
-          viewBox="0 0 16 16">
-          <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-        </svg>
-      </a>
+    <Box 
+      id="main" 
+      sx={{ 
+        display: "flex", 
+        padding: "5% 8% 5% 8%", 
+        flexDirection:"column", 
+        // backgroundColor: "blue", 
+        justifyContent: "center", 
+        alignItems: "center",
+      }}>
+        <Box 
+          id="main_second" 
+          sx={{ 
+            display: "inline", 
+            width: "100%", 
+            margin: "0 auto",
+        }}>
+          <Box 
+            id="home"
+            sx={{ 
+              flexDirection: "row", 
+              // backgroundColor: "lightblue", 
+              alignItems: "center", 
+              justifyContent: "flex-start", 
+              display: "flex", 
+              padding: "20px 4% 20px 4%", 
+              '@media (max-width: 768px)' : {
+                flexDirection: "column",
+                alignContent: "center",
+                justifyContent: "center",
+                pb: 1
+              } 
+            }}>
+            <Avatar
+              alt="Bond Trinh"
+              variant="rounded"
+              // src="avatar.jpg"
+              sx={{ 
+                width: 300, 
+                height: 300, 
+                '@media (max-width: 1024px)' : {
+                  width: 250, 
+                  height: 250,
+                },
+                '@media (max-width: 768px)' : {
+                  width: 200, 
+                  height: 200,
+                  alignSelf: "center",
+                },
+                '@media (max-width: 480px)' : {
+                  width: "100%", 
+                  height: "50%",
+                  alignSelf: "center",
+                }
+              }}
+            />
+              <Box 
+                id="socials" 
+                sx={{
+                  display: "flex", 
+                  flexDirection:"column", 
+                  alignItems:"center", 
+                  justifyContent: "space-evenly", 
+                  padding: "1% 2% 0% 2%",
+                  '@media (max-width: 768px)' : {
+                      justifyContent: "flex-start",
+                      alignSelf: "center",
+                      mt: 2
+ 
+                  } 
+                }}>
+                  <Typography 
+                    variant="h1" 
+                    fontWeight={600} 
+                    fontSize={75} 
+                    sx={{ 
+                      letterSpacing: 1, 
+                      textTransform: "uppercase",
+                      '@media (max-width: 1200px)' : {
+                        fontSize: 60
+
+                      } ,
+                      '@media (max-width: 768px)' : {
+                        fontSize: 60,
+                        display: "none"
+                      } 
+                    }}>
+                  Bond Trinh
+                  </Typography>
+                  <Typography 
+                    id="welcomeParagraph" 
+                    sx={{ 
+                      ml: 0.45, 
+                      letterSpacing: 1, 
+                      textTransform: "uppercase", 
+                      fontSize: 18, 
+                      alignSelf: "flex-start",
+                      '@media (max-width: 1200px)' : {
+                        fontSize: 16
+
+                      } ,
+                      '@media (max-width: 768px)' : {
+                        fontSize: 14,
+                        display: "none"
+                      } 
+                    }}>
+                  Aspiring Software Engineer
+                  </Typography>
+                  <Box sx={{ 
+                      display: "inline", 
+                      alignSelf: "flex-start", 
+                      mt: 1.5,
+                      ml: 0.25,
+                      // '@media (max-width: 768px)' : {
+                      //   alignSelf: "center"
+                      // } 
+                    }}>
+                    <Link href="https://github.com/bondtrinh1" target="blank" >
+                      <GitHubIcon fontSize="medium" sx={{ color: "#000", mr: 2 }} />
+                    </Link>
+                    <Link href="https://www.linkedin.com/in/bond-nick-trinh-a015b420a/" target="blank">
+                      <LinkedInIcon fontSize="medium" sx={{color: "#000", mr: 2 }} />
+                    </Link>
+                    <Link href="mailto:bond.nicktrinh@gmail.com">
+                      <EmailIcon fontSize="medium" sx={{ color: "#000" }}/>
+                    </Link>
+                  </Box>
+              </Box>
+          </Box>
+          <Box sx={{ 
+            // backgroundColor: "yellow", 
+            padding: "3% 4% 3% 4%", 
+            display:  "flex", 
+            flexDirection: "column", 
+            alignItems: "center", 
+            justifyContent: "center",
+            '@media (max-width: 480px)' : {
+              padding: "6% 4% 6% 4%", 
+            }
+          }}>
+            <Typography>
+              <Typography sx={{ 
+                fontSize: 30, 
+                fontWeight: 600, 
+                textTransform: "uppercase",
+                '@media (max-width: 480px)' : {
+                  fontSize: 20
+                }
+              }}>
+                Hey, I'm Bond
+              </Typography>
+              <Typography sx={{ 
+                                '@media (max-width: 768px)' : {
+                                  // fontSize: 14
+                                },
+                '@media (max-width: 480px)' : {
+                  fontSize: 14
+                }
+              }}>
+                I am a final-year Software Development student
+                at Auckland University of Technology studying a Bachelor of Computer and
+                Information Sciences. I have a fond interest in front-end development because 
+                it is a creatively fulfilling process that challenges me to think outside the 
+                box and learn new things along the way. The concept of creating software that 
+                serves a meaningful purpose excites me which is why I chose a career in technology. 
+                I am currently focused on improving my frontend skills using modern technologies such 
+                as JavaScript and React. 
+              </Typography>
+              <Typography sx={{ textTransform: "uppercase", mt: 3 }}>
+                Check out my list of <Redirect to="/projects" color="#000">Projects</Redirect>
+              </Typography>
+            </Typography>
+          </Box>
+        </Box>
     </Box>
-  </Container>
   )
 }
 
-export default Home;
+export default Home

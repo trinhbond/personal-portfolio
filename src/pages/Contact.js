@@ -4,7 +4,7 @@ import { Container, Box } from "@mui/system";
 import { Typography, Button } from "@mui/material";
 
 export default function Contact() {
-    document.title="Contact - Bond Trinh"
+    // document.title="Contact - Bond Trinh"
     return (
     <Container className="Content">
       <Box>        

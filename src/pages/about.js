@@ -1,10 +1,10 @@
 import React from "react";
-import "../styles/AboutMe.css";
+import "../styles/about.css";
 import { Container, Box } from "@mui/system";
 import { Typography, List, ListItem, ListItemText, Stack } from "@mui/material";
 
-function AboutMe() {
-  document.title = "About Me - Bond Trinh";
+function About() {
+  // document.title = "About Me - Bond Trinh";
   
   return (
   <Container className="About-Me">
@@ -143,4 +143,4 @@ function AboutMe() {
   )
 }
 
-export default AboutMe;
+export default About;

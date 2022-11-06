@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Projects.css";
+import "../styles/projects.css";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
@@ -22,7 +22,6 @@ import Pokedex from "../Pokedex.PNG";
 import Blank from "../Blank.PNG";
 
 export default function Projects() {
-    document.title = "Projects - Bond Trinh";
 
     const theme = createTheme({
         breakpoints: {
@@ -36,7 +35,7 @@ export default function Projects() {
             }
         }
     });
-    
+
     return (
     <Container className="ProjectsContainer" sx={{
         display: "flex", 
@@ -110,7 +109,7 @@ export default function Projects() {
                                     <Typography className="CardTitle" gutterBottom variant="h6" component="div" sx={{ fontWeight: "bold" }}>
                                     Booking Application for Cabs
                                     </Typography>
-                                    <Button className="ButtonLink" size="small" color="primary" sx={{ backgroundColor: "black", marginBottom: "12px" }} href="/Projects/assign2.7z" download>
+                                    <Button className="ButtonLink" size="small" color="primary" sx={{ display: "none", backgroundColor: "black", marginBottom: "12px" }} href="/Projects/assign2.7z" download>
                                         Download Source Code
                                     </Button>
                                     <Typography variant="body2" color="text.secondary">
@@ -287,9 +286,9 @@ export default function Projects() {
                                     <Typography className="CardTitle" gutterBottom variant="h6" component="div" sx={{ fontWeight: "bold" }}>
                                     Technical School Application
                                     </Typography>
-                                    <Button className="ButtonLink" size="small" color="primary" sx={{ backgroundColor: "black", marginBottom: "12px" }} href="/Projects/TechnicalSchoolApp.7z" download>
+                                    {/* <Button className="ButtonLink" size="small" color="primary" sx={{ backgroundColor: "black", marginBottom: "12px" }} href="/Projects/TechnicalSchoolApp.7z" download>
                                         Download Source Code
-                                    </Button>
+                                    </Button> */}
                                     <Typography variant="body2" color="text.secondary">
                                     The Technical School application determines whether or not a student is certified by checking their transcript against a certification criterion.
                                     </Typography>

@@ -1,145 +1,40 @@
-.Home {
-    text-align: center;
-    justify-content: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+/* .main {
+    display: "flex";
+    padding: "2% 8% 6% 8%"; 
+    flex-direction:"column"; 
+    background-color: "blue"; 
+    justify-content: "center"; 
+    align-items: "center";
 }
-.Home h1 {
-    margin-top: 30px;
-    font-weight: bold;
-    font-size: 7rem;
-}
-.Home #hiParagraph {
-    position: relative;
-}
-.Home p {
-    font-size: 1.2rem;
-}
-.Home #welcomeParagraph {
-    text-align: center;
 
+#main_second {
+    display: "inline";
+    width: "100%";
+    margin: "0 auto";
 }
-.Home #resumeButton {
-    margin: 0 auto;
-    display: block;
-    margin-bottom: 30px;
-    border: 1px solid black;
-    background-color: black;
-    color: white;
-    padding: 10px;
-    font-weight: bolder;
-    margin-top: 35px;
+
+#home {
+    flex-direction: "row";
+    background-color: "lightblue"; 
+    align-items: "center"; 
+    justify-content: "center";
+    display: "flex";
+    padding: "15px 0px 15px 15px"; 
 }
-.Home .icons {
-    width: fit-content;
-    margin: 0 auto;
-    display: flex;
-    position: relative;
-    right: 2px;
+
+#socials {
+    display: "flex";
+    flex-direction:"column"; 
+    align-items:"center";
+    justify-content: "space-evenly";
+    padding: "1% 2% 1% 2%";
 }
-.Home svg {
-    color: black;
-    display: block;
-}
-@media screen and (max-width: 768px) {
-    .Home h1 {
-        margin-top: 30px;
-        font-weight: bold;
-        font-size: 5rem;
-    }
-    .Home #hiParagraph {
-        position: relative;
-    }
-    .Home p {
-        font-size: 1rem;
-    }
-    .Home #welcomeParagraph {
-        text-align: center;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-    .Home #resumeButton {
-        margin: 0 auto;
-        display: block;
-        margin-bottom: 30px;
-        border: 1px solid black;
-        background-color: black;
-        color: white;
-        padding: 10px;
-        font-weight: bolder;
-        margin-top: 35px;
-    }
-    .Home .icons {
-        width: fit-content;
-        margin: 0 auto;
-        display: flex;
-        position: relative;
-        right: 2px;
-    }
-    .Home svg {
-        color: black;
-        display: block;
-    }
-}
-@media screen and (max-width: 960px) {
-    .Home h1 {
-        margin-top: 30px;
-        font-weight: bold;
-        font-size: 5rem;
-    }
-    .Home #hiParagraph {
-        position: relative;
-    }
-    .Home p {
-        font-size: 0.90rem;
-    }
-    .Home #welcomeParagraph {
-        text-align: center;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-    .Home #resumeButton {
-        margin: 0 auto;
-        display: block;
-        margin-bottom: 30px;
-        border: 1px solid black;
-        background-color: black;
-        color: white;
-        padding: 10px;
-        font-weight: bolder;
-        margin-top: 35px;
-    }
-}
-@media screen and (max-width: 600px) {
-    .Home h1 {
-        margin-top: 30px;
-        font-weight: bold;
-        font-size: 4rem;
-    }
-    .Home #hiParagraph {
-        position: relative;
-    }
-    .Home p {
-        font-size: 0.90rem;
-    }
-    .Home #welcomeParagraph {
-        text-align: center;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-    .Home #resumeButton {
-        margin: 0 auto;
-        display: block;
-        margin-bottom: 30px;
-        border: 1px solid black;
-        background-color: black;
-        color: white;
-        padding: 10px;
-        font-weight: bolder;
-        margin-top: 35px;
-    }
-}
+
+#profile_content {
+    background-color: "yellow"; 
+    padding: "2% 4% 2% 4%"; 
+    display:  "flex";
+    flex-direction: "column"; 
+    align-items: "center";
+    justify-content: "center";
+} */

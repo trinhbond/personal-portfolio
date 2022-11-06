@@ -13,9 +13,11 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
+import { Link as MUILink } from "@mui/material";
 
 const drawerWidth = 240;
-const navItems = ["Home", "Projects", "About", "Contact"];
+// const navItems = ["Home", "Projects", "About"];
+const navItems = ["Projects", "About"];
 
 function CustomLink({ children, to, ...props }: LinkProps) {
     let resolved = useResolvedPath(to);
@@ -24,7 +26,7 @@ function CustomLink({ children, to, ...props }: LinkProps) {
     return (
       <div>
         <Link
-          style={{ fontWeight: match ? "bold" : "normal", textDecoration: "none", color: "#000000", fontSize: "0.90rem", textTransform: "uppercase" }}
+          style={{ color: match ? "#8ae9fc" : "#000", textDecoration: "none",  fontSize: "1rem", textTransform: "uppercase" }}
           to={to}
           {...props}
         >
@@ -45,7 +47,7 @@ export default function DrawerAppBar(props: Props) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <Typography variant="h6" sx={{ my: 2, userSelect: "none" }}>
+      <Typography variant="h6" sx={{ my: 2, userSelect: "none", textTransform: "uppercase", fontWeight: 600 }}>
         Bond Trinh
       </Typography>
       <Divider />
@@ -69,7 +71,7 @@ export default function DrawerAppBar(props: Props) {
 
   return (
     <Box sx={{ display: "flex" }}>
-      <AppBar position="absolute" component="nav" style={{ padding: "10px 10%", backgroundColor: "#caede8", color: "#000000" }}>
+      <AppBar position="static" component="nav" style={{ padding: "30px 8% 30px 8%", backgroundColor: "#ffffff", color: "#000000", boxShadow: "none" }}>
         <Toolbar>
           <IconButton
             color="inherit"
@@ -83,13 +85,13 @@ export default function DrawerAppBar(props: Props) {
           <Typography
             variant="h6"
             component="div"
-            sx={{ flexGrow: 1, display: { xs: "none", sm: "block", fontSize: "1rem", color: "#000000", userSelect: "none", fontWeight: "bold" } }}
+            sx={{ flexGrow: 1, textTransform: "uppercase", display: { xs: "none", sm: "block", fontSize: "1.5rem", color: "#000000" } }}
           >
-            Bond Trinh
+            <Link to="/" style={{ textDecoration: "none", color: "inherit", fontWeight: 600 }}>Bond Trinh</Link>
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item) => (
-              <Button key={item} sx={{ color: "#fff" }} style={{ letterSpacing: 0, marginLeft: "14px", textTransform: "capitalize", fontSize: "1rem" }}>
+              <Button key={item} sx={{ color: "#fff", textTransform: "capitalize", fontWeight: 600, marginLeft: 2 }}>
                 <CustomLink to={`/${item}`}>
                     {item}
                 </CustomLink>
@@ -109,14 +111,11 @@ export default function DrawerAppBar(props: Props) {
           }}
           sx={{
             display: { xs: "block", sm: "none" },
-            "& .MuiDrawer-paper": { boxSizing: "border-box", width: drawerWidth, backgroundColor: "#caede8" },
+            "& .MuiDrawer-paper": { boxSizing: "border-box", width: drawerWidth },
           }}
         >
           {drawer}
         </Drawer>
-      </Box>
-      <Box component="main" sx={{ p: 3 }}>
-        <Toolbar />
       </Box>
     </Box>
   );
