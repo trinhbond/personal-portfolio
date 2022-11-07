@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/personal-portfolio/static/css/main.d603e2f2.css",
+    "main.js": "/personal-portfolio/static/js/main.88c1c5f9.js",
+    "static/js/787.fb771931.chunk.js": "/personal-portfolio/static/js/787.fb771931.chunk.js",
+    "static/media/Pokedex.PNG": "/personal-portfolio/static/media/Pokedex.47cbf9f62cbc14c3ada1.PNG",
+    "static/media/BooksList.PNG": "/personal-portfolio/static/media/BooksList.70189d51988367e7f0d7.PNG",
+    "static/media/Diary.PNG": "/personal-portfolio/static/media/Diary.434d01c9868dcb5492bc.PNG",
+    "static/media/Website.PNG": "/personal-portfolio/static/media/Website.ad85ed0483824b394b8f.PNG",
+    "static/media/CabApplication.PNG": "/personal-portfolio/static/media/CabApplication.56ecb85b0ae2a58ef5cb.PNG",
+    "static/media/Blank.PNG": "/personal-portfolio/static/media/Blank.a5a175a9971342b6e00a.PNG",
+    "index.html": "/personal-portfolio/index.html",
+    "main.d603e2f2.css.map": "/personal-portfolio/static/css/main.d603e2f2.css.map",
+    "main.88c1c5f9.js.map": "/personal-portfolio/static/js/main.88c1c5f9.js.map",
+    "787.fb771931.chunk.js.map": "/personal-portfolio/static/js/787.fb771931.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d603e2f2.css",
+    "static/js/main.88c1c5f9.js"
+  ]
+}
