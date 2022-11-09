@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/projects.css";
+import "../styles/Projects.css";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";

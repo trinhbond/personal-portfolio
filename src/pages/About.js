@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/about.css";
+import "../styles/About.css";
 import { Container, Box } from "@mui/system";
 import { Typography, List, ListItem, ListItemText, Stack } from "@mui/material";
 
