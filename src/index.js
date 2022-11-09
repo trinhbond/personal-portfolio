@@ -4,14 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import About from './pages/about';
-import PageNotFound from './pages/404';
-import Projects from './pages/projects';
-import Header from "./components/header";
-import Footer from "./components/footer";
-import Home from "./pages/home";
 import { ThemeProvider } from "@mui/material/styles";
 import theme from "./Theme";
+import About from './pages/About';
+import PageNotFound from './pages/404';
+import Projects from './pages/Projects';
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -22,8 +22,8 @@ root.render(
         <Routes>
           <Route path="/" element={<App />}>
             <Route index element={<Home />} />
-            <Route path="projects" element={<Projects title="yo" />}  />
-            <Route path="about" element={<About />} />
+            <Route path="Projects" element={<Projects />}  />
+            <Route path="About" element={<About />} />
             <Route path="*" element={<PageNotFound />} />
           </Route>
         </Routes>
