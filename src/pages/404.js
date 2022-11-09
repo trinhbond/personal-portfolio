@@ -10,7 +10,7 @@ function PageNotFound() {
           404
         </Typography>
         <Typography variant="body2">
-          Page Not Found
+          Page Not Found!
         </Typography>
       </Box>
     </Container>
