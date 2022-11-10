@@ -16,7 +16,6 @@ import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import { Link as MUILink } from "@mui/material";
 
 const drawerWidth = 240;
-// const navItems = ["Home", "Projects", "About"];
 const navItems = ["Projects", "About"];
 
 function CustomLink({ children, to, ...props }: LinkProps) {
@@ -26,7 +25,7 @@ function CustomLink({ children, to, ...props }: LinkProps) {
     return (
       <div>
         <Link
-          style={{ color: match ? "#8ae9fc" : "#000", textDecoration: "none",  fontSize: "1rem", textTransform: "uppercase" }}
+          style={{ color: match ? "#8ae9fc" : "#000", textDecoration: "none",  fontSize: "1.25rem", textTransform: "uppercase" }}
           to={to}
           {...props}
         >
@@ -48,11 +47,13 @@ export default function DrawerAppBar(props: Props) {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <Typography variant="h6" sx={{ my: 2, userSelect: "none", textTransform: "uppercase", fontWeight: 600 }}>
+        <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
         Bond Trinh
+        </Link>
       </Typography>
       <Divider />
       <List>
-        {navItems.map((item) => (
+        {navItems.map((item, index) => (
           <ListItem key={item} disablePadding>
             <ListItemButton sx={{ textAlign: "center" }}>
               <ListItemText>   
