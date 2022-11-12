@@ -13,10 +13,9 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
-import { Link as MUILink } from "@mui/material";
 
 const drawerWidth = 240;
-const navItems = ["Projects", "About"];
+const navItems = ["Projects"];
 
 function CustomLink({ children, to, ...props }: LinkProps) {
     let resolved = useResolvedPath(to);
@@ -25,7 +24,7 @@ function CustomLink({ children, to, ...props }: LinkProps) {
     return (
       <div>
         <Link
-          style={{ color: match ? "#8ae9fc" : "#000", textDecoration: "none",  fontSize: "1.25rem", textTransform: "uppercase" }}
+          style={{ color: match ? "#8ae9fc" : "#000", textDecoration: "none", fontSize: "1rem", textTransform: "uppercase" }}
           to={to}
           {...props}
         >
@@ -48,7 +47,7 @@ export default function DrawerAppBar(props: Props) {
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <Typography variant="h6" sx={{ my: 2, userSelect: "none", textTransform: "uppercase", fontWeight: 600 }}>
         <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
-        Bond Trinh
+          Bond Trinh
         </Link>
       </Typography>
       <Divider />
@@ -58,9 +57,9 @@ export default function DrawerAppBar(props: Props) {
             <ListItemButton sx={{ textAlign: "center" }}>
               <ListItemText>   
                 <CustomLink to={`/${item}`}>
-                    {item}
+                  {item}
                 </CustomLink>
-                </ListItemText>
+              </ListItemText>
             </ListItemButton>
           </ListItem>
         ))}
@@ -94,7 +93,7 @@ export default function DrawerAppBar(props: Props) {
             {navItems.map((item) => (
               <Button key={item} sx={{ color: "#fff", textTransform: "capitalize", fontWeight: 600, marginLeft: 2 }}>
                 <CustomLink to={`/${item}`}>
-                    {item}
+                  {item}
                 </CustomLink>
               </Button>
             ))}

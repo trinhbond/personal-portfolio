@@ -1,27 +1,11 @@
 import * as React from 'react';
 import "./styles/App.css";
-import { Outlet, useLocation } from "react-router-dom";
-
-const titles = {
-  "/": "Home",
-  "Projects": "Projects",
-  "About": "About"
-};
+import { Outlet } from "react-router-dom";
 
 function App() {
-  const location = useLocation();
-  const [title, setTitle] = React.useState(titles["/"]);
-
-  React.useEffect(() => {
-    setTitle(titles[location.pathname]);
-  }, [location.pathname]);
-  
-
-
   return (
     <>
       <Outlet />
-      {/* <Home /> */}
     </>
   );
 }

@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ThemeProvider } from "@mui/material/styles";
 import theme from "./Theme";
-import About from './pages/About';
+// import About from './pages/About';
 import PageNotFound from './pages/404';
 import Projects from './pages/Projects';
 import Header from "./components/Header";
@@ -23,7 +23,7 @@ root.render(
           <Route path="/" element={<App />}>
             <Route index element={<Home />} />
             <Route path="Projects" element={<Projects />}  />
-            <Route path="About" element={<About />} />
+            {/* <Route path="About" element={<About />} /> */}
             <Route path="*" element={<PageNotFound />} />
           </Route>
         </Routes>

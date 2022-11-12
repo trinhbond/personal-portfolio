@@ -48,7 +48,7 @@ function Projects() {
             <Box className="Box">
                 <Grid className="Grid" container rowSpacing={4} columnSpacing={{ xs: 1, sm: 2, md: 4 }}>
                     <Grid className="GridItem" item xs={6} sx={{ maxWidth: 400, display: "flex", flexWrap: "wrap" }}>
-                        <Card sx={{ backgroundColor: "#caede8" }}>
+                        <Card sx={{ backgroundColor: "#8ae9fc" }}>
                             <CardMedia
                                 component="img"
                                 height="250"
@@ -97,7 +97,7 @@ function Projects() {
                         </Card>
                     </Grid>
                     <Grid className="GridItem" item xs={6} sx={{ maxWidth: 400, display: "flex", flexWrap: "wrap" }}>
-                        <Card sx={{ backgroundColor: "#caede8" }}>
+                        <Card sx={{ backgroundColor: "#8ae9fc" }}>
                             <CardMedia
                                 component="img"
                                 height="250"
@@ -140,7 +140,7 @@ function Projects() {
                         </Card>
                     </Grid>
                     <Grid className="GridItem" item xs={6} sx={{ maxWidth: 400, display: "flex", flexWrap: "wrap" }}>
-                        <Card sx={{ backgroundColor: "#caede8" }}>
+                        <Card sx={{ backgroundColor: "#8ae9fc" }}>
                             <CardMedia
                                     component="img"
                                     height="250"
@@ -185,7 +185,7 @@ function Projects() {
                         </Card>
                     </Grid>
                     <Grid className="GridItem" item xs={6} sx={{ maxWidth: 400, display: "flex", flexWrap: "wrap" }}>
-                        <Card sx={{ backgroundColor: "#caede8" }}>
+                        <Card sx={{ backgroundColor: "#8ae9fc" }}>
                         <CardMedia
                             component="img"
                             height="250"
@@ -228,7 +228,7 @@ function Projects() {
                         </Card>
                     </Grid>
                     <Grid className="GridItem" item xs={6} sx={{ maxWidth: 400, display: "flex", flexWrap: "wrap" }}>
-                        <Card sx={{ backgroundColor: "#caede8" }}>
+                        <Card sx={{ backgroundColor: "#8ae9fc" }}>
                         <CardMedia
                             component="img"
                             height="250"
@@ -274,7 +274,7 @@ function Projects() {
                         </Card>
                     </Grid>
                     <Grid className="GridItem" item xs={6} sx={{ maxWidth: 400, display: "flex", flexWrap: "wrap" }}>
-                        <Card sx={{ backgroundColor: "#caede8" }}>
+                        <Card sx={{ backgroundColor: "#8ae9fc" }}>
                         <CardMedia
                             component="img"
                             height="250"
@@ -286,9 +286,7 @@ function Projects() {
                                     <Typography className="CardTitle" gutterBottom variant="h6" component="div" sx={{ fontWeight: "bold" }}>
                                     Technical School Application
                                     </Typography>
-                                    {/* <Button className="ButtonLink" size="small" color="primary" sx={{ backgroundColor: "black", marginBottom: "12px" }} href="/Projects/TechnicalSchoolApp.7z" download>
-                                        Download Source Code
-                                    </Button> */}
+
                                     <Typography variant="body2" color="text.secondary">
                                     The Technical School application determines whether or not a student is certified by checking their transcript against a certification criterion.
                                     </Typography>
@@ -310,4 +308,4 @@ function Projects() {
     )
 }
 
-export default Projects;
+export default Projects
