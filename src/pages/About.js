@@ -140,3 +140,16 @@
 // }
 
 // export default About;
+
+
+import React from 'react'
+
+function about() {
+  return (
+    <div class="flex justify-start bg-red-500 px-44 py-16">
+        <p class="text-7xl font-bold uppercase md:text-3xl">About Me</p>
+    </div>
+  )
+}
+
+export default about
