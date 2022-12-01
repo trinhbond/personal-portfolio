@@ -1,155 +1,33 @@
-// import React from "react";
-// import "../styles/About.css";
-// import { Container } from "@mui/system";
-// import { Typography, List, ListItem, ListItemText, Stack } from "@mui/material";
+import React from "react";
+import "../styles/About.css";
+import { Container } from "@mui/system";
+import { Typography } from "@mui/material";
 
-// function About() {  
-//   return (
-//   <Container className="About-Me">
-//       <Typography variant="h1" component="h1">
-//         About Me
-//       </Typography>
-//       <Typography variant="body2" id="aboutMeParagraph">
-//         I am a Software Development major in my final year at Auckland University of Technology
-//         studying a Bachelor of Computer and Information Sciences. During my second year at AUT, I realised that my passion lies in web development. Since then, I have been able to learn a lot about frontend and backend development by working with technologies such as React. Apart from playing video games and hanging out 
-//         with friends in my spare time, I enjoy creating meaningful projects such as this website. I am currently focusing on a Research and Development Project 
-//         where I am working with 6 other members to develop a proof of concept android application for Kumeu River Wines. The application 
-//         will use real-time climatic data to predict dangerous weather events such as frost that are damaging to their vineyards.
-//       </Typography>
-//       <Typography variant="body2" id="listHeading">
-//         Technologies I've worked with:
-//       </Typography>
-//       <List component={Stack} spacing={1}>
-//         <ListItem className="text">
-//           <ListItemText
-//             disableTypography
-//             primary={<Typography type="body2">JavaScript</Typography>}
-//           />
-//         </ListItem>
-//         <ListItem>
-//           <ListItemText
-//             disableTypography
-//             primary={<Typography type="body2">HTML</Typography>}
-//           />
-//         </ListItem>
-//         <ListItem sx={{ paddingTop: 0, paddingBottom: 0 }}>
-//           <ListItemText
-//             disableTypography
-//             primary={<Typography type="body2">CSS</Typography>}
-//             />
-//         </ListItem>        
-//         <ListItem sx={{ paddingTop: 0, paddingBottom: 0 }}>
-//           <ListItemText
-//             disableTypography
-//             primary={<Typography type="body2">PHP</Typography>}
-//           />
-//         </ListItem>
-//           <ListItem sx={{ paddingTop: 0, paddingBottom: 0 }}>
-//             <ListItemText
-//               disableTypography
-//               primary={<Typography type="body2">React</Typography>}
-//             />
-//           </ListItem>     
-//           <ListItem sx={{ paddingTop: 0, paddingBottom: 0 }}>
-//             <ListItemText
-//               disableTypography
-//               primary={<Typography type="body2">React Native</Typography>}
-//             />
-//           </ListItem>      
-//           <ListItem sx={{ paddingTop: 0, paddingBottom: 0 }}>
-//             <ListItemText
-//               disableTypography
-//               primary={<Typography type="body2">Node.js</Typography>}
-//             />
-//           </ListItem>
-//           <ListItem sx={{ paddingTop: 0, paddingBottom: 0 }}>
-//             <ListItemText
-//               disableTypography
-//               primary={<Typography type="body2">jQuery</Typography>}
-//             />
-//           </ListItem>
-//           <ListItem sx={{ paddingTop: 0, paddingBottom: 0 }}>
-//             <ListItemText
-//               disableTypography
-//               primary={<Typography type="body2">Bootstrap</Typography>}
-//             />
-//           </ListItem>
-//           <ListItem sx={{ paddingTop: 0, paddingBottom: 0 }}>
-//             <ListItemText
-//               disableTypography
-//               primary={<Typography type="body2">Material UI</Typography>}
-//             />
-//           </ListItem>
-//           <ListItem sx={{ paddingTop: 0, paddingBottom: 0 }}>
-//             <ListItemText
-//               disableTypography
-//               primary={<Typography type="body2">Java</Typography>}
-//             />
-//           </ListItem>
-//           <ListItem sx={{ paddingTop: 0, paddingBottom: 0 }}>
-//             <ListItemText
-//               disableTypography
-//               primary={<Typography type="body2">C</Typography>}
-//             />
-//           </ListItem>
-//           <ListItem sx={{ paddingTop: 0, paddingBottom: 0 }}>
-//             <ListItemText
-//               disableTypography
-//               primary={<Typography type="body2">C#</Typography>}
-//             />
-//           </ListItem>
-//           <ListItem sx={{ paddingTop: 0, paddingBottom: 0 }}>
-//             <ListItemText
-//               disableTypography
-//               primary={<Typography type="body2">GitHub</Typography>}
-//             />
-//           </ListItem>
-//           <ListItem sx={{ paddingTop: 0, paddingBottom: 0 }}>
-//             <ListItemText
-//               disableTypography
-//               primary={<Typography type="body2">MySQL</Typography>}
-//             />
-//           </ListItem>
-//           <ListItem sx={{ paddingTop: 0, paddingBottom: 0 }}>
-//           <ListItemText
-//               disableTypography
-//               primary={<Typography type="body2">Firebase</Typography>}
-//             />
-//           </ListItem>
-//           <ListItem sx={{ paddingTop: 0, paddingBottom: 0 }}>
-//             <ListItemText
-//                 disableTypography
-//                 primary={<Typography type="body2">Android Studio</Typography>}
-//               />
-//           </ListItem>
-//           <ListItem sx={{ paddingTop: 0, paddingBottom: 0 }}>
-//             <ListItemText
-//                 disableTypography
-//                 primary={<Typography type="body2">Express</Typography>}
-//               />
-//           </ListItem>
-//           <ListItem sx={{ paddingTop: 0, paddingBottom: 0 }}>
-//             <ListItemText
-//                 disableTypography
-//                 primary={<Typography type="body2">MongoDB</Typography>}
-//               />
-//           </ListItem>
-//       </List>
-//   </Container>
-//   )
-// }
+function About() { 
+  const technologies = [
+    'Java', 'C', 'C#', 'PHP', 'HTML', 'CSS', 'MongoDB', 'Express', 
+    'React', 'Node', 'Bootstrap','Material-UI', 'GitHub', 'GitLab'
+  ]
 
-// export default About;
+  const listItems = technologies.map(item => <li>{item}</li>)
 
-
-import React from 'react'
-
-function about() {
   return (
-    <div class="flex justify-start bg-red-500 px-44 py-16">
-        <p class="text-7xl font-bold uppercase md:text-3xl">About Me</p>
-    </div>
+    <Container className="About-Me">
+      <Typography variant="h1" component="h1">About Me</Typography>
+      <Typography variant="body2" id="aboutMeParagraph">
+          I am a Software Development major in my final year at Auckland University of Technology
+          studying a Bachelor of Computer and Information Sciences. During my second year at AUT, I realised that my passion lies in web development. Since then, I have been able to learn a lot about frontend and backend development by working with technologies such as React. Apart from playing video games and hanging out 
+          with friends in my spare time, I enjoy creating meaningful projects such as this website. I am currently focusing on a Research and Development Project 
+          where I am working with 6 other members to develop a proof of concept android application for Kumeu River Wines. The application 
+          will use real-time climatic data to predict dangerous weather events such as frost that are damaging to their vineyards.
+        </Typography>
+        <Typography variant="body2" id="listHeading">
+          Technologies I've worked with:
+        </Typography>
+        <ul>{listItems}</ul>
+  
+    </Container>
   )
 }
 
-export default about
+export default About;
