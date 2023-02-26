@@ -15,7 +15,7 @@ import Button from "@mui/material/Button";
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 
 const drawerWidth = 240;
-const navItems = ["Projects"];
+const navItems = ["Projects", "About"];
 
 function CustomLink({ children, to, ...props }: LinkProps) {
     let resolved = useResolvedPath(to);
@@ -71,7 +71,7 @@ export default function DrawerAppBar(props: Props) {
 
   return (
     <Box sx={{ display: "flex" }}>
-      <AppBar position="static" component="nav" style={{ padding: "30px 8% 30px 8%", backgroundColor: "#ffffff", color: "#000000", boxShadow: "none" }}>
+      <AppBar position="static" component="nav" style={{ padding: '35px', backgroundColor: "#fff", color: "#000000", boxShadow: "none" }}>
         <Toolbar>
           <IconButton
             color="inherit"
@@ -91,7 +91,7 @@ export default function DrawerAppBar(props: Props) {
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item) => (
-              <Button key={item} sx={{ color: "#fff", textTransform: "capitalize", fontWeight: 600, marginLeft: 2 }}>
+              <Button key={item} sx={{ color: "#fff", textTransform: "capitalize", fontWeight: 600}}>
                 <CustomLink to={`/${item}`}>
                   {item}
                 </CustomLink>

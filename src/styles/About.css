@@ -1,55 +1,98 @@
-.About-Me {
-    padding-bottom: 200px;
-    overflow: hidden;    
-    padding-top: 60px;
-    position: relative;
-    min-height: 100vh;
+.about {
+    /* background-color: beige; */
+    /* background-color: #0e0e10; */
+    padding: 30px 58px;
 }
-.About-Me h1 {
-    text-align: start;
+
+.about > div {
+    margin-bottom: 2rem;
+}
+
+.about .education ul li {
+    white-space: break-spaces;
+}
+
+.about .education ul li {
+    /* background-color: red; */
+    width: 720px; 
+}
+
+.about .education ul li:first-child > span {
+    /* background-color: yellow; */
+    right: 58px;
+}
+
+.about .education ul li:nth-child(2) {
+    /* background-color: yellow; */
+}
+
+.about .education span.aut-title {
+    display: block;
     font-weight: bold;
-    text-transform: uppercase;
+    margin-top: 10px;
+    text-decoration: underline;
+    width: min-content;
 }
-.About-Me p {
-    font-size: 1.2rem;
+
+.about .education ul li > span {
+    clear: both;
+    float: right;
+    position: relative; 
 }
-.About-Me #aboutMeParagraph {
-    margin-top: 20px;
-    line-height: 1.6em;
+
+h2 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-transform: capitalize;
 }
-.About-Me ul {
+
+.languages ul {
+    margin-top: 10px;
+}
+
+.about .experience .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* background-color: #0e0e10; */
+    border-radius: 16px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    padding: 10px 15px 10px 15px;
+    width: 28%;
+}
+
+.about .experience .card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.about .experience .card h3 {
+    font-weight: bold;  
+}
+
+.about .experience .card p {
+    margin: 15px 0 16px 0;
+}
+
+.aut ul li {
     display: inline;
+    margin-right: 0.75rem;
 }
-.About-Me ul li {
-    list-style-type: style type circle;;
-    margin-bottom: 0.5rem;
-}
-.About-Me #listHeading {
-    margin-top: 20px;
-}
-@media screen and (max-width: 768px) {
-    .About-Me {
-        padding-bottom: 160px;
-        overflow: hidden;    
-        padding-top: 25px;
-    }
-    .About-Me h1 {
-        font-size: 4.5rem;
-    }
-    .About-Me p {
-        font-size: 1rem;
+
+@media screen and (max-width: 1600px) {
+    .about .experience .card {
+
     }
 }
+
+@media screen and (max-width: 1200px) {
+    .about .experience .card{
+ 
+    }
+}
+
 @media screen and (max-width: 600px) {
-    .About-Me {
-        padding-bottom: 160px;
-        overflow: hidden;    
-        padding-top: 25px;
-    }
-    .About-Me h1 {
-        font-size: 3rem;
-    }
-    .About-Me p {
-        font-size: 0.8rem;
-    }
+  
+}
+
+@media screen and (max-width: 480px) {
+
 }

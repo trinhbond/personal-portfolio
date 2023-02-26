@@ -27,7 +27,7 @@ root.render(
             <Route path="*" element={<PageNotFound />} />
           </Route>
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </BrowserRouter>
     </ThemeProvider>
   </React.StrictMode>

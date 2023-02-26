@@ -1,43 +1,53 @@
-.container {
-    min-height: 100vh;
-    width: 100%;
-    margin: auto;
-    padding-top: 8%;
-    justify-content: center;
+.page-not-found {
+    display: inline-block;
+    left: 50%;
+    position: absolute;
+    top: 50%;
     text-align: center;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    -webkit-transform: translate(-50%, -50%);
 }
-.container .main {
-    flex: 1;
-}
-.container h1 {
-    font-size: 10rem;
+
+.page-not-found h1 {
+    font-size: 12rem;
     font-weight: bold;
 }
-.container p {
-    font-size: 2rem;
-    margin-bottom: 4%;
-}
-.container button .link {
-    background-color: #000;
-    color: #fff;
-    padding: 12px 24px 12px 24px;
-    border-radius: 8px;
+
+.page-not-found span {
+    display: block;
     font-size: 1.5rem;
-    text-decoration: none;
 }
-.container .social_icons {
-    padding: 3% 0% 2% 0%;
+
+.page-not-found ul.icons {
+    margin-top: 40px;
+    top: 0;
 }
-@media screen and (max-width: 600px) {
-    .container h1 {
-        font-size: 6rem;
-        margin-top: 5rem;
+
+.page-not-found ul.icons li {
+    align-self: center;
+    display: inline;
+    margin-right: 0.75rem;
+}
+
+.page-not-found ul.icons li > * {
+    color: #000;
+}
+
+@media only screen and (max-width: 600px) {
+    .page-not-found h1 {
+        font-size: 10rem;
     }
-    .container p {
-        font-size: 1.5rem;
-        margin-bottom: 2rem;
+    .page-not-found span {
+        font-size: 1rem;
     }
-    .container .social_icons {
-        padding-top: 5rem;
+}
+
+@media only screen and (max-width: 400px) {
+    .page-not-found h1 {
+        font-size: 8rem;
+    }
+    .page-not-found span {
+        font-size: 1rem;
     }
 }

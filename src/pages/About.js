@@ -1,32 +1,67 @@
 import React from "react";
 import "../styles/About.css";
-import { Container } from "@mui/system";
-import { Typography } from "@mui/material";
 
 function About() { 
   const technologies = [
-    'Java', 'C', 'C#', 'PHP', 'HTML', 'CSS', 'MongoDB', 'Express', 
-    'React', 'Node', 'Bootstrap','Material-UI', 'GitHub', 'GitLab'
+    'Java', 'C', 'C#', 'PHP', 'HTML', 'CSS', 'React', 'Next JS', 
+    'Node', 'Bootstrap','Material-UI', 'GitHub', 'GitLab'
   ]
 
-  const listItems = technologies.map(item => <li>{item}</li>)
+  const listItems = technologies.map(item => <li key={item}>{item}</li>)
 
   return (
-    <Container className="About-Me">
-      <Typography variant="h1" component="h1">About Me</Typography>
-      <Typography variant="body2" id="aboutMeParagraph">
-          I am a Software Development major in my final year at Auckland University of Technology
-          studying a Bachelor of Computer and Information Sciences. During my second year at AUT, I realised that my passion lies in web development. Since then, I have been able to learn a lot about frontend and backend development by working with technologies such as React. Apart from playing video games and hanging out 
-          with friends in my spare time, I enjoy creating meaningful projects such as this website. I am currently focusing on a Research and Development Project 
-          where I am working with 6 other members to develop a proof of concept android application for Kumeu River Wines. The application 
-          will use real-time climatic data to predict dangerous weather events such as frost that are damaging to their vineyards.
-        </Typography>
-        <Typography variant="body2" id="listHeading">
-          Technologies I've worked with:
-        </Typography>
-        <ul>{listItems}</ul>
-  
-    </Container>
+    <div className='about'>
+      <div className='education'> 
+        <h2>Education</h2>
+        <span className='aut-title'>AUT</span>
+        <ul>
+          <li>
+            Certificate in Science and Technology
+          <span>2019</span>
+
+          </li>
+          <li>
+            Bachelor of Computer and Information Sciences&#44; Software Development
+            <span>2020 - 2022</span>
+          </li>
+        </ul>
+      </div>
+      <div className='languages'>
+        <h2>Languages and Frameworks</h2>
+        <span>Some technologies that I've used&#58;</span>
+        <ul>
+          {listItems}
+        </ul>
+      </div>
+      <div className='experience'>
+        <h2>Experience</h2>
+        <div className='card'>
+          <h3>Nui Markets</h3>
+          <span>
+            Junior Software Engineer &#x2022; November 2022 - Present
+          </span>
+          <p>A UX/UI focused role where I write CSS for React components and
+            participate in discussions regarding UX/UI decisions
+          </p>
+        </div>
+        <div className='card aut'>
+          <h3>AUT Reseach & Development Project</h3>
+          <span>
+            Frontend Developer &#x2022; February 2022 - November 2022
+          </span>
+          <p>A year long project with Kumeu River Wines to create an
+            android mobile application for a climate monitoring system.
+          </p>
+          <ul>
+            <li>React Native</li>
+            <li>Expo</li>
+            <li>C++</li>
+            <li>Docker</li>
+            <li>GitLab</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   )
 }
 
