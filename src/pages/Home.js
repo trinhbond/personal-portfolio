@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/Home.css';
+import '../styles/Home.scss';
 import { Box, Typography, Link } from "@mui/material";
 import Avatar from "@mui/material/Avatar";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
