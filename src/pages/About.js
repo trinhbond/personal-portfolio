@@ -1,56 +1,62 @@
 import React from "react";
-import "../styles/About.scss";
 
-function About() { 
+function About() {
   const technologies = [
-    'Java', 'C', 'C#', 'PHP', 'HTML', 'CSS', 'React', 'Next JS', 
-    'Node', 'Bootstrap','Material-UI', 'GitHub', 'GitLab'
-  ]
+    "Java",
+    "C",
+    "C#",
+    "PHP",
+    "HTML",
+    "CSS",
+    "React",
+    "Next JS",
+    "Node",
+    "Bootstrap",
+    "Material-UI",
+    "GitHub",
+    "GitLab",
+  ];
 
-  const listItems = technologies.map(item => <li key={item}>{item}</li>)
+  const listItems = technologies.map((item) => <li key={item}>{item}</li>);
 
   return (
-    <div className='about'>
-      <div className='education'> 
+    <div className="about">
+      <div className="education">
         <h2>Education</h2>
-        <span className='aut-title'>AUT</span>
+        <span className="aut-title">AUT</span>
         <ul>
           <li>
             Certificate in Science and Technology
-          <span>2019</span>
-
+            <span>2019</span>
           </li>
           <li>
-            Bachelor of Computer and Information Sciences&#44; Software Development
+            Bachelor of Computer and Information Sciences&#44; Software
+            Development
             <span>2020 - 2022</span>
           </li>
         </ul>
       </div>
-      <div className='languages'>
+      <div className="languages">
         <h2>Languages and Frameworks</h2>
         <span>Some technologies that I've used&#58;</span>
-        <ul>
-          {listItems}
-        </ul>
+        <ul>{listItems}</ul>
       </div>
-      <div className='experience'>
+      <div className="experience">
         <h2>Experience</h2>
-        <div className='card'>
+        <div className="card">
           <h3>Nui Markets</h3>
-          <span>
-            Junior Software Engineer &#x2022; November 2022 - Present
-          </span>
-          <p>A UX/UI focused role where I write CSS for React components and
+          <span>Junior Software Engineer &#x2022; November 2022 - Present</span>
+          <p>
+            A UX/UI focused role where I write CSS for React components and
             participate in discussions regarding UX/UI decisions
           </p>
         </div>
-        <div className='card aut'>
+        <div className="card aut">
           <h3>AUT Reseach & Development Project</h3>
-          <span>
-            Frontend Developer &#x2022; February 2022 - November 2022
-          </span>
-          <p>A year long project with Kumeu River Wines to create an
-            android mobile application for a climate monitoring system.
+          <span>Frontend Developer &#x2022; February 2022 - November 2022</span>
+          <p>
+            A year long project with Kumeu River Wines to create an android
+            mobile application for a climate monitoring system.
           </p>
           <ul>
             <li>React Native</li>
@@ -62,7 +68,7 @@ function About() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default About;

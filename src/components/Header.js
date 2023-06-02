@@ -18,21 +18,26 @@ const drawerWidth = 240;
 const navItems = ["Projects", "About"];
 
 function CustomLink({ children, to, ...props }: LinkProps) {
-    let resolved = useResolvedPath(to);
-    let match = useMatch({ path: resolved.pathname, end: true });
-  
-    return (
-      <div>
-        <Link
-          style={{ color: match ? "#8ae9fc" : "#000", textDecoration: "none", fontSize: "1rem", textTransform: "uppercase" }}
-          to={to}
-          {...props}
-        >
-          {children}
-        </Link>
-        {match && ""}
-      </div>
-    );
+  let resolved = useResolvedPath(to);
+  let match = useMatch({ path: resolved.pathname, end: true });
+
+  return (
+    <div>
+      <Link
+        style={{
+          color: match ? "#8ae9fc" : "#000",
+          textDecoration: "none",
+          fontSize: "1rem",
+          textTransform: "uppercase",
+        }}
+        to={to}
+        {...props}
+      >
+        {children}
+      </Link>
+      {match && ""}
+    </div>
+  );
 }
 
 export default function DrawerAppBar(props: Props) {
@@ -44,8 +49,16 @@ export default function DrawerAppBar(props: Props) {
   };
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <Typography variant="h6" sx={{ my: 2, userSelect: "none", textTransform: "uppercase", fontWeight: 600 }}>
+    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
+      <Typography
+        variant="h6"
+        sx={{
+          my: 2,
+          userSelect: "none",
+          textTransform: "uppercase",
+          fontWeight: 600,
+        }}
+      >
         <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
           Bond Trinh
         </Link>
@@ -55,10 +68,8 @@ export default function DrawerAppBar(props: Props) {
         {navItems.map((item, index) => (
           <ListItem key={item} disablePadding>
             <ListItemButton sx={{ textAlign: "center" }}>
-              <ListItemText>   
-                <CustomLink to={`/${item}`}>
-                  {item}
-                </CustomLink>
+              <ListItemText>
+                <CustomLink to={`/${item}`}>{item}</CustomLink>
               </ListItemText>
             </ListItemButton>
           </ListItem>
@@ -67,11 +78,21 @@ export default function DrawerAppBar(props: Props) {
     </Box>
   );
 
-  const container = window !== undefined ? () => window().document.body : undefined;
+  const container =
+    window !== undefined ? () => window().document.body : undefined;
 
   return (
     <Box sx={{ display: "flex" }}>
-      <AppBar position="static" component="nav" style={{ padding: '35px', backgroundColor: "#fff", color: "#000000", boxShadow: "none" }}>
+      <AppBar
+        position="static"
+        component="nav"
+        style={{
+          padding: "35px",
+          backgroundColor: "#fff",
+          color: "#000000",
+          boxShadow: "none",
+        }}
+      >
         <Toolbar>
           <IconButton
             color="inherit"
@@ -85,16 +106,39 @@ export default function DrawerAppBar(props: Props) {
           <Typography
             variant="h6"
             component="div"
-            sx={{ flexGrow: 1, textTransform: "uppercase", display: { xs: "none", sm: "block", fontSize: "1.5rem", color: "#000000" } }}
+            sx={{
+              flexGrow: 1,
+              textTransform: "uppercase",
+              display: {
+                xs: "none",
+                sm: "block",
+                fontSize: "1.5rem",
+                color: "#000000",
+              },
+            }}
           >
-            <Link to="/" style={{ textDecoration: "none", color: "inherit", fontWeight: 600 }}>Bond Trinh</Link>
+            <Link
+              to="/"
+              style={{
+                textDecoration: "none",
+                color: "inherit",
+                fontWeight: 600,
+              }}
+            >
+              Bond Trinh
+            </Link>
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item) => (
-              <Button key={item} sx={{ color: "#fff", textTransform: "capitalize", fontWeight: 600}}>
-                <CustomLink to={`/${item}`}>
-                  {item}
-                </CustomLink>
+              <Button
+                key={item}
+                sx={{
+                  color: "#fff",
+                  textTransform: "capitalize",
+                  fontWeight: 600,
+                }}
+              >
+                <CustomLink to={`/${item}`}>{item}</CustomLink>
               </Button>
             ))}
           </Box>
@@ -111,7 +155,10 @@ export default function DrawerAppBar(props: Props) {
           }}
           sx={{
             display: { xs: "block", sm: "none" },
-            "& .MuiDrawer-paper": { boxSizing: "border-box", width: drawerWidth },
+            "& .MuiDrawer-paper": {
+              boxSizing: "border-box",
+              width: drawerWidth,
+            },
           }}
         >
           {drawer}
