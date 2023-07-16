@@ -147,8 +147,12 @@
 
 * {
   font-family: "Poppins";
+  margin: 0;
+  padding: 0;
 }
 
-body {
-  margin: 0;
+html,
+body,
+#root {
+  height: 100%;
 }

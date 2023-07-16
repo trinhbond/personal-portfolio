@@ -1,12 +1,16 @@
 import { Routes, Route } from "react-router-dom";
-import { routes } from "./components/Routes";
+import { routes } from "./Routes";
+import Header from "./components/Header";
 
 export default function App() {
   return (
-    <Routes>
-      {routes.map(({ path, element }, key) => (
-        <Route path={path} element={element} key={key} />
-      ))}
-    </Routes>
+    <>
+      {/* <Header /> */}
+      <Routes>
+        {routes.map(({ path, element }, key) => (
+          <Route path={path} element={element} key={key} />
+        ))}
+      </Routes>
+    </>
   );
 }

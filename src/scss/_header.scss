@@ -1,0 +1,52 @@
+nav {
+  border-bottom: 1px solid #ffffff1a;
+  color: #fff;
+  display: block;
+  height: 45px;
+  margin: 0 auto;
+  max-width: 100%;
+  padding-top: 50px;
+  position: sticky;
+  top: 0;
+  width: 1300px;
+  white-space: nowrap;
+
+  @include xs {
+    background: #ef9a9a;
+  }
+  a.name {
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  ul {
+    display: inline-block;
+    float: right;
+
+    li {
+      display: inline-block;
+      text-transform: uppercase;
+      vertical-align: middle;
+
+      &:not(:last-child) {
+        margin-right: 1.8rem;
+      }
+
+      & > a {
+        text-decoration: none;
+        font-weight: 600;
+
+        &:hover {
+          border-bottom: 3px solid #cdc;
+        }
+      }
+
+      button {
+        background-color: transparent;
+        color: #fff;
+        border: 1px solid #fff;
+      }
+    }
+  }
+}

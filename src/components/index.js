@@ -1,6 +1,6 @@
-import Data from "./Data";
 import Header from "./Header";
 import Footer from "./Footer";
-import Project from "./Project";
+import { Section } from "./Section";
+import Button from "./Button";
 
-export { Data, Header, Footer, Project };
+export { Header, Footer, Section, Button };
