@@ -1,7 +1,7 @@
 {
   "name": "personal-portfolio",
   "version": "0.1.0",
-  "homepage": "https://bondtrinh1.github.io",
+  "homepage": "https://trinhbond.github.io",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.3",
