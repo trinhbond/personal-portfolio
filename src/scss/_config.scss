@@ -10,19 +10,8 @@ $body: #727e82;
   background: #cdc;
 }
 
-button {
-  border-radius: 32px;
-  padding: 8px 24px;
-  border: 1px solid $theme-color;
-  background-color: $theme-color;
-  color: $white;
-  font-size: 1rem;
-  font-weight: 500;
-  white-space: nowrap;
-}
-
 a {
-  color: #cdc !important;
+  color: $white;
   text-decoration: none;
 
   &:hover,
@@ -32,104 +21,32 @@ a {
   }
 }
 
-p,
+svg,
 span {
-  color: $body;
-}
-
-h1 {
-  color: $white;
+  vertical-align: middle;
 }
 
 // media aliases and breakpoints
-$screen-sm-min: 600px;
-$screen-md-min: 960px;
-$screen-lg-min: 1280px;
-$screen-xl-min: 1920px;
+$sm-min: 600px;
+$md-min: 960px;
+$lg-min: 1280px;
+$xl-min: 1920px;
 
-$screen-xs-max: 599px;
-$screen-sm-max: 959px;
-$screen-md-max: 1279px;
-$screen-lg-max: 1919px;
-$screen-xl-max: 5000px;
+$xs-max: 599px;
+$sm-max: 959px;
+$md-max: 1360px;
+$lg-max: 1919px;
+$xl-max: 5000px;
 
-// media devices
-@mixin xs {
-  @media screen and (max-width: #{$screen-xs-max}) {
+// media queries
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
     @content;
   }
 }
 
-@mixin sm {
-  @media screen and (min-width: #{$screen-sm-min}) and (max-width: #{$screen-sm-max}) {
-    @content;
-  }
-}
-
-@mixin md {
-  @media screen and (min-width: #{$screen-md-min}) and (max-width: #{$screen-md-max}) {
-    @content;
-  }
-}
-
-@mixin lg {
-  @media screen and (min-width: #{$screen-lg-min}) and (max-width: #{$screen-lg-max}) {
-    @content;
-  }
-}
-
-@mixin xl {
-  @media screen and (min-width: #{$screen-xl-min}) and (max-width: #{$screen-xl-max}) {
-    @content;
-  }
-}
-
-// media lt queries
-@mixin lt-sm {
-  @media screen and (max-width: #{$screen-xs-max}) {
-    @content;
-  }
-}
-
-@mixin lt-md {
-  @media screen and (max-width: #{$screen-sm-max}) {
-    @content;
-  }
-}
-
-@mixin lt-lg {
-  @media screen and (max-width: #{$screen-md-max}) {
-    @content;
-  }
-}
-
-@mixin lt-xl {
-  @media screen and (max-width: #{$screen-lg-max}) {
-    @content;
-  }
-}
-
-// media gt queries
-@mixin gt-xs {
-  @media screen and (min-width: #{$screen-sm-min}) {
-    @content;
-  }
-}
-
-@mixin gt-sm {
-  @media screen and (min-width: #{$screen-md-min}) {
-    @content;
-  }
-}
-
-@mixin gt-md {
-  @media screen and (min-width: #{$screen-lg-min}) {
-    @content;
-  }
-}
-
-@mixin gt-lg {
-  @media screen and (min-width: #{$screen-xl-min}) {
+@mixin min-screen($res) {
+  @media screen and (min-width: $res) {
     @content;
   }
 }

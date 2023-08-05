@@ -152,7 +152,10 @@
 }
 
 html,
-body,
-#root {
+body {
+  background-color: #303846;
   height: 100%;
+  line-height: 1.6;
+  margin: 0 auto;
+  max-width: 85%;
 }

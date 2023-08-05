@@ -1,16 +1,17 @@
-const style = {
-  height: "100vh",
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "center",
-  alignItems: "flex-start",
-  width: "100%",
-};
+import styled from "styled-components";
 
-export const Section = ({ children }) => {
-  return (
-    <section className="section" style={style}>
-      {children}
-    </section>
-  );
+const StyledSection = styled.section`
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100vh;
+  justify-content: center;
+  max-width: 100%;
+  margin: 0 auto;
+`;
+
+export const Section = ({ children, className }) => {
+  return <StyledSection className={className}>{children}</StyledSection>;
 };
