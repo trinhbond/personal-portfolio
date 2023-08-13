@@ -1,40 +1,153 @@
-.home {
-  @include min-screen($sm-max) {
-    width: auto;
-  }
-
+// section section
+.introduction {
   color: $white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  max-width: 100%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-}
 
-.intro {
-  @include max-screen($md-max) {
+  @include max-screen($max-medium) {
     padding: 0 24px;
   }
-  color: $white;
 
-  .intro-title {
-    font-size: 2rem;
-    font-weight: 500;
+  .title {
+    .hey {
+      display: block;
+      font-weight: 400;
+      font-size: 2rem;
+
+      @include max-screen($max-medium) {
+        font-size: 1.8rem;
+      }
+      @include max-screen($max-small) {
+        font-size: 1.6rem;
+      }
+    }
+    p {
+      display: inline-block;
+      font-size: 2rem;
+      font-weight: 400;
+      line-height: 3rem;
+      margin: 96px 0;
+      max-width: 850px;
+
+      @include max-screen($max-medium) {
+        font-size: 1.8rem;
+        width: 700px;
+      }
+      @include max-screen($max-small) {
+        width: auto;
+        font-size: 1.6rem;
+      }
+
+      .name,
+      a {
+        color: $theme-color;
+      }
+    }
   }
 
-  p {
-    font-size: 1.4rem;
+  .get-in-touch {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
 
-    span {
-      font-weight: 600;
-      border-bottom: 4px solid #000;
-      line-height: 2.1rem;
+    img {
+      padding: 0 10px 0 6px;
+      vertical-align: middle;
+      width: 25px;
+    }
+    a {
+      color: $theme-color;
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+// background section
+.background {
+  color: $white;
+  height: auto !important;
+  letter-spacing: 1px;
+  padding: 50px;
+  position: relative;
+
+  .list {
+    width: 100%;
+
+    .about-me,
+    .experience,
+    .education,
+    .skills,
+    .tools {
+      padding: 50px;
+
+      @include max-screen($max-xsmall) {
+        padding: 50px 0;
+      }
+
+      .title {
+        color: $theme-color;
+        font-weight: 600;
+        display: inline-block;
+        font-size: 1.2rem;
+        margin-bottom: 4px;
+        text-transform: uppercase;
+      }
+    }
+    .about-me {
+      p {
+        a {
+          color: $theme-color;
+          font-weight: 600;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    .experience {
+      .company {
+        font-weight: 500;
+      }
+      .position {
+        display: block;
+        font-weight: 300;
+      }
+    }
+    .education {
+      .list-item {
+        position: relative;
+
+        .csit {
+          margin-top: 8px;
+        }
+
+        .career {
+          display: inline-block;
+          font-weight: 500;
+        }
+      }
+    }
+    .year {
+      display: inline-block;
+      font-size: 0.9rem;
+      font-weight: 200;
+      position: absolute;
+      right: 0;
+
+      @include max-screen($max-small) {
+        display: block;
+        font-size: 0.8rem;
+        position: relative;
+      }
+    }
+    .list-item {
+      margin-bottom: 24px;
+
+      .experience-wrapper {
+        position: relative;
+      }
     }
   }
 }

@@ -2,9 +2,9 @@ import { GitHub, LinkedIn } from "@mui/icons-material";
 import { HTML, JavaScript, MaterialUI, React, Sass } from "./components/icons";
 
 export const socials = [
-  { name: "Github", url: "https://github.com/bondtrinh1", icon: <GitHub /> },
+  { name: "github", url: "https://github.com/trinhbond", icon: <GitHub /> },
   {
-    name: "LinkedIn",
+    name: "linkedin",
     url: "https://www.linkedin.com/in/bondnicktrinh/",
     icon: <LinkedIn />,
   },
@@ -32,4 +32,34 @@ export const techStack = [
   { icon: <HTML /> },
   { icon: <JavaScript /> },
   { icon: <MaterialUI /> },
+];
+
+export const languages = [
+  "React",
+  "HTML",
+  "CSS/Sass",
+  "C",
+  "C#",
+  "Java",
+  "JavaScript",
+];
+
+export const tools = ["Git", "GitHub", "Figma", "Confluence", "Linear"];
+
+export const education = [
+  {
+    id: "bcis",
+    study: "Bachelor of Computer and Information Sciences",
+    major: "Software Development",
+    year: "2020 - 2023",
+  },
+  { id: "csit", study: "Certificate in Science and Technology", year: "2019" },
+];
+
+export const experience = [
+  {
+    company: "Nui Markets",
+    year: "Nov 2022 - Present",
+    position: "Junior Software Engineer",
+  },
 ];

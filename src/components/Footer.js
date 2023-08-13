@@ -5,7 +5,8 @@ export default function Footer({ className, children }) {
   return (
     <div className="footer">
       <span>
-        Developed by <span>Bond Trinh</span> &#124; 2023
+        Developed by{" "}
+        <span className="block-on-small">Bond Trinh &#124; 2023</span>
       </span>
       <div className="stack">
         <span>Powered by</span>

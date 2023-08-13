@@ -1,17 +1,25 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
-import { GitHub, LinkedIn } from "@mui/icons-material";
+import { socials } from "../config";
 
 export default function Header() {
+  const s = socials.map(({ name, url }) => (
+    <li>
+      <a href={url} target="_blank" rel="noreferrer">
+        {name}
+      </a>
+    </li>
+  ));
+
+  console.log(s);
   return (
     <div className="header">
       <div className="nav-wrapper">
         <div className="name">
-          <Link to="/">bond</Link>
+          <span>bond</span>
           <div>
             <nav>
               <ul>
-                <li>
+                {/* <li>
                   <NavLink
                     to="/projects"
                     className={({ isActive }) =>
@@ -20,13 +28,26 @@ export default function Header() {
                   >
                     projects
                   </NavLink>
+                </li> */}
+                {/* <li>
+                  <a
+                    href="https://github.com/trinhbond"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    github
+                  </a>
                 </li>
                 <li>
-                  <GitHub fontSize="medium" />
-                </li>
-                <li>
-                  <LinkedIn fontSize="medium" />
-                </li>
+                  <a
+                    href="https://www.linkedin.com/in/bondnicktrinh/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    linkedin
+                  </a>
+                </li> */}
+                {s}
               </ul>
             </nav>
           </div>

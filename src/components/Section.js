@@ -10,6 +10,7 @@ const StyledSection = styled.section`
   justify-content: center;
   max-width: 100%;
   margin: 0 auto;
+  padding: 0 8px;
 `;
 
 export const Section = ({ children, className }) => {
