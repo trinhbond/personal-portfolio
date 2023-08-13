@@ -20,7 +20,7 @@
       font-size: 12rem;
       font-weight: bold;
 
-      @include max-screen($sm-max) {
+      @include max-screen($max-small) {
         font-size: 8rem;
       }
     }
@@ -30,7 +30,7 @@
       white-space: normal;
       width: 500px;
 
-      @include max-screen($sm-max) {
+      @include max-screen($max-small) {
         font-size: 1rem;
         width: auto;
       }

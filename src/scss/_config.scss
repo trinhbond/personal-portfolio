@@ -1,14 +1,40 @@
-$theme-color: #cdc;
+// media breakpoints
+$min-xsmall: 600px;
+$min-small: 600px;
+$min-medium: 960px;
+$min-large: 1280px;
+$min-xlarge: 1920px;
+
+$max-xsmall: 600px;
+$max-small: 980px;
+$max-medium: 1200px;
+$max-large: 1600px;
+$max-xlarge: 1919px;
+
+// media queries
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
+
+@mixin min-screen($res) {
+  @media screen and (min-width: $res) {
+    @content;
+  }
+}
+
+$theme-color: #1ba9d6;
 $white: #fff;
 $black: #000;
 $body: #727e82;
 
-::selection {
-  background: #cdc;
-}
-::-moz-selection {
-  background: #cdc;
-}
+// ::selection {
+//   background: $theme-color;
+// }
+// ::-moz-selection {
+//   background: $theme-color;
+// }
 
 a {
   color: $white;
@@ -21,32 +47,34 @@ a {
   }
 }
 
-svg,
-span {
+svg {
   vertical-align: middle;
 }
 
-// media aliases and breakpoints
-$sm-min: 600px;
-$md-min: 960px;
-$lg-min: 1280px;
-$xl-min: 1920px;
+ul {
+  list-style: none;
+}
 
-$xs-max: 599px;
-$sm-max: 959px;
-$md-max: 1360px;
-$lg-max: 1919px;
-$xl-max: 5000px;
-
-// media queries
-@mixin max-screen($res) {
-  @media screen and (max-width: $res) {
-    @content;
+.hide-for-small {
+  @include max-screen($max-xsmall) {
+    display: none;
   }
 }
 
-@mixin min-screen($res) {
-  @media screen and (min-width: $res) {
-    @content;
+// animations
+.fade-in {
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

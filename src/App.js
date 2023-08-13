@@ -4,7 +4,7 @@ import { Header, Footer } from "./components";
 
 export default function App() {
   return (
-    <>
+    <div className="fade-in">
       <Header />
       <Routes>
         {routes.map(({ path, element }, key) => (
@@ -12,6 +12,6 @@ export default function App() {
         ))}
       </Routes>
       <Footer />
-    </>
+    </div>
   );
 }
