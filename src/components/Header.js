@@ -2,24 +2,22 @@ import React from "react";
 import { socials } from "../config";
 
 export default function Header() {
-  const s = socials.map(({ name, url }) => (
+  const mySocials = socials.map(({ name, url, icon }) => (
     <li>
       <a href={url} target="_blank" rel="noreferrer">
-        {name}
+        name
       </a>
     </li>
   ));
 
-  console.log(s);
   return (
     <div className="header">
-      <div className="nav-wrapper">
-        <div className="name">
-          <span>bond</span>
-          <div>
-            <nav>
-              <ul>
-                {/* <li>
+      <div className="name">
+        <span>bond</span>
+        <div>
+          <nav>
+            <ul>
+              {/* <li>
                   <NavLink
                     to="/projects"
                     className={({ isActive }) =>
@@ -29,7 +27,7 @@ export default function Header() {
                     projects
                   </NavLink>
                 </li> */}
-                {/* <li>
+              {/* <li>
                   <a
                     href="https://github.com/trinhbond"
                     target="_blank"
@@ -47,10 +45,9 @@ export default function Header() {
                     linkedin
                   </a>
                 </li> */}
-                {s}
-              </ul>
-            </nav>
-          </div>
+              {mySocials}
+            </ul>
+          </nav>
         </div>
       </div>
     </div>

@@ -1,13 +1,13 @@
 import React from "react";
 import { HTML, JavaScript, React as ReactIcon } from "./icons";
 
-export default function Footer({ className, children }) {
+export default function Footer() {
   return (
     <div className="footer">
-      <span>
+      <p>
         Developed by{" "}
         <span className="block-on-small">Bond Trinh &#124; 2023</span>
-      </span>
+      </p>
       <div className="stack">
         <span>Powered by</span>
         <HTML />

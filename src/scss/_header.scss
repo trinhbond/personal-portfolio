@@ -1,38 +1,36 @@
 .header {
-  .nav-wrapper {
-    color: $white;
-    margin: 0 auto;
-    padding: 28px 8px 0 8px;
+  color: $white;
+  margin: 0 auto;
+  padding: 28px 8px 0 8px;
 
-    .name,
-    nav {
-      align-content: center;
-      align-items: center;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
+  .name,
+  nav {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .name > span {
+    font-weight: 600;
+    font-size: 1.5rem;
+    user-select: none;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+    vertical-align: middle;
+
+    &:first-child {
+      margin-right: 35px;
     }
-
-    .name > span {
+    a {
       font-weight: 600;
-      font-size: 1.5rem;
-      user-select: none;
-    }
-
-    nav > ul > li {
-      display: inline-block;
       vertical-align: middle;
 
-      &:first-child {
-        margin-right: 35px;
-      }
-      a {
-        font-weight: 600;
-        vertical-align: middle;
-
-        &:hover {
-          color: $theme-color;
-        }
+      &:hover {
+        color: $theme-color;
       }
     }
   }

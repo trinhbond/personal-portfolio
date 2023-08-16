@@ -7,15 +7,6 @@
   text-align: center;
 
   div {
-    @media only screen and (max-width: 600px) {
-      h1 {
-        font-size: 9rem;
-      }
-      p {
-        font-size: 1rem;
-      }
-    }
-
     h1 {
       font-size: 12rem;
       font-weight: bold;
@@ -29,6 +20,10 @@
       margin: auto;
       white-space: normal;
       width: 500px;
+
+      a {
+        color: $theme-color;
+      }
 
       @include max-screen($max-small) {
         font-size: 1rem;
