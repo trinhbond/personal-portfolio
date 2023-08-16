@@ -5,7 +5,7 @@ export default function Header() {
   const mySocials = socials.map(({ name, url, icon }) => (
     <li>
       <a href={url} target="_blank" rel="noreferrer">
-        name
+        {name}
       </a>
     </li>
   ));
