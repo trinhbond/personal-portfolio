@@ -21,10 +21,6 @@
       white-space: normal;
       width: 500px;
 
-      a {
-        color: $theme-color;
-      }
-
       @include max-screen($max-small) {
         font-size: 1rem;
         width: auto;

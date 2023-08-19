@@ -1,4 +1,6 @@
-// section section
+// TODO clean this file up
+
+// introduction section
 .introduction {
   color: $white;
 
@@ -36,8 +38,7 @@
         font-size: 1.6rem;
       }
 
-      .name,
-      a {
+      .name {
         color: $theme-color;
       }
     }
@@ -97,7 +98,6 @@
     .about-me {
       p {
         a {
-          color: $theme-color;
           font-weight: 600;
 
           &:hover {
@@ -107,6 +107,9 @@
       }
     }
     .experience {
+      .list-item {
+        position: relative;
+      }
       .company {
         font-weight: 500;
       }

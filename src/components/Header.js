@@ -1,17 +1,20 @@
 import React from "react";
+import useMeasure from "react-use-measure";
 import { socials } from "../config";
 
 export default function Header() {
+  const [ref, { width }] = useMeasure();
+  const headerIsSmall = width < 350;
   const mySocials = socials.map(({ name, url, icon }) => (
-    <li>
+    <li className={headerIsSmall && "small"}>
       <a href={url} target="_blank" rel="noreferrer">
-        {name}
+        {headerIsSmall ? icon : name}
       </a>
     </li>
   ));
 
   return (
-    <div className="header">
+    <div className="header" ref={ref}>
       <div className="name">
         <span>bond</span>
         <div>
@@ -26,24 +29,6 @@ export default function Header() {
                   >
                     projects
                   </NavLink>
-                </li> */}
-              {/* <li>
-                  <a
-                    href="https://github.com/trinhbond"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    github
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/in/bondnicktrinh/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    linkedin
-                  </a>
                 </li> */}
               {mySocials}
             </ul>

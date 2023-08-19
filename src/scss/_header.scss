@@ -9,11 +9,11 @@
     align-items: center;
     display: flex;
     flex-direction: row;
+    font-weight: 600;
     justify-content: space-between;
   }
 
   .name > span {
-    font-weight: 600;
     font-size: 1.5rem;
     user-select: none;
   }
@@ -24,14 +24,13 @@
 
     &:first-child {
       margin-right: 35px;
+
+      &.small {
+        margin-right: 17.5px;
+      }
     }
     a {
-      font-weight: 600;
       vertical-align: middle;
-
-      &:hover {
-        color: $theme-color;
-      }
     }
   }
 }

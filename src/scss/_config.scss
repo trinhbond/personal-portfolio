@@ -43,7 +43,7 @@ a {
   &:hover,
   &:visited,
   &.active {
-    color: inherit;
+    color: $theme-color;
   }
 }
 
