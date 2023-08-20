@@ -41,7 +41,6 @@ a {
   text-decoration: none;
 
   &:hover,
-  &:visited,
   &.active {
     color: $theme-color;
   }

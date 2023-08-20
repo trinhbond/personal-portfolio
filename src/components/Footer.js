@@ -5,11 +5,10 @@ export default function Footer() {
   return (
     <div className="footer">
       <p>
-        Developed by{" "}
-        <span className="block-on-small">Bond Trinh &#124; 2023</span>
+        Developed by <span>Bond Trinh &#124; 2023</span>
       </p>
-      <div className="stack">
-        <span>Powered by</span>
+      <div className="stack inline-block">
+        <span className="hide-for-small">Powered by</span>
         <HTML />
         <JavaScript />
         <ReactIcon />

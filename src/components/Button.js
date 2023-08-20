@@ -2,8 +2,8 @@ import styled from "styled-components";
 import classNames from "classnames";
 
 const ButtonStyle = styled.button`
-  background-color: #cdc;
-  border: 1px solid #cdc;
+  background-color: #1ba9d6;
+  border: 1px solid #1ba9d6;
   border-radius: 32px;
   color: $white;
   font-size: 1rem;
