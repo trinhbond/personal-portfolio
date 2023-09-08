@@ -1,4 +1,3 @@
-import React from "react";
 import { Section } from "../components";
 import { languages, tools, education, experience } from "../config";
 import WavingHand from "../assets/svgs/waving-hand.svg";
@@ -11,15 +10,15 @@ export default function Home() {
   );
   const langs = languages.map((language) => <li>{language}</li>);
   const tool = tools.map((tool) => <li>{tool}</li>);
-  const exp = experience.map((e) => (
+  const exp = (
     <>
       <div className="experience-list">
-        <span className="company">{e.company}</span>
-        <span className="year hide-for-small">{e.year}</span>
+        <span className="company">{experience.company}</span>
+        <span className="year hide-for-small">{experience.year}</span>
       </div>
-      <span className="position">{e.position}</span>
+      <span className="position">{experience.position}</span>
     </>
-  ));
+  );
   const edu = education.map((e) => (
     <>
       <div className={e.id}>
@@ -31,7 +30,7 @@ export default function Home() {
   ));
 
   return (
-    <main>
+    <main className="fade-in">
       <Section className="introduction">
         <div className="title">
           <h2 className="hey">Hey there&#33;</h2>

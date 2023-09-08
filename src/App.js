@@ -6,12 +6,18 @@ export default function App() {
   return (
     <div className="fade-in">
       <Header />
-      <Routes>
-        {routes.map(({ path, element }, key) => (
-          <Route path={path} element={element} key={key} />
-        ))}
-      </Routes>
+      <AppRoutes />
       <Footer />
     </div>
+  );
+}
+
+function AppRoutes() {
+  return (
+    <Routes>
+      {routes.map(({ path, element }, key) => (
+        <Route path={path} element={element} key={key} />
+      ))}
+    </Routes>
   );
 }

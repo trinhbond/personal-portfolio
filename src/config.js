@@ -36,30 +36,33 @@ export const techStack = [
 
 export const languages = [
   "React",
+  "JavaScript",
+  "TypeScript",
   "HTML",
-  "CSS/Sass",
+  "CSS",
   "C",
   "C#",
   "Java",
-  "JavaScript",
 ];
 
 export const tools = ["Git", "GitHub", "Figma", "Confluence", "Linear"];
 
 export const education = [
   {
-    id: "bcis",
+    id: "AK3697",
     study: "Bachelor of Computer and Information Sciences",
     major: "Software Development",
     year: "2020 - 2023",
   },
-  { id: "csit", study: "Certificate in Science and Technology", year: "2019" },
-];
-
-export const experience = [
   {
-    company: "Nui Markets",
-    year: "Nov 2022 - Present",
-    position: "Junior Software Engineer",
+    id: "AK1311",
+    study: "Certificate in Science and Technology",
+    year: "2019",
   },
 ];
+
+export const experience = {
+  company: "Nui Markets",
+  year: "Nov 2022 - Present",
+  position: "Junior Software Engineer",
+};
