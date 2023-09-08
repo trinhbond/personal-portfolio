@@ -36,6 +36,17 @@ $body: #727e82;
 //   background: $theme-color;
 // }
 
+button {
+  background-color: #1ba9d6;
+  border: 1px solid #1ba9d6;
+  border-radius: 32px;
+  color: $white;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 8px 24px;
+  white-space: nowrap;
+}
+
 a {
   color: $white;
   text-decoration: none;
