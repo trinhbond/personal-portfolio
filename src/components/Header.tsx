@@ -1,31 +1,27 @@
-import Link from "./Link";
-import { GitHub, LinkedIn } from "./icons";
+import { NavLink } from "react-router-dom";
 
-function Header() {
-  return (
-    <header className="py-8 flex flex-row justify-end align-center items-center">
-      <div className="inline-block flex flex-row align-center items-center">
-        <div className="mr-10">
-          <Link
-            icon={<GitHub />}
-            className="text-lg font-normal"
-            href="https://www.github.com/trinhbond"
-          >
-            GitHub
-          </Link>
-        </div>
-        <div>
-          <Link
-            icon={<LinkedIn />}
-            className="text-lg font-normal"
-            href="https://www.linkedin.com/in/bondnicktrinh/"
-          >
-            LinkedIn
-          </Link>
-        </div>
-      </div>
-    </header>
-  );
-}
+const Header = () => (
+  <header className="max-w-3xl py-8 px-4 m-auto text-white">
+    <nav className="flex flex-row justify-between items-center align-center">
+      <NavLink
+        to="/"
+        className="select-none font-semibold text-lg"
+        // className="border-green-300 text-xl select-none border-2 rounded px-2 py-2 leading-5 text-center"
+      >
+        {"<bond />"}
+      </NavLink>
+      <NavLink
+        to="/projects"
+        className={({ isActive }) =>
+          `select-none hover:text-green-300 ${
+            isActive && "text-green-300"
+          } max-[600px]:text-sm`
+        }
+      >
+        Projects
+      </NavLink>
+    </nav>
+  </header>
+);
 
 export default Header;
