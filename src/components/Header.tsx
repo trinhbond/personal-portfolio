@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 
 const Header = () => (
-  <header className="max-w-3xl py-8 px-4 m-auto text-white">
+  <header className="max-w-3xl py-8 px-4 max-[600px]:px-6 m-auto text-white">
     <nav className="flex flex-row justify-between items-center align-center">
       <NavLink
         to="/"

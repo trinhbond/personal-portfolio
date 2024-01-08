@@ -24,7 +24,7 @@ const projects = [
 
 function Projects() {
   return (
-    <div className="max-w-3xl py-10 px-5 max-[600px]:px-2.5 m-auto text-white">
+    <div className="max-w-3xl py-10 px-5 max-[600px]:px-2.5 max-[600px]:px-6 m-auto text-white">
       {projects.map((project) => (
         <div className="flex flex-row max-[768px]:flex-col gap-3 mb-16">
           <img
