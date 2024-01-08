@@ -5,17 +5,13 @@ interface LinkProps {
   className?: string;
 }
 
-function Link({ children, href, icon, className }: LinkProps) {
-  return (
-    <a className={className} href={href} target="_blank" rel="noreferrer">
-      {icon && (
-        <span className="fill-white mr-3 inline-block align-middle">
-          {icon}
-        </span>
-      )}
-      <span>{children}</span>
-    </a>
-  );
-}
+const Link = ({ children, href, icon, className }: LinkProps) => (
+  <a className={className} href={href} target="_blank" rel="noreferrer">
+    {icon && (
+      <span className="fill-white mr-3 inline-block align-middle">{icon}</span>
+    )}
+    {children}
+  </a>
+);
 
 export default Link;
