@@ -8,7 +8,9 @@ interface LinkProps {
 const Link = ({ children, href, icon, className }: LinkProps) => (
   <a className={className} href={href} target="_blank" rel="noreferrer">
     {icon && (
-      <span className="fill-white mr-3 inline-block align-middle">{icon}</span>
+      <span className="fill-white mr-3 inline-block align-middle font-medium">
+        {icon}
+      </span>
     )}
     {children}
   </a>

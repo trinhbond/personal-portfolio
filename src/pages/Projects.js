@@ -43,9 +43,9 @@ function Projects() {
               <p className="max-[600px]:text-sm">{project.description}</p>
             </div>
             <div className="flex flex-row gap-2 max-[768px]:mt-6">
-              {project.tech.map((dd) => (
+              {project.tech.map((i) => (
                 <span className="flex-1 border-2 border-green-200 rounded text-center text-sm">
-                  {dd}
+                  {i}
                 </span>
               ))}
             </div>
