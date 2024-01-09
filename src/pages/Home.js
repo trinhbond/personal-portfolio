@@ -20,7 +20,7 @@ function Home() {
           </p>
           <p className="text-lg max-[600px]:text-sm">
             I am a{" "}
-            <span className="text-green-200">junior software engineer</span> who
+            <span className="text-green-300">junior software engineer</span> who
             enjoys front-end development and all things UX/UI. I graduated from
             AUT with a Bachelor of Computer and Information Sciences, majoring
             in Software Development. I am currently focused on learning
@@ -30,12 +30,12 @@ function Home() {
         <img src={Me} className="w-1/3 m-auto rounded-full" alt="Idiot" />
         <div className="middle flex flex-col gap-2 text-lg self-center max-[600px]:text-sm">
           <Link icon={<Wave />} href="mailto:bond.nicktrinh@gmail.com">
-            <span className="hover:underline hover:text-green-200">
+            <span className="hover:underline hover:text-green-300">
               Email me
             </span>
           </Link>
           <Link icon={<GitHub />} href="https://www.github.com/trinhbond">
-            <span className="hover:underline hover:text-green-200">
+            <span className="hover:underline hover:text-green-300">
               Check out my repository
             </span>
           </Link>
@@ -43,7 +43,7 @@ function Home() {
             icon={<LinkedIn />}
             href="https://www.linkedin.com/in/bondnicktrinh/"
           >
-            <span className="hover:underline hover:text-green-200">
+            <span className="hover:underline hover:text-green-300">
               Connect with me
             </span>
           </Link>
@@ -57,7 +57,7 @@ function Home() {
               Junior Software Engineer
             </h2>
             <div className="nui flex flex-row justify-between items-center">
-              <h2 className="text-lg max-[600px]:text-sm text-green-200">
+              <h2 className="text-lg max-[600px]:text-sm text-green-300">
                 Nui Markets
               </h2>
               <span className="max-[600px]:text-sm">2022 - 2023</span>
