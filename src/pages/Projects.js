@@ -40,7 +40,9 @@ function Projects() {
               >
                 {project.name} ({project.year})
               </Link>
-              <p className="max-[600px]:text-sm my-2">{project.description}</p>
+              <p className="max-[600px]:text-sm my-2 text-lg">
+                {project.description}
+              </p>
             </div>
             <div className="flex flex-row gap-4">
               {project.tech.map((i) => (

@@ -12,7 +12,7 @@ import Me from "../me.jpg";
 function Home() {
   return (
     <main className="max-w-3xl max-[600px]:py-5 py-10 px-5 max-[600px]:px-6 m-auto text-white overflow-x-hidden">
-      <div className="flex flex-col justify-center align-center gap-16 m-auto">
+      <div className="flex flex-col justify-center align-center gap-16">
         <div className="top">
           <p className="mb-4 text-lg max-[600px]:text-sm">
             Hey, my name is <br />
