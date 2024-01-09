@@ -2,6 +2,7 @@ import { BrowserRouter, Link, Outlet, Route, Routes } from "react-router-dom";
 import Projects from "./pages/Projects";
 import Header from "./components/Header";
 import Home from "./pages/Home";
+import Experience from "./pages/Experience";
 
 function App() {
   const Layout = () => (
@@ -28,6 +29,7 @@ function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
+          <Route path="/experience" element={<Experience />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="*" element={<ErrorPage />} />
         </Route>

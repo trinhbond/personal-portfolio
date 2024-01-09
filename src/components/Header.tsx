@@ -10,16 +10,28 @@ const Header = () => (
       >
         {"<bond />"}
       </NavLink>
-      <NavLink
-        to="/projects"
-        className={({ isActive }) =>
-          `select-none hover:text-green-300 ${
-            isActive && "text-green-300"
-          } max-[600px]:text-sm`
-        }
-      >
-        Projects
-      </NavLink>
+      <div className="flex flex-row gap-6">
+        <NavLink
+          to="/experience"
+          className={({ isActive }) =>
+            `select-none hover:text-green-300 ${
+              isActive && "text-green-300"
+            } max-[600px]:text-sm`
+          }
+        >
+          Experience
+        </NavLink>
+        <NavLink
+          to="/projects"
+          className={({ isActive }) =>
+            `select-none hover:text-green-300 ${
+              isActive && "text-green-300"
+            } max-[600px]:text-sm`
+          }
+        >
+          Projects
+        </NavLink>
+      </div>
     </nav>
   </header>
 );
