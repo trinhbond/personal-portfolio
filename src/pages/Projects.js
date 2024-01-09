@@ -27,24 +27,25 @@ function Projects() {
     <div className="max-w-3xl py-10 px-5 max-[600px]:px-2.5 max-[600px]:px-6 m-auto text-white">
       {projects.map((project) => (
         <div className="flex flex-row max-[768px]:flex-col gap-3 mb-16">
-          <img
+          {/* <img
             src={project.image}
             alt={project.name}
             className="rounded w-1/3 max-[768px]:w-full"
-          />
+          /> */}
           <div className="flex flex-col justify-between gap-6">
             <div>
               <Link
                 href="https://github.com/trinhbond/random-jokes"
-                className="text-xl font-bold"
+                className="text-xl font-medium hover:text-green-300"
               >
                 {project.name} ({project.year})
               </Link>
-              <p className="max-[600px]:text-sm">{project.description}</p>
+              <p className="max-[600px]:text-sm my-2">{project.description}</p>
             </div>
-            <div className="flex flex-row gap-2 max-[768px]:mt-6">
+            <div className="flex flex-row gap-4">
               {project.tech.map((i) => (
-                <span className="flex-1 border-2 border-green-200 rounded text-center text-sm">
+                // <span className="flex-1 border-2 border-green-200 rounded text-center text-sm">
+                <span className="flex-1 max-w-min whitespace-nowrap rounded text-center text-sm text-green-200">
                   {i}
                 </span>
               ))}
