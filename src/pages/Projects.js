@@ -25,6 +25,9 @@ const projects = [
 function Projects() {
   return (
     <div className="max-w-3xl py-10 px-5 max-[600px]:px-2.5 max-[600px]:px-6 m-auto text-white">
+      <h1 className="font-semibold text-4xl max-[600px]:text-2xl mb-8">
+        Projects
+      </h1>
       {projects.map((project) => (
         <div className="flex flex-row max-[768px]:flex-col gap-3 mb-16">
           {/* <img
@@ -36,7 +39,7 @@ function Projects() {
             <div>
               <Link
                 href="https://github.com/trinhbond/random-jokes"
-                className="text-xl font-medium hover:text-green-300"
+                className="text-xl max-[600px]:text-lg font-medium hover:text-green-300 "
               >
                 {project.name} ({project.year})
               </Link>
@@ -46,7 +49,6 @@ function Projects() {
             </div>
             <div className="flex flex-row gap-4">
               {project.tech.map((i) => (
-                // <span className="flex-1 border-2 border-green-200 rounded text-center text-sm">
                 <span className="flex-1 max-w-min whitespace-nowrap rounded text-center text-sm text-green-200">
                   {i}
                 </span>
