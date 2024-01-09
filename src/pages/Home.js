@@ -48,22 +48,6 @@ function Home() {
             </span>
           </Link>
         </div>
-        <div className="work">
-          <h1 className="font-semibold text-lg max-[600px]:text-sm">
-            Work (1 YOE)
-          </h1>
-          <div>
-            <h2 className="text-lg max-[600px]:text-sm">
-              Junior Software Engineer
-            </h2>
-            <div className="nui flex flex-row justify-between items-center">
-              <h2 className="text-lg max-[600px]:text-sm text-green-300">
-                Nui Markets
-              </h2>
-              <span className="max-[600px]:text-sm">2022 - 2023</span>
-            </div>
-          </div>
-        </div>
         <div className="bottom self-center">
           <ul className="flex flex-row gap-8 max-[330px]:flex-col">
             {[<ReactSVG />, <TypeScriptSVG />, <TailWindSVG />].map((i) => (
