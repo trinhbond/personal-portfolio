@@ -24,7 +24,7 @@ const projects = [
 
 function Projects() {
   return (
-    <div className="max-w-3xl py-10 px-5 max-[600px]:px-2.5 max-[600px]:px-6 m-auto text-white">
+    <div className="max-w-3xl py-10 px-5 max-[600px]:px-2.5 max-[600px]:px-6 m-auto text-white overflow-x-hidden">
       <h1 className="font-semibold text-4xl max-[600px]:text-2xl mb-8">
         Projects
       </h1>
