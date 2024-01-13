@@ -1,12 +1,10 @@
-import {
-  GitHub,
-  LinkedIn,
-  ReactSVG,
-  TailWindSVG,
-  TypeScriptSVG,
-  Wave,
-} from "../components/icons";
 import Link from "../components/Link";
+import { GitHub } from "../icons/GitHub";
+import { LinkedIn } from "../icons/LinkedIn";
+import { ReactSVG as React } from "../icons/React";
+import { TailWindSVG as TailWind } from "../icons/Tailwind";
+import { TypeScriptSVG as TypeScript } from "../icons/TypeScript";
+import { Wave } from "../icons/Wave";
 import Me from "../me.jpg";
 
 function Home() {
@@ -50,7 +48,7 @@ function Home() {
         </div>
         <div className="bottom self-center">
           <ul className="flex flex-row gap-8 max-[330px]:flex-col">
-            {[<ReactSVG />, <TypeScriptSVG />, <TailWindSVG />].map((i) => (
+            {[<React />, <TypeScript />, <TailWind />].map((i) => (
               <li className="m-auto">{i}</li>
             ))}
           </ul>
