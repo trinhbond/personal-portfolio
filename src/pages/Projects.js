@@ -1,7 +1,7 @@
 import React from "react";
 import JokesApp from "../random-jokes.png";
 import Portfolio from "../personal-portfolio.png";
-import Link from "../components/Link";
+import Link from "../components/ExternalLink";
 
 const projects = [
   {

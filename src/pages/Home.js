@@ -1,4 +1,4 @@
-import Link from "../components/Link";
+import ExternalLink from "../components/ExternalLink";
 import { GitHub } from "../icons/GitHub";
 import { LinkedIn } from "../icons/LinkedIn";
 import { ReactSVG as React } from "../icons/React";
@@ -27,24 +27,27 @@ function Home() {
         </div>
         <img src={Me} className="w-1/3 m-auto rounded-full" alt="Idiot" />
         <div className="middle flex flex-col gap-2 text-lg self-center max-[600px]:text-sm">
-          <Link icon={<Wave />} href="mailto:bond.nicktrinh@gmail.com">
-            <span className="hover:underline hover:text-green-300">
-              Email me
-            </span>
-          </Link>
-          <Link icon={<GitHub />} href="https://www.github.com/trinhbond">
-            <span className="hover:underline hover:text-green-300">
-              Check out my repository
-            </span>
-          </Link>
-          <Link
+          <ExternalLink
+            icon={<Wave />}
+            href="mailto:bond.nicktrinh@gmail.com"
+            className="hover:underline hover:text-green-300"
+          >
+            Email me
+          </ExternalLink>
+          <ExternalLink
+            icon={<GitHub />}
+            href="https://www.github.com/trinhbond"
+            className="hover:underline hover:text-green-300"
+          >
+            Check out my repository
+          </ExternalLink>
+          <ExternalLink
             icon={<LinkedIn />}
             href="https://www.linkedin.com/in/bondnicktrinh/"
+            className="hover:underline hover:text-green-300"
           >
-            <span className="hover:underline hover:text-green-300">
-              Connect with me
-            </span>
-          </Link>
+            Connect with me
+          </ExternalLink>
         </div>
         <div className="bottom self-center">
           <ul className="flex flex-row gap-8 max-[330px]:flex-col">

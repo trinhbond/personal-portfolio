@@ -1,4 +1,4 @@
-import Link from "../components/Link";
+import ExternalLink from "../components/ExternalLink";
 
 function Experience() {
   return (
@@ -10,12 +10,12 @@ function Experience() {
         <div className="pt-4">
           <h2 className="text-lg max-[600px]:text-sm">
             Junior Software Engineer {"|"}{" "}
-            <Link
+            <ExternalLink
               href="https://www.nuimarkets.com/"
               className="text-green-300 hover:underline"
             >
               Nui Markets
-            </Link>
+            </ExternalLink>
           </h2>
           <div className="nui flex flex-row justify-between items-center">
             <span className="max-[600px]:text-sm">2022 - 2023</span>
