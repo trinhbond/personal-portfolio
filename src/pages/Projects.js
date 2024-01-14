@@ -28,7 +28,7 @@ function Projects() {
       <h1 className="font-semibold text-4xl max-[600px]:text-2xl mb-8">
         Projects
       </h1>
-      {projects.map((project) => (
+      {projects.map((project, index) => (
         <div className="flex flex-row max-[768px]:flex-col gap-3 mb-16">
           {/* <img
             src={project.image}
@@ -36,7 +36,7 @@ function Projects() {
             className="rounded w-1/3 max-[768px]:w-full"
           /> */}
           <div className="flex flex-col justify-between gap-6">
-            <div>
+            <div key={index}>
               <Link
                 href="https://github.com/trinhbond/random-jokes"
                 className="text-xl max-[600px]:text-lg font-medium hover:text-green-300 "
