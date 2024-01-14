@@ -58,14 +58,14 @@ const Header = () => {
         ) : (
           <button
             onClick={() => {
-              setOpen((prev) => !prev);
+              setOpen((open) => !open);
             }}
           >
             <Hamburger />
           </button>
         )}
       </nav>
-      <Drawer open={open} />
+      {open && <Drawer />}
     </header>
   );
 };
