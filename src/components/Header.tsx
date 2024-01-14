@@ -65,7 +65,7 @@ const Header = () => {
           </button>
         )}
       </nav>
-      {!!open && <Drawer open={open} />}
+      <Drawer open={open} />
     </header>
   );
 };
