@@ -17,9 +17,9 @@ export const Wave = () => (
       gradientTransform="scale(1 -1) rotate(45 506.867 1318.897)"
       gradientUnits="userSpaceOnUse"
     >
-      <stop offset=".353" stop-color="#ffca28"></stop>
+      <stop offset=".353" stopColor="#ffca28"></stop>
 
-      <stop offset=".872" stop-color="#ffb300"></stop>
+      <stop offset=".872" stopColor="#ffb300"></stop>
     </radialGradient>
 
     <path
