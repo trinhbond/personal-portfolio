@@ -10,13 +10,13 @@ import Me from "../me.jpg";
 function Home() {
   return (
     <main className="max-w-3xl max-[600px]:py-5 py-10 px-5 max-[600px]:px-6 m-auto text-white overflow-x-hidden">
-      <div className="flex flex-col justify-center align-center gap-16 text-lg">
+      <div className="flex flex-col justify-center align-center gap-16">
         <div className="top">
-          <p className="mb-4">
+          <p className="mb-4 text-lg max-[600px]:text-sm">
             Hey, my name is <br />
             <span className="text-4xl font-bold">Bond Trinh.</span>
           </p>
-          <p>
+          <p className="text-lg max-[600px]:text-sm">
             I am a{" "}
             <span className="text-green-300">junior software engineer</span> who
             enjoys front-end development and all things UX/UI. I graduated from
@@ -26,7 +26,7 @@ function Home() {
           </p>
         </div>
         <img src={Me} className="w-1/3 m-auto rounded-full" alt="Idiot" />
-        <div className="middle flex flex-col gap-2 self-center">
+        <div className="middle flex flex-col gap-2 text-lg self-center max-[600px]:text-sm">
           <ExternalLink
             icon={<Wave />}
             href="mailto:bond.nicktrinh@gmail.com"
