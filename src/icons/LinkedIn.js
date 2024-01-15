@@ -3,7 +3,7 @@ export const LinkedIn = () => (
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 24 24"
     data-supported-dps="24x24"
-    fill="currentColor"
+    fill="white"
     className="mercado-match"
     width="22"
     height="22"
