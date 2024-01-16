@@ -7,8 +7,8 @@ function Experience() {
         <h1 className="font-semibold text-4xl max-[600px]:text-2xl">
           Where I've worked
         </h1>
-        <div className="pt-4">
-          <h2 className="text-lg max-[600px]:text-sm">
+        <div className="pt-4 text-lg max-[600px]:text-base">
+          <h2>
             Junior Software Engineer {"|"}{" "}
             <ExternalLink
               href="https://www.nuimarkets.com/"
@@ -18,9 +18,9 @@ function Experience() {
             </ExternalLink>
           </h2>
           <div className="nui flex flex-row justify-between items-center">
-            <span className="max-[600px]:text-sm">2022 - 2023</span>
+            <span>2022 - 2023</span>
           </div>
-          <ul className="flex flex-col gap-4 relative list-disc mt-6 pl-[17px] text-lg max-[600px]:text-sm">
+          <ul className="flex flex-col gap-4 relative list-disc mt-6 pl-[17px]">
             <li>
               Collaborated with a UX/UI Designer to improve the Nui Markets
               platform, implementing React component designs from Figma using

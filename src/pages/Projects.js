@@ -24,17 +24,12 @@ const projects = [
 
 function Projects() {
   return (
-    <div className="max-w-3xl py-10 px-5 max-[600px]:px-2.5 max-[600px]:px-6 m-auto text-white overflow-x-hidden">
+    <div className="max-w-3xl py-10 px-5 max-[600px]:px-2.5 max-[600px]:px-6 m-auto text-white overflow-x-hidden text-lg max-[600px]:text-base">
       <h1 className="font-semibold text-4xl max-[600px]:text-2xl mb-8">
         Projects
       </h1>
       {projects.map((project, index) => (
         <div className="flex flex-row max-[768px]:flex-col gap-3 mb-16">
-          {/* <img
-            src={project.image}
-            alt={project.name}
-            className="rounded w-1/3 max-[768px]:w-full"
-          /> */}
           <div className="flex flex-col justify-between gap-6">
             <div key={index}>
               <Link
@@ -43,13 +38,11 @@ function Projects() {
               >
                 {project.name} ({project.year})
               </Link>
-              <p className="max-[600px]:text-sm my-2 text-lg">
-                {project.description}
-              </p>
+              <p>{project.description}</p>
             </div>
-            <div className="flex flex-row gap-4">
+            <div className="flex flex-row gap-4 flex-wrap text-base max-[600px]:text-sm">
               {project.tech.map((i) => (
-                <span className="flex-1 max-w-min whitespace-nowrap rounded text-center text-sm text-green-200">
+                <span className="flex-1 max-w-min whitespace-nowrap rounded text-center text-green-200">
                   {i}
                 </span>
               ))}

@@ -20,7 +20,7 @@ const Header = () => {
   }, []);
 
   useEffect(() => {
-    if (width >= 600) setOpen(false);
+    if (width > 600) setOpen(false);
   }, [width]);
 
   return (
@@ -32,14 +32,14 @@ const Header = () => {
         <NavLink to="/" className="select-none font-semibold text-lg">
           {"<bond />"}
         </NavLink>
-        {width >= 600 ? (
+        {width > 600 ? (
           <div className="flex flex-row gap-6">
             <NavLink
               to="/experience"
               className={({ isActive }) =>
                 `select-none hover:text-green-300 ${
                   isActive && "text-green-300"
-                } max-[600px]:text-sm`
+                }`
               }
             >
               Experience
@@ -49,7 +49,7 @@ const Header = () => {
               className={({ isActive }) =>
                 `select-none hover:text-green-300 ${
                   isActive && "text-green-300"
-                } max-[600px]:text-sm`
+                }`
               }
             >
               Projects
