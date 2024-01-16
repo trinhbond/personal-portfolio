@@ -2,11 +2,9 @@ import ExternalLink from "../components/ExternalLink";
 
 function Experience() {
   return (
-    <div className="max-w-3xl  py-10 px-5 text-white overflow-x-hidden m-auto">
+    <div className="max-w-3xl py-10 px-5 m-auto text-white overflow-x-hidden max-[600px]:text-base ">
       <div className="work text-white">
-        <h1 className="font-semibold text-4xl max-[600px]:text-2xl">
-          Where I've worked
-        </h1>
+        <h1 className="font-semibold text-[26px]">Where I've worked</h1>
         <div className="pt-4 text-lg max-[600px]:text-base">
           <h2>
             Junior Software Engineer {"|"}{" "}
