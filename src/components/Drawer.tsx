@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 const Drawer = () => {
   return (
-    <div className="border w-36 rounded-md absolute right-6 top-16 px-6 py-3">
+    <div className="border w-36 rounded-md absolute right-6 top-16 px-6 py-3 bg-black">
       <ul>
         <li className="leading-8">
           <NavLink
