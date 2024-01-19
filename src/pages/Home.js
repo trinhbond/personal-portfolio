@@ -51,8 +51,10 @@ function Home() {
         </div>
         <div className="bottom self-center">
           <ul className="flex flex-row gap-8 max-[330px]:flex-col">
-            {[<React />, <TypeScript />, <TailWind />].map((i) => (
-              <li className="m-auto">{i}</li>
+            {[<React />, <TypeScript />, <TailWind />].map((tool, index) => (
+              <li className="m-auto" key={index}>
+                {tool}
+              </li>
             ))}
           </ul>
         </div>
