@@ -30,7 +30,7 @@ const Header = () => {
     >
       <nav className="flex flex-row justify-between items-center align-center">
         <NavLink to="/" className="select-none font-semibold text-lg">
-          {"<bond />"}
+          bond
         </NavLink>
         {width > 600 ? (
           <div className="flex flex-row gap-6">
