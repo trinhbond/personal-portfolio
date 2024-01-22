@@ -6,40 +6,40 @@ function Experience() {
   }, []);
 
   return (
-    <div className="max-w-3xl py-10 px-5 m-auto text-white overflow-x-hidden max-[600px]:text-base ">
-      <div className="work text-white">
-        <h1 className="font-semibold text-[26px]">Where I've worked</h1>
-        <div className="pt-4 text-lg max-[600px]:text-base">
-          <h2>
-            Junior Software Engineer {"|"}{" "}
-            <ExternalLink
-              href="https://www.nuimarkets.com/"
-              className="text-green-300 hover:underline"
-            >
-              Nui Markets
-            </ExternalLink>
-          </h2>
-          <div className="nui flex flex-row justify-between items-center">
-            <span>2022 - 2023</span>
+    <div className="max-w-3xl py-10 px-5 m-auto text-white overflow-x-hidden max-[600px]:text-base">
+      <h1 className="font-semibold text-[26px] mb-10">Experience</h1>
+      <div className="work flex flex-row max-[600px]:flex-col flex-wrap gap-4">
+        <div className="font-medium w-1/6 max-[600px]:w-auto">2022 - 2023</div>
+        <div className="w-4/5 max-[600px]:w-auto flex flex-col gap-6">
+          <div>
+            <h2 className="font-bold">Junior Software Engineer</h2>
+            <span>Nui Markets</span>
           </div>
-          <ul className="flex flex-col gap-4 relative list-disc mt-6 pl-[17px]">
-            <li>
-              Collaborated with a UX/UI Designer to improve the Nui Markets
-              platform, implementing React component designs from Figma using
-              CSS to align with current design trends.
-            </li>
-            <li>
-              Optimised and improved performance on the Nui Markets platform by
-              identifying edge cases and resolving bugs through comprehensive
-              tests using Playwright, JavaScript & TypeScript.
-            </li>
-            <li>
-              Developed comprehensive guidelines for the frontend repository to
-              streamline the process of issuing pull requests, ensuring
-              readability and efficiency when generating release notes on
-              GitHub.
-            </li>
-          </ul>
+          <p>
+            Assumed multiple responsibilities involving frontend development and
+            test automation. Typical responsibilities included styling React
+            components and collaborating with a UX/UI Designer to bring design
+            ideas to life. Additionally, I have experience in creating
+            end-to-end tests to optimise and improve the Nui Markets platform,
+            resolving bugs and identifying edge cases.
+          </p>
+          <div className="flex flex-row gap-2 flex-wrap text-[12px]">
+            {[
+              "HTML",
+              "SCSS",
+              "React",
+              "JavaScript",
+              "TypeScript",
+              "Playwright",
+              "Figma",
+              "Confluence",
+              "Linear",
+            ].map((i) => (
+              <span className="flex-1 max-w-min whitespace-nowrap rounded-full text-center text-black font-bold bg-green-300 px-3.5 py-1.5">
+                {i}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
     </div>
