@@ -46,9 +46,9 @@ export const ProjectCard = (project: ProjectsProps) => (
         </Link>
         <p>{project.description}</p>
       </div>
-      <div className="flex flex-row gap-2 flex-wrap text-sm">
+      <div className="flex flex-row gap-2 flex-wrap text-[12px]">
         {project.tech.map((i) => (
-          <span className="flex-1 max-w-min whitespace-nowrap rounded-md text-center border-2 border-green-300 px-3.5 py-1.5">
+          <span className="flex-1 max-w-min whitespace-nowrap rounded-full text-center text-black font-bold bg-green-300 px-3.5 py-1.5">
             {i}
           </span>
         ))}
