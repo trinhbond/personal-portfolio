@@ -1,6 +1,10 @@
-import ExternalLink from "../components/ExternalLink";
+import { useEffect } from "react";
 
 function Experience() {
+  useEffect(() => {
+    document.title = "Experience | Bond Trinh";
+  }, []);
+
   return (
     <div className="max-w-3xl py-10 px-5 m-auto text-white overflow-x-hidden max-[600px]:text-base ">
       <div className="work text-white">

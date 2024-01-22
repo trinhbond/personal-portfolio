@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import ExternalLink from "../components/ExternalLink";
 import { GitHub } from "../icons/GitHub";
 import { LinkedIn } from "../icons/LinkedIn";
@@ -8,6 +9,10 @@ import { Wave } from "../icons/Wave";
 import Me from "../me.jpg";
 
 function Home() {
+  useEffect(() => {
+    document.title = "Home | Bond Trinh";
+  }, []);
+
   return (
     <main className="max-w-3xl max-[600px]:py-5 py-10 px-5 max-[600px]:px-6 m-auto text-white overflow-x-hidden">
       <div className="flex flex-col justify-center align-center gap-16 text-lg max-[600px]:text-base">

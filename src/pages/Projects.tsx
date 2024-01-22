@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Link from "../components/ExternalLink";
 import projects from "../projects.json";
 
@@ -11,6 +12,10 @@ interface ProjectsProps {
 }
 
 function Projects() {
+  useEffect(() => {
+    document.title = "Projects | Bond Trinh";
+  }, []);
+
   return (
     <div className="max-w-3xl py-10 px-5 m-auto text-white max-[600px]:text-base overflow-x-hidden flex flex-col gap-12">
       <div>
