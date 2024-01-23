@@ -17,7 +17,7 @@ function Projects() {
   }, []);
 
   return (
-    <div className="max-w-3xl py-10 px-5 m-auto text-white max-[600px]:text-base overflow-x-hidden flex flex-col gap-12">
+    <main className="max-w-3xl py-10 px-5 m-auto text-white max-[600px]:text-base overflow-x-hidden flex flex-col gap-12">
       <div>
         <h1 className="font-semibold text-[26px]">Projects</h1>
         <p>Some projects that I've worked on.</p>
@@ -27,12 +27,12 @@ function Projects() {
           <ProjectCard {...project} key={index} />
         ))}
       </div>
-    </div>
+    </main>
   );
 }
 
 export const ProjectCard = (project: ProjectsProps) => (
-  <div className="flex flex-row max-[768px]:flex-col gap-3">
+  <div className="animate flex flex-row max-[768px]:flex-col gap-3">
     <span className="font-bold text-2xl mr-10 max-[600px]:mr-0 max-[600px]:block">
       {project.no}
     </span>
