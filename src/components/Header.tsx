@@ -4,15 +4,15 @@ import { Hamburger } from "../icons/Hamburger";
 import Drawer from "./Drawer";
 
 const Header = () => {
-  const ref = useRef<any>();
+  const ref = useRef<HTMLDivElement>(null);
   const [width, setWidth] = useState(0);
   const [open, setOpen] = useState<boolean>(false);
 
   useEffect(() => {
-    setWidth(ref.current.offsetWidth);
+    if (ref.current !== null) setWidth(ref.current.offsetWidth);
 
     const getWidth = () => {
-      setWidth(ref.current.offsetWidth);
+      if (ref.current !== null) setWidth(ref.current.offsetWidth);
     };
     window.addEventListener("resize", getWidth);
 
