@@ -57,6 +57,9 @@ const Header = () => {
           </div>
         ) : (
           <button
+            className={`rounded-full p-2 hover:bg-zinc-800 ${
+              open && "bg-zinc-800"
+            }`}
             onClick={() => {
               setOpen((open) => !open);
             }}
