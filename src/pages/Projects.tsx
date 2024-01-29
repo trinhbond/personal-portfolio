@@ -1,12 +1,11 @@
 import { useEffect } from "react";
-import Link from "../components/ExternalLink";
+import { ExternalLink } from "../components/ExternalLink";
 import projects from "../projects.json";
 
 interface ProjectsProps {
   name: string;
   year: number;
-  no: string;
-  image: string;
+  number: string;
   description: string;
   tech: string[];
 }
@@ -34,16 +33,16 @@ function Projects() {
 export const ProjectCard = (project: ProjectsProps) => (
   <div className="animate flex flex-row max-[768px]:flex-col gap-3">
     <span className="font-bold text-2xl mr-10 max-[600px]:mr-0 max-[600px]:block">
-      {project.no}
+      {project.number}
     </span>
     <div className="flex flex-col justify-between gap-6">
       <div>
-        <Link
+        <ExternalLink
           href="https://github.com/trinhbond/random-jokes"
           className="text-green-300 font-medium hover:underline"
         >
           {project.name} ({project.year})
-        </Link>
+        </ExternalLink>
         <p>{project.description}</p>
       </div>
       <div className="flex flex-row gap-2 flex-wrap text-[12px]">

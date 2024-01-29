@@ -14,4 +14,4 @@ const ExternalLink = ({ children, href, icon, className }: LinkProps) => (
   </a>
 );
 
-export default ExternalLink;
+export { ExternalLink };

@@ -1,12 +1,13 @@
 import { useEffect, useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
-import { Hamburger } from "../icons/Hamburger";
-import Drawer from "./Drawer";
+import { Hamburger } from "../../icons/Hamburger";
+import { Drawer } from "../Drawer";
+import { Backdrop } from "../Backdrop";
 
 const Header = () => {
   const ref = useRef<HTMLDivElement>(null);
   const [width, setWidth] = useState(0);
-  const [open, setOpen] = useState<boolean>(false);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
 
   useEffect(() => {
     if (ref.current !== null) setWidth(ref.current.offsetWidth);
@@ -20,7 +21,7 @@ const Header = () => {
   }, []);
 
   useEffect(() => {
-    if (width > 600) setOpen(false);
+    if (width > 600) setIsOpen(false);
   }, [width]);
 
   return (
@@ -58,19 +59,24 @@ const Header = () => {
         ) : (
           <button
             className={`rounded-full p-2 hover:bg-zinc-800 ${
-              open && "bg-zinc-800"
+              isOpen && "bg-zinc-800"
             }`}
             onClick={() => {
-              setOpen((open) => !open);
+              setIsOpen((open) => !open);
             }}
           >
             <Hamburger />
           </button>
         )}
       </nav>
-      {open && <Drawer />}
+      {isOpen && (
+        <>
+          <Backdrop />
+          <Drawer isOpen={isOpen} onClose={() => setIsOpen(false)} />
+        </>
+      )}
     </header>
   );
 };
 
-export default Header;
+export { Header };
