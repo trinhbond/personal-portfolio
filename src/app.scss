@@ -2,13 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    font-family: "Inter", sans-serif;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
 
 html,
 body {
-  font-family: "Inter", sans-serif;
   background: rgb(0 0 0);
 }
 
