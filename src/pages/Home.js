@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import ExternalLink from "../components/ExternalLink";
+import { ExternalLink } from "../components/ExternalLink";
 import { GitHub } from "../icons/GitHub";
 import { LinkedIn } from "../icons/LinkedIn";
 import { ReactSVG as React } from "../icons/React";
