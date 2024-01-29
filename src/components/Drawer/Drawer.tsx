@@ -7,8 +7,8 @@ interface DrawerProps {
 
 const Drawer = () => {
   return (
-    <div className="px-6 py-2 z-[10] rounded w-1/3 fixed right-8 top-20 bg-[#141414]">
-      <ul className="flex flex-col justify-center text-lg h-[100px]">
+    <div className="px-6 py-2 z-[10] rounded fixed right-8 top-20 bg-[#141414] text-lg max-[600px]:text-base">
+      <ul className="flex flex-col justify-center h-[100px]">
         <li className="leading-8">
           <NavLink
             to="/experience"
