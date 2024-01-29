@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
 interface DrawerProps {
@@ -6,11 +5,7 @@ interface DrawerProps {
   onClose?: () => void;
 }
 
-const Drawer = ({ isOpen }: DrawerProps) => {
-  useEffect(() => {
-    console.log({ isOpen });
-  }, [isOpen]);
-
+const Drawer = () => {
   return (
     <div className="px-6 py-2 z-[10] rounded w-1/3 fixed right-8 top-20 bg-[#141414]">
       <ul className="flex flex-col justify-center text-lg h-[100px]">
