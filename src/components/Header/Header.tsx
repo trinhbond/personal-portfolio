@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import { Hamburger } from "../../icons/Hamburger";
 import { Drawer } from "../Drawer";
 import { Backdrop } from "../Backdrop";
+import { Close } from "../../icons/Close";
 
 const Header = () => {
   const ref = useRef<HTMLDivElement>(null);
@@ -29,7 +30,7 @@ const Header = () => {
       className="max-w-3xl py-8 px-4 max-[600px]:px-6 m-auto text-white relative"
       ref={ref}
     >
-      <nav className="flex flex-row justify-between items-center align-center">
+      <nav className="flex flex-row justify-between items-center align-center relative z-[20]">
         <NavLink to="/" className="select-none font-semibold text-lg">
           bond
         </NavLink>
@@ -58,21 +59,19 @@ const Header = () => {
           </div>
         ) : (
           <button
-            className={`rounded-full p-2 hover:bg-zinc-800 ${
-              isOpen && "bg-zinc-800"
-            }`}
+            className="rounded-full p-2 hover:bg-zinc-800"
             onClick={() => {
               setIsOpen((open) => !open);
             }}
           >
-            <Hamburger />
+            {isOpen ? <Close /> : <Hamburger />}
           </button>
         )}
       </nav>
       {isOpen && (
         <>
           <Backdrop />
-          <Drawer isOpen={isOpen} onClose={() => setIsOpen(false)} />
+          <Drawer isOpen={isOpen} />
         </>
       )}
     </header>
