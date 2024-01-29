@@ -59,7 +59,7 @@ const Header = () => {
           </div>
         ) : (
           <button
-            className="rounded-full p-2 hover:bg-zinc-800"
+            className="rounded-full p-2"
             onClick={() => {
               setIsOpen((open) => !open);
             }}
@@ -71,7 +71,7 @@ const Header = () => {
       {isOpen && (
         <>
           <Backdrop />
-          <Drawer isOpen={isOpen} />
+          <Drawer />
         </>
       )}
     </header>
