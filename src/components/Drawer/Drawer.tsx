@@ -7,35 +7,33 @@ interface DrawerProps {
 
 const Drawer = () => {
   return (
-    <div className="px-6 py-2 z-[10] rounded absolute block ml-auto mr-0 right-8 top-20 bg-[#141414]">
-      <ul className="flex flex-col justify-center h-[100px]">
-        <li className="leading-8">
-          <NavLink
-            to="/experience"
-            className={({ isActive }) =>
-              `select-none ${
-                isActive ? "text-green-300" : "hover:text-zinc-300"
-              }`
-            }
-          >
-            Experience
-          </NavLink>
-        </li>
-        <li className="leading-8">
-          <NavLink
-            to="/projects"
-            className={({ isActive }) =>
-              `select-none hover:text-green-300 ${
-                isActive ? "text-green-300" : "hover:text-zinc-300"
-              }`
-            }
-          >
-            Projects
-          </NavLink>
-        </li>
-      </ul>
+    <div className="z-[10] rounded-md absolute block ml-auto mr-0 right-5 top-20 bg-[#141414]">
+      <div className="flex flex-col justify-center h-[100px] px-2">
+        <NavLink
+          to="/experience"
+          className={({ isActive }) =>
+            `select-none px-4 py-2 ${
+              isActive ? "rounded-md bg-zinc-800" : "hover:text-zinc-300"
+            }`
+          }
+        >
+          Experience
+        </NavLink>
+        <NavLink
+          to="/projects"
+          className={({ isActive }) =>
+            `select-none px-4 py-2 ${
+              isActive ? "rounded-md bg-zinc-800" : "hover:text-zinc-300"
+            }`
+          }
+        >
+          Projects
+        </NavLink>
+      </div>
     </div>
   );
 };
 
 export { Drawer };
+
+// #929295

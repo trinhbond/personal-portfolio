@@ -27,7 +27,7 @@ const Header = () => {
 
   return (
     <header
-      className="max-w-3xl py-8 px-4 max-[600px]:px-6 m-auto text-white relative"
+      className="max-w-3xl py-8 px-4 max-[600px]:px-5 m-auto text-white relative"
       ref={ref}
     >
       <nav className="flex flex-row justify-between items-center align-center relative z-[20]">
@@ -59,7 +59,6 @@ const Header = () => {
           </div>
         ) : (
           <button
-            className="rounded-full p-2"
             onClick={() => {
               setIsOpen((open) => !open);
             }}
