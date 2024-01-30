@@ -22,12 +22,12 @@ function Home() {
             <span className="text-4xl font-bold">Bond Trinh.</span>
           </p>
           <p>
-            I am a{" "}
-            <span className="text-green-300">junior software engineer</span> who
-            enjoys front-end development and all things UX/UI. I graduated from
-            AUT with a Bachelor of Computer and Information Sciences, majoring
-            in Software Development. I am currently focused on learning
-            front-end development using modern technologies.
+            I am an aspiring{" "}
+            <span className="text-green-300">software engineer</span> who enjoys
+            front-end development and all things UX/UI. I graduated from AUT
+            with a Bachelor of Computer and Information Sciences, majoring in
+            Software Development. I am currently focused on learning front-end
+            development using modern technologies.
           </p>
         </div>
         <img src={Me} className="w-1/3 m-auto rounded-full" alt="Idiot" />
