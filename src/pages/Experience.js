@@ -9,7 +9,9 @@ function Experience() {
     <main className="max-w-3xl py-10 px-5 m-auto text-white overflow-x-hidden max-[600px]:text-base">
       <h1 className="font-semibold text-[26px] mb-10">Experience</h1>
       <div className="animate work flex flex-row max-[600px]:flex-col flex-wrap gap-4">
-        <div className="font-medium w-1/6 max-[600px]:w-auto">2022 - 2023</div>
+        <div className="font-medium w-1/6 max-[600px]:w-auto whitespace-nowrap">
+          2022 - 2023
+        </div>
         <div className="w-4/5 max-[600px]:w-auto flex flex-col gap-6">
           <div>
             <h2 className="font-bold">Junior Software Engineer</h2>
