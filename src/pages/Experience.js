@@ -35,7 +35,7 @@ function Experience() {
               "Confluence",
               "Linear",
             ].map((i) => (
-              <span className="flex-1 max-w-min whitespace-nowrap rounded-full text-center text-black font-bold bg-green-300 px-3.5 py-1.5">
+              <span className="flex-1 max-w-min whitespace-nowrap rounded-full text-center text-black font-bold bg-green-300 px-[16px] py-[4px]">
                 {i}
               </span>
             ))}
