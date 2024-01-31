@@ -6,7 +6,7 @@ import { ReactSVG as React } from "../icons/React";
 import { TailWindSVG as TailWind } from "../icons/Tailwind";
 import { TypeScriptSVG as TypeScript } from "../icons/TypeScript";
 import { Wave } from "../icons/Wave";
-import Me from "../me.jpg";
+import Avatar from "../me.jpg";
 
 function Home() {
   useEffect(() => {
@@ -22,15 +22,14 @@ function Home() {
             <span className="text-4xl font-bold">Bond Trinh.</span>
           </p>
           <p>
-            I am an aspiring{" "}
-            <span className="text-green-300">software engineer</span> who enjoys
-            front-end development and all things UX/UI. I graduated from AUT
-            with a Bachelor of Computer and Information Sciences, majoring in
-            Software Development. I am currently focused on learning front-end
-            development using modern technologies.
+            I am an aspiring software engineer who enjoys front-end development
+            and all things UX/UI. I graduated from AUT with a Bachelor of
+            Computer and Information Sciences, majoring in Software Development.
+            I am currently focused on learning front-end development using
+            modern technologies.
           </p>
         </div>
-        <img src={Me} className="w-1/3 m-auto rounded-full" alt="Idiot" />
+        <img src={Avatar} className="w-1/3 m-auto rounded-full" alt="Idiot" />
         <div className="middle flex flex-col gap-2 self-center">
           <ExternalLink
             icon={<Wave />}
