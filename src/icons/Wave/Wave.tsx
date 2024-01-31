@@ -1,4 +1,4 @@
-export const Wave = () => (
+const Wave = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="24"
@@ -62,3 +62,5 @@ export const Wave = () => (
     </g>
   </svg>
 );
+
+export { Wave };

@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
-import { Hamburger } from "../../icons/Hamburger";
+import { Hamburger } from "../../icons/Hamburger/Hamburger";
 import { Drawer } from "../Drawer";
 import { Backdrop } from "../Backdrop";
-import { Close } from "../../icons/Close";
+import { Close } from "../../icons/Close/Close";
 
 const Header = () => {
   const ref = useRef<HTMLDivElement>(null);

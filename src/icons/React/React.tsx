@@ -1,4 +1,4 @@
-export const ReactSVG = () => (
+const ReactSVG = () => (
   <svg
     width="24"
     height="24"
@@ -16,3 +16,5 @@ export const ReactSVG = () => (
     </g>
   </svg>
 );
+
+export { ReactSVG };

@@ -3,8 +3,8 @@ import { ExternalLink } from "../components/ExternalLink";
 import { GitHub } from "../icons/GitHub";
 import { LinkedIn } from "../icons/LinkedIn";
 import { ReactSVG as React } from "../icons/React";
-import { TailWindSVG as TailWind } from "../icons/Tailwind";
-import { TypeScriptSVG as TypeScript } from "../icons/TypeScript";
+import { Tailwind } from "../icons/Tailwind";
+import { TypeScript } from "../icons/TypeScript";
 import { Wave } from "../icons/Wave";
 import Avatar from "../me.jpg";
 
@@ -55,7 +55,7 @@ function Home() {
         </div>
         <div className="bottom self-center">
           <ul className="flex flex-row gap-8 max-[330px]:flex-col">
-            {[<React />, <TypeScript />, <TailWind />].map((tool, index) => (
+            {[<React />, <TypeScript />, <Tailwind />].map((tool, index) => (
               <li className="m-auto" key={index}>
                 {tool}
               </li>

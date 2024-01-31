@@ -1,4 +1,4 @@
-export const TailWindSVG = () => (
+const Tailwind = () => (
   <svg
     viewBox="0 0 248 31"
     className="text-slate-900 dark:text-white w-auto h-5"
@@ -17,3 +17,5 @@ export const TailWindSVG = () => (
     ></path>
   </svg>
 );
+
+export { Tailwind };

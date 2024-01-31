@@ -1,4 +1,4 @@
-export const TypeScriptSVG = () => (
+const TypeScript = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
@@ -16,3 +16,5 @@ export const TypeScriptSVG = () => (
     />
   </svg>
 );
+
+export { TypeScript };
