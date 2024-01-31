@@ -7,7 +7,7 @@ interface DrawerProps {
 
 const Drawer = () => {
   return (
-    <div className="z-[10] rounded-md absolute block ml-auto mr-0 right-5 top-20 bg-[#141414]">
+    <div className="z-[10] rounded-md absolute block right-5 top-20 bg-[#141414]">
       <div className="flex flex-col justify-center h-[100px] px-2">
         <NavLink
           to="/experience"
