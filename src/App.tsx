@@ -13,12 +13,14 @@ function App() {
   );
 
   const ErrorPage = () => (
-    <div className="max-w-3xl max-[600px]:py-5 py-10 px-5 text-white overflow-x-hidden m-auto">
-      <div className="flex flex-col justify-center align-center gap-3">
-        <h1 className="text-2xl font-medium">Error 404</h1>
-        <p className="text-lg">Oops... This page could not be found. </p>
-        <Link to="/" className="text-lg hover:text-green-300 mt-4">
-          Back to <span className="underline">Home</span>
+    <div className="animate max-w-3xl max-[600px]:py-5 py-10 px-5 text-white overflow-x-hidden m-auto absolute left-0 right-0 top-0 flex justify-center h-dvh">
+      <div className="flex flex-col justify-center align-center gap-6">
+        <div>
+          <h1 className="text-4xl font-bold">Error 404</h1>
+          <p>This page could not be found. </p>
+        </div>
+        <Link to="/">
+          Back to <span className="underline text-green-300">Home</span>
         </Link>
       </div>
     </div>
