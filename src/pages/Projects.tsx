@@ -36,7 +36,7 @@ export const ProjectCard = (project: ProjectsProps) => (
       <div>
         <ExternalLink
           href="https://github.com/trinhbond/random-jokes"
-          className="font-medium hover:underline hover:text-green-300"
+          className="font-medium hover:underline hover:text-green-300 block pb-2"
         >
           {project.name} ({project.year})
         </ExternalLink>
