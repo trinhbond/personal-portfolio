@@ -27,7 +27,7 @@ const Header = () => {
 
   return (
     <header
-      className="max-w-3xl py-8 px-4 max-[600px]:px-5 m-auto text-white relative"
+      className="max-w-3xl py-10 px-5 m-auto text-white relative"
       ref={ref}
     >
       <nav className="flex flex-row justify-between items-center align-center relative z-[20]">

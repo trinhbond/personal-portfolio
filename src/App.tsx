@@ -13,7 +13,7 @@ function App() {
   );
 
   const ErrorPage = () => (
-    <div className="animate max-w-3xl max-[600px]:py-5 py-10 px-5 text-white overflow-x-hidden m-auto absolute left-0 right-0 top-0 flex justify-center h-dvh">
+    <div className="animate max-w-3xl py-5 py-10 px-5 text-white overflow-x-hidden m-auto absolute left-0 right-0 top-0 flex justify-center h-dvh">
       <div className="flex flex-col justify-center align-center gap-6">
         <div>
           <h1 className="text-4xl font-bold">Error 404</h1>

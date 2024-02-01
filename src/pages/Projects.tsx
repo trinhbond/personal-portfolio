@@ -16,7 +16,7 @@ function Projects() {
   }, []);
 
   return (
-    <main className="max-w-3xl py-10 px-5 m-auto text-white max-[600px]:text-base overflow-x-hidden flex flex-col gap-12">
+    <main className="max-w-3xl py-10 px-5 m-auto text-white text-base overflow-x-hidden flex flex-col gap-12">
       <div>
         <h1 className="font-bold text-[26px]">Projects</h1>
         <p>Some projects that I've worked on.</p>
