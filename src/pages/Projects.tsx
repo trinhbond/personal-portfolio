@@ -19,7 +19,7 @@ function Projects() {
     <main className="max-w-3xl py-10 px-5 m-auto text-white text-base overflow-x-hidden flex flex-col gap-12">
       <div>
         <h1 className="font-bold text-[26px]">Projects</h1>
-        <p>Some projects that I've worked on.</p>
+        <p className="text-[#ababab]">Some projects that I've worked on.</p>
       </div>
       <div className="flex flex-col gap-16 flex-wrap">
         {projects.map((project, index) => (
@@ -36,11 +36,11 @@ export const ProjectCard = (project: ProjectsProps) => (
       <div>
         <ExternalLink
           href="https://github.com/trinhbond/random-jokes"
-          className="font-medium hover:underline hover:text-green-300 block pb-2"
+          className="font-medium hover:underline block pb-2"
         >
           {project.name} ({project.year})
         </ExternalLink>
-        <p>{project.description}</p>
+        <p className="text-[#ababab]">{project.description}</p>
       </div>
       <div className="flex flex-row gap-2 flex-wrap text-[12px]">
         {project.tech.map((i) => (

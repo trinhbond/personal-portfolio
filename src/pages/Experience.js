@@ -15,7 +15,7 @@ function Experience() {
         <div className="w-4/5 max-[600px]:w-auto flex flex-col gap-6">
           <div>
             <h2 className="font-bold">Junior Software Engineer</h2>
-            <span>Nui Markets</span>
+            <span className="text-[#ababab]">Nui Markets</span>
           </div>
           <p>
             Assumed multiple responsibilities involving frontend development and

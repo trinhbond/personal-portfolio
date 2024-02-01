@@ -29,26 +29,30 @@ function Home() {
             modern technologies.
           </p>
         </div>
-        <img src={Avatar} className="w-1/3 m-auto rounded-full" alt="Idiot" />
+        <img
+          src={Avatar}
+          className="max-[600px]:w-1/2 w-1/3 m-auto rounded-full"
+          alt="Idiot"
+        />
         <div className="middle flex flex-col gap-2 self-center">
           <ExternalLink
             icon={<Wave />}
             href="mailto:bond.nicktrinh@gmail.com"
-            className="hover:underline hover:text-green-300"
+            className="hover:underline hover:text-[#ababab]"
           >
             Email me
           </ExternalLink>
           <ExternalLink
             icon={<GitHub />}
             href="https://www.github.com/trinhbond"
-            className="hover:underline hover:text-green-300"
+            className="hover:underline hover:text-[#ababab]"
           >
             Check out my repository
           </ExternalLink>
           <ExternalLink
             icon={<LinkedIn />}
             href="https://www.linkedin.com/in/bondnicktrinh/"
-            className="hover:underline hover:text-green-300"
+            className="hover:underline hover:text-[#ababab]"
           >
             Connect with me
           </ExternalLink>

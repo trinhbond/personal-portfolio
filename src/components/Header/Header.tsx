@@ -39,8 +39,8 @@ const Header = () => {
             <NavLink
               to="/experience"
               className={({ isActive }) =>
-                `select-none hover:text-green-300 ${
-                  isActive && "text-green-300"
+                `select-none hover:text-[#ababab] ${
+                  isActive && "text-[#ababab]"
                 }`
               }
             >
@@ -49,8 +49,8 @@ const Header = () => {
             <NavLink
               to="/projects"
               className={({ isActive }) =>
-                `select-none hover:text-green-300 ${
-                  isActive && "text-green-300"
+                `select-none hover:text-[#ababab] ${
+                  isActive && "text-[#ababab]"
                 }`
               }
             >
