@@ -35,5 +35,3 @@ const Drawer = () => {
 };
 
 export { Drawer };
-
-// #929295
