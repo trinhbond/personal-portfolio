@@ -8,7 +8,7 @@ import { TypeScript } from "../icons/TypeScript";
 import { Wave } from "../icons/Wave";
 import Avatar from "../me.jpg";
 
-function Home() {
+const Home = () => {
   useEffect(() => {
     document.title = "Home | Bond Trinh";
   }, []);
@@ -69,6 +69,6 @@ function Home() {
       </div>
     </main>
   );
-}
+};
 
 export default Home;

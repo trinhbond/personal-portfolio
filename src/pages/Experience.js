@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-function Experience() {
+const Experience = () => {
   useEffect(() => {
     document.title = "Experience | Bond Trinh";
   }, []);
@@ -46,6 +46,6 @@ function Experience() {
       </div>
     </main>
   );
-}
+};
 
 export default Experience;

@@ -4,7 +4,7 @@ import { Header } from "./components/Header";
 import Home from "./pages/Home";
 import Experience from "./pages/Experience";
 
-function App() {
+const App = () => {
   const Layout = () => (
     <>
       <Header />
@@ -38,6 +38,6 @@ function App() {
       </Routes>
     </BrowserRouter>
   );
-}
+};
 
 export default App;

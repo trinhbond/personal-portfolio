@@ -10,7 +10,7 @@ interface ProjectsProps {
   tech: string[];
 }
 
-function Projects() {
+const Projects = () => {
   useEffect(() => {
     document.title = "Projects | Bond Trinh";
   }, []);
@@ -28,7 +28,7 @@ function Projects() {
       </div>
     </main>
   );
-}
+};
 
 export const ProjectCard = (project: ProjectsProps) => (
   <div className="animate flex flex-row max-[768px]:flex-col gap-3">
