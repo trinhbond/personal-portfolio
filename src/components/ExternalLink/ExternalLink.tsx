@@ -5,8 +5,8 @@ interface LinkProps {
   className?: string;
 }
 
-const ExternalLink = ({ children, href, icon, className }: LinkProps) => (
-  <a className={className} href={href} target="_blank" rel="noreferrer">
+const ExternalLink = ({ children, icon, ...props }: LinkProps) => (
+  <a {...props} target="_blank" rel="noreferrer">
     {icon && (
       <span className="fill-white mr-3 inline-block align-middle">{icon}</span>
     )}
