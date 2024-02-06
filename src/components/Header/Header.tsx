@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, ElementRef } from "react";
 import { NavLink } from "react-router-dom";
 import { Hamburger } from "../../icons/Hamburger/Hamburger";
 import { Drawer } from "../Drawer";
@@ -6,7 +6,7 @@ import { Backdrop } from "../Backdrop";
 import { Close } from "../../icons/Close/Close";
 
 const Header = () => {
-  const ref = useRef<HTMLDivElement>(null);
+  const ref = useRef<ElementRef<"header">>(null);
   const [width, setWidth] = useState(0);
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
