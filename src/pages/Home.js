@@ -6,7 +6,7 @@ import { ReactSVG as React } from "../icons/React";
 import { Tailwind } from "../icons/Tailwind";
 import { TypeScript } from "../icons/TypeScript";
 import { Wave } from "../icons/Wave";
-import Avatar from "../me.jpg";
+import Avatar from "../avatar.jpg";
 
 const Home = () => {
   useEffect(() => {
@@ -16,7 +16,7 @@ const Home = () => {
   return (
     <main className="animate max-w-3xl py-10 px-5 m-auto text-white overflow-x-hidden">
       <div className="flex flex-col justify-center align-center gap-16">
-        <div className="top">
+        <div>
           <p className="mb-6">
             Hey, my name is <br />
             <span className="text-4xl font-bold">Bond Trinh.</span>
@@ -34,7 +34,7 @@ const Home = () => {
           className="max-[600px]:w-1/2 w-1/3 m-auto rounded-full"
           alt="Idiot"
         />
-        <div className="middle flex flex-col gap-2 self-center">
+        <div className="flex flex-col gap-2 self-center">
           <ExternalLink
             icon={<Wave />}
             href="mailto:bond.nicktrinh@gmail.com"
@@ -57,7 +57,7 @@ const Home = () => {
             Connect with me
           </ExternalLink>
         </div>
-        <div className="bottom self-center">
+        <div className="self-center">
           <ul className="flex flex-row gap-8 max-[330px]:flex-col">
             {[<React />, <TypeScript />, <Tailwind />].map((tool, index) => (
               <li className="m-auto" key={index}>

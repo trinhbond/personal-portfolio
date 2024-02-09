@@ -26,11 +26,8 @@ const Header = () => {
   }, [width]);
 
   return (
-    <header
-      className="max-w-3xl py-10 px-5 m-auto text-white relative"
-      ref={ref}
-    >
-      <nav className="flex flex-row justify-between items-center align-center relative z-[20]">
+    <header className="text-white" ref={ref}>
+      <nav className="max-w-3xl py-10 px-5 m-auto flex flex-row justify-between items-center align-center relative z-[20]">
         <NavLink to="/" className="select-none font-semibold text-lg">
           bond
         </NavLink>
