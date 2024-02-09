@@ -47,7 +47,7 @@ const Home = () => {
             href="https://www.github.com/trinhbond"
             className="hover:underline hover:text-[#ababab]"
           >
-            Check out my repository
+            Check out my repositories
           </ExternalLink>
           <ExternalLink
             icon={<LinkedIn />}
