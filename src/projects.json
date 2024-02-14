@@ -3,14 +3,14 @@
     "name": "Portfolio Website",
     "year": 2022,
     "number": "02",
-    "description": "A web app showcasing my projects and sharing my professional experience, built with React and hosted on Vercel.",
+    "description": "Personal website built with React and hosted on Vercel. Designed and developed using Tailwind CSS with custom components supported with TypeScript.",
     "tech": ["React", "Tailwind CSS", "React Router", "SCSS", "TypeScript"]
   },
   {
     "name": "Jokes App",
     "year": 2023,
     "number": "01",
-    "description": "A single page web app for fetching a list of random jokes using React Query, built with custom components supported by TypeScript & Material UI.",
+    "description": "A single page web application for generating a list of random jokes from an external API using Axios, leveraging Material UI for a simple user interface. Data fetching and caching is handled using React Query.",
     "tech": ["React", "React Query", "Material UI", "SCSS", "TypeScript"]
   }
 ]
