@@ -7,15 +7,44 @@ import { Tailwind } from "../icons/Tailwind";
 import { TypeScript } from "../icons/TypeScript";
 import { Wave } from "../icons/Wave";
 import Avatar from "../avatar.jpg";
+import { motion } from "framer-motion";
 
 const Home = () => {
+  const container = {
+    hidden: { opacity: 1, scale: 0 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delayChildren: 0.3,
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const item = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+    },
+  };
+
   useEffect(() => {
     document.title = "Home | Bond Trinh";
   }, []);
 
   return (
-    <main className="animate max-w-3xl py-10 px-5 m-auto text-white overflow-x-hidden">
-      <div className="flex flex-col justify-center align-center gap-16">
+    <motion.main
+      variants={container}
+      initial="hidden"
+      animate="visible"
+      className="animate max-w-3xl py-10 px-5 m-auto text-white overflow-x-hidden"
+    >
+      <motion.div
+        variants={item}
+        className="flex flex-col justify-center align-center gap-16"
+      >
         <div>
           <p className="mb-6">
             Hey, my name is <br />
@@ -66,8 +95,8 @@ const Home = () => {
             ))}
           </ul>
         </div>
-      </div>
-    </main>
+      </motion.div>
+    </motion.main>
   );
 };
 

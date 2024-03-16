@@ -1,8 +1,9 @@
-import { useEffect } from "react";
-import { ExternalLink } from "../components/ExternalLink";
 import projects from "../projects.json";
+import { motion } from "framer-motion";
+import { ExternalLink } from "../components/ExternalLink";
+import { useEffect } from "react";
 
-interface ProjectsProps {
+interface ProjectProps {
   name: string;
   year: number;
   number?: string;
@@ -10,7 +11,27 @@ interface ProjectsProps {
   tech: string[];
 }
 
-const Projects = () => {
+function Projects() {
+  const container = {
+    hidden: { opacity: 1, scale: 0 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delayChildren: 0.3,
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const item = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+    },
+  };
+
   useEffect(() => {
     document.title = "Projects | Bond Trinh";
   }, []);
@@ -18,20 +39,29 @@ const Projects = () => {
   return (
     <main className="max-w-3xl py-10 px-5 m-auto text-white overflow-x-hidden flex flex-col gap-12">
       <div>
-        <h1 className="font-bold text-[26px]">Projects</h1>
-        <p className="text-[#ababab]">Some projects that I've worked on.</p>
+        <div>
+          <h1 className="font-bold text-[26px]">Projects</h1>
+          <p className="text-[#ababab]">Some projects that I've worked on.</p>
+        </div>
       </div>
-      <div className="flex flex-col gap-16 flex-wrap">
+      <motion.ul
+        className="grid overflow-hidden m-0 list-none grid-cols-1 grid-rows-2 gap-[30px]"
+        variants={container}
+        initial="hidden"
+        animate="visible"
+      >
         {projects.map((project, index) => (
-          <ProjectCard {...project} key={index} />
+          <motion.li key={index} variants={item}>
+            <ProjectCard {...project} key={index} />
+          </motion.li>
         ))}
-      </div>
+      </motion.ul>
     </main>
   );
-};
+}
 
-export const ProjectCard = (project: ProjectsProps) => (
-  <div className="animate flex flex-row max-[768px]:flex-col gap-3">
+export const ProjectCard = (project: ProjectProps) => (
+  <div className="flex flex-row max-[768px]:flex-col gap-3">
     <div className="flex flex-col justify-between gap-6">
       <div>
         <ExternalLink
