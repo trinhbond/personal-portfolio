@@ -39,7 +39,7 @@ const Home = () => {
       variants={container}
       initial="hidden"
       animate="visible"
-      className="animate max-w-3xl py-10 px-5 m-auto text-white overflow-x-hidden"
+      className="max-w-3xl py-10 px-5 m-auto text-white overflow-x-hidden"
     >
       <motion.div
         variants={item}
