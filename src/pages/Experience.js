@@ -54,14 +54,29 @@ const Experience = () => {
                   Nui Markets
                 </span>
               </div>
-              <p className="text-[#ababab]">
-                Assumed multiple responsibilities involving frontend development
-                and test automation. Typical responsibilities included styling
-                React components and collaborating with a UX/UI Designer to
-                bring design ideas to life. Additionally, I have experience in
-                creating end-to-end tests to optimise and improve the Nui
-                Markets platform, resolving bugs and identifying edge cases.
-              </p>
+              <ul className="text-[#ababab] pl-[16.5px] list-disc flex flex-col flex-wrap gap-4 ">
+                <li>
+                  Collaborated with a UX/UI Designer to improve the Nui Markets
+                  platform, implementing React component designs from Figma
+                  using CSS to align with current design trends.
+                </li>
+                <li>
+                  Optimised and improved performance on the Nui Markets platform
+                  by identifying edge cases and resolving bugs through
+                  comprehensive tests using Playwright, JavaScript & TypeScript.
+                </li>
+                <li>
+                  Converted the test automation codebase from JavaScript to
+                  TypeScript, resulting in less type conflicts and improved code
+                  maintainance and readability.
+                </li>
+                <li>
+                  Drafted release notes for the frontend repository and created
+                  a standard format for fellow software engineers to adhere to,
+                  providing a more descriptive overview for feature updates and
+                  bug fixes.
+                </li>
+              </ul>
             </div>
             <div className="flex flex-row gap-2 flex-wrap text-[12px]">
               {[
