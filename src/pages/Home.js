@@ -2,38 +2,8 @@ import avatar from "../avatar.jpg";
 import { motion } from "framer-motion";
 import projects from "../projects.json";
 import { Launch } from "../icons/Launch";
-
-interface ProjectProps {
-  name: string;
-  year: number;
-  description: string;
-  tech: string[];
-  link: string;
-}
-
-const Project = (project: ProjectProps) => (
-  <div className="flex flex-row justify-between gap-8 flex-wrap">
-    <div>
-      <span className="text-[#ababab]">{project.year}</span>
-    </div>
-    <a
-      target="_blank"
-      rel="noreferrer"
-      href={project.link}
-      className="block hover:underline"
-    >
-      {project.name} <Launch />
-    </a>
-    <p className="text-[#e6e6e6]">{project.description}</p>
-    <div className="flex flex-row gap-2 flex-wrap">
-      {project.tech.map((i) => (
-        <span className="flex-1 max-w-min whitespace-nowrap rounded-full text-center text-xs text-[#cdcdcd] bg-[#333333] px-[16px] py-[4px]">
-          {i}
-        </span>
-      ))}
-    </div>
-  </div>
-);
+import { Footer } from "../components/Footer";
+import { ProjectItem } from "../components/Project";
 
 function Home() {
   return (
@@ -86,7 +56,7 @@ function Home() {
         <div className="projects w-full py-6 px-3 flex justify-center flex-col flex-wrap gap-6 font-medium">
           <h2>Side Projects</h2>
           {projects.map((project, index) => (
-            <Project {...project} key={index} />
+            <ProjectItem {...project} key={index} />
           ))}
         </div>
 
@@ -127,9 +97,7 @@ function Home() {
           </div>
         </div>
       </motion.div>
-      <footer className="px-3 pt-24 pb-12 absolute left-0 right-0">
-        <span className="font-medium">&copy; 2024 Bond Trinh</span>
-      </footer>
+      <Footer />
     </motion.main>
   );
 }
