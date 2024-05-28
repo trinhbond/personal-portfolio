@@ -103,10 +103,3 @@ function Home() {
 }
 
 export default Home;
-
-{
-  /* <div className="mt-4 inline-block w-fit text-[12px] bg-[#0c4a22] rounded-full px-6 py-1 flex flex-row items-center gap-2">
-  <Spotify />
-  <span>Post Malone - Chemicals</span>
-</div>; */
-}
