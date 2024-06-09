@@ -1,5 +1,12 @@
 [
   {
+    "name": "Ecommerce Application",
+    "year": 2024,
+    "description": "A work in progress user-friendly online shopping platform built using modern technologies. Commerce.js is integrated as the backend e-commerce solution handling functionalities such as product management, shopping cart, checkout, and payment processing.",
+    "tech": ["React", "React Router", "Material UI", "SCSS", "Commerce.js"],
+    "link": "https://github.com/trinhbond/ecommerce-application"
+  },
+  {
     "name": "Jokes",
     "year": 2023,
     "description": "A single page web application for generating a list of random jokes from an external API using Axios, leveraging Material UI for a simple user interface. Data fetching and caching is handled using React Query.",
