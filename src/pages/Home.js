@@ -67,10 +67,10 @@ function Home() {
             <a
               target="_blank"
               rel="noreferrer"
-              href={"mailto:bond.nicktrinh@gmail.com"}
+              href={"mailto:bondtrinh.it@gmail.com"}
               className="text-[#e6e6e6] hover:underline"
             >
-              bond.nicktrinh@gmail.com <Launch />
+              bondtrinh.it@gmail.com <Launch />
             </a>
           </div>
           <div className="flex flex-row max-[480px]:flex-col gap-10 max-[480px]:gap-0">
