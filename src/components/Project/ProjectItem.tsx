@@ -24,7 +24,7 @@ const ProjectItem = (project: ProjectProps) => (
     <p className="text-[#e6e6e6]">{project.description}</p>
     <div className="flex flex-row gap-2 flex-wrap">
       {project.tech.map((i) => (
-        <span className="flex-1 max-w-min whitespace-nowrap rounded-full text-center text-xs text-[#cdcdcd] bg-[#333333] px-[16px] py-[4px]">
+        <span className="min-w-fit rounded-full text-center text-xs text-[#cdcdcd] bg-[#333333] px-[16px] py-[4px]">
           {i}
         </span>
       ))}
