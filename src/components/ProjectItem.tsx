@@ -1,4 +1,5 @@
 import { Launch } from "../icons/Launch";
+import ExternalLink from "./ExternalLink";
 
 type ProjectItemProps = {
   name: string;
@@ -14,14 +15,13 @@ export default function ProjectItem(project: ProjectItemProps) {
       <div>
         <span className="text-[#ababab]">{project.year}</span>
       </div>
-      <a
-        target="_blank"
-        rel="noreferrer"
+      <ExternalLink
         href={project.link}
         className="block hover:underline"
+        icon={<Launch />}
       >
-        {project.name} <Launch />
-      </a>
+        {project.name}
+      </ExternalLink>
       <p className="text-[#e6e6e6]">{project.description}</p>
       <div className="flex flex-row gap-2 flex-wrap">
         {project.tech.map((i) => (
