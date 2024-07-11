@@ -2,10 +2,10 @@ import avatar from "../avatar.jpg";
 import { motion } from "framer-motion";
 import projects from "../projects.json";
 import { Launch } from "../icons/Launch";
-import { Footer } from "../components/Footer";
-import { ProjectItem } from "../components/Project";
+import Footer from "../components/Footer";
+import ProjectItem from "../components/ProjectItem";
 
-function Home() {
+export default function Home(): JSX.Element {
   return (
     <motion.main
       initial={{ opacity: 0, scale: 0.5, y: 0 }}
@@ -101,5 +101,3 @@ function Home() {
     </motion.main>
   );
 }
-
-export default Home;
