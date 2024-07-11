@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    box-sizing: border-box;
+    line-height: 1.6rem;
+  }
+
+  html {
+    color-scheme: light dark;
+    font-family: "Inter", sans-serif;
+
+    body {
+      min-height: 100vh;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    main {
+      margin-inline: auto;
+      width: min(80ch, 100%);
+    }
+  }
+}
