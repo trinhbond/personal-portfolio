@@ -4,6 +4,7 @@ import projects from "../projects.json";
 import { Launch } from "../icons/Launch";
 import Footer from "../components/Footer";
 import ProjectItem from "../components/ProjectItem";
+import ExternalLink from "../components/ExternalLink";
 
 export default function Home(): JSX.Element {
   return (
@@ -40,14 +41,13 @@ export default function Home(): JSX.Element {
               <span className="text-[#ababab]">2022 - 2023</span>
             </div>
             <div>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href={"https://www.nuimarkets.com/"}
+              <ExternalLink
                 className="block hover:underline"
+                href={"https://www.nuimarkets.com/"}
+                icon={<Launch />}
               >
-                Software Engineer at Nui Markets <Launch />
-              </a>
+                Software Engineer at Nui Markets
+              </ExternalLink>
               <span className="text-[#cdcdcd]">Hybrid</span>
             </div>
           </div>
@@ -64,36 +64,33 @@ export default function Home(): JSX.Element {
           <h2 className="font-semibold">Connect</h2>
           <div className="flex flex-row max-[480px]:flex-col gap-10 max-[480px]:gap-0">
             <span className="w-[75px] text-[#ababab]">Email</span>
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href={"mailto:bondtrinh.it@gmail.com"}
+            <ExternalLink
               className="text-[#e6e6e6] hover:underline"
+              href={"mailto:bondtrinh.it@gmail.com"}
+              icon={<Launch />}
             >
-              bondtrinh.it@gmail.com <Launch />
-            </a>
+              bondtrinh.it@gmail.com
+            </ExternalLink>
           </div>
           <div className="flex flex-row max-[480px]:flex-col gap-10 max-[480px]:gap-0">
             <span className="w-[75px] text-[#ababab]">GitHub</span>
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href={"https://www.github.com/trinhbond"}
+            <ExternalLink
               className="text-[#e6e6e6] hover:underline"
+              href={"https://www.github.com/trinhbond"}
+              icon={<Launch />}
             >
-              trinhbond <Launch />
-            </a>
+              trinhbond
+            </ExternalLink>
           </div>
           <div className="flex flex-row max-[480px]:flex-col gap-10 max-[480px]:gap-0">
             <span className="w-[75px] text-[#ababab]">LinkedIn</span>
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href={"https://www.linkedin.com/in/bondnicktrinh/"}
+            <ExternalLink
               className="text-[#e6e6e6] hover:underline"
+              href={"https://www.linkedin.com/in/bondnicktrinh/"}
+              icon={<Launch />}
             >
-              Bond Trinh <Launch />
-            </a>
+              Bond Trinh
+            </ExternalLink>
           </div>
         </div>
       </motion.div>
