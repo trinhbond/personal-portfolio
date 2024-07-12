@@ -10,7 +10,7 @@ My portfolio website built with React that details my work experience, projects,
 - [Vercel](https://vercel.com/)
 - [Framer Motion](https://www.framer.com/motion/)
 
-## Geting Started
+## Getting Started
 
 1. Install dependencies using `npm install`
 
