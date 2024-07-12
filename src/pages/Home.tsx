@@ -1,7 +1,7 @@
 import avatar from "../avatar.jpg";
 import { motion } from "framer-motion";
 import projects from "../projects.json";
-import { Launch } from "../icons/Launch";
+import Launch from "../icons/Launch";
 import Footer from "../components/Footer";
 import ProjectItem from "../components/ProjectItem";
 import ExternalLink from "../components/ExternalLink";
