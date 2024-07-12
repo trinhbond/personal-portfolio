@@ -61,7 +61,7 @@ export default function Home(): JSX.Element {
         </div>
 
         <div className="socials w-full py-6 px-3 flex justify-center flex-col flex-wrap gap-6 font-medium">
-          <h2 className="font-semibold">Connect</h2>
+          <h2>Connect</h2>
           <div className="flex flex-row max-[480px]:flex-col gap-10 max-[480px]:gap-0">
             <span className="w-[75px] text-gray-darker">Email</span>
             <ExternalLink
