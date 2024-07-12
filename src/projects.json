@@ -2,21 +2,21 @@
   {
     "name": "Ecommerce Application",
     "year": 2024,
-    "description": "A work in progress user-friendly online shopping platform built using modern technologies. Commerce.js is integrated as the backend e-commerce solution handling functionalities such as product management, shopping cart, checkout, and payment processing.",
+    "description": "A user-friendly online shopping platform built using modern technologies for users to browse and pay for clothes. Commerce.js is integrated as the backend e-commerce solution to handle functionalities such as product management, shopping cart, checkout, and payment processing. Material UI's themed components achieve styling consistency across the application.",
     "tech": ["React", "React Router", "Material UI", "SCSS", "Commerce.js"],
     "link": "https://github.com/trinhbond/ecommerce-application"
   },
   {
     "name": "Jokes",
     "year": 2023,
-    "description": "A single page web application for generating a list of random jokes from an external API using Axios, leveraging Material UI for a simple user interface. Data fetching and caching is handled using React Query.",
+    "description": "A single page-application built using React to display a list of random jokes. React Query is used for server state management and Axios is used to grab data from an external API.",
     "tech": ["React", "React Query", "Material UI", "SCSS", "TypeScript"],
     "link": "https://github.com/trinhbond/random-jokes"
   },
   {
     "name": "Portfolio",
     "year": 2022,
-    "description": "Personal website built with React and hosted on Vercel. Designed and developed using Tailwind CSS with custom components supported with TypeScript.",
+    "description": "Personal website built using React and hosted on Vercel. The application features technologies such as Tailwind CSS for the UI, TypeScript for custom components and Framer Motion for animated properties.",
     "tech": ["React", "Tailwind CSS", "React Router", "SCSS", "TypeScript"],
     "link": "https://github.com/trinhbond/personal-portfolio"
   }
