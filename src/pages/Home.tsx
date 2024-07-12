@@ -24,9 +24,9 @@ export default function Home(): JSX.Element {
             </div>
             <div className="right">
               <h1>Bond Trinh</h1>
-              <p className="text-[#cdcdcd]">Software Developer</p>
+              <p className="text-gray-dark">Software Developer</p>
             </div>
-            <p className="text-[#e6e6e6]">
+            <p className="text-gray-light">
               Hey, I'm Bond. I am a software developer with a year of
               professional development experience. I am passionate about areas
               in digital design such as UX/UI and frontend development.
@@ -38,7 +38,7 @@ export default function Home(): JSX.Element {
           <h2>Work Experience</h2>
           <div className="flex flex-row justify-between gap-6 flex-wrap">
             <div className="date">
-              <span className="text-[#ababab]">2022 - 2023</span>
+              <span className="text-gray-darker">2022 - 2023</span>
             </div>
             <div>
               <ExternalLink
@@ -48,7 +48,7 @@ export default function Home(): JSX.Element {
               >
                 Software Engineer at Nui Markets
               </ExternalLink>
-              <span className="text-[#cdcdcd]">Hybrid</span>
+              <span className="text-gray-dark">Hybrid</span>
             </div>
           </div>
         </div>
@@ -63,9 +63,9 @@ export default function Home(): JSX.Element {
         <div className="socials w-full py-6 px-3 flex justify-center flex-col flex-wrap gap-6 font-medium">
           <h2 className="font-semibold">Connect</h2>
           <div className="flex flex-row max-[480px]:flex-col gap-10 max-[480px]:gap-0">
-            <span className="w-[75px] text-[#ababab]">Email</span>
+            <span className="w-[75px] text-gray-darker">Email</span>
             <ExternalLink
-              className="text-[#e6e6e6] hover:underline"
+              className="text-gray-light hover:underline"
               href={"mailto:bondtrinh.it@gmail.com"}
               icon={<Launch />}
             >
@@ -73,9 +73,9 @@ export default function Home(): JSX.Element {
             </ExternalLink>
           </div>
           <div className="flex flex-row max-[480px]:flex-col gap-10 max-[480px]:gap-0">
-            <span className="w-[75px] text-[#ababab]">GitHub</span>
+            <span className="w-[75px] text-gray-darker">GitHub</span>
             <ExternalLink
-              className="text-[#e6e6e6] hover:underline"
+              className="text-gray-light hover:underline"
               href={"https://www.github.com/trinhbond"}
               icon={<Launch />}
             >
@@ -83,9 +83,9 @@ export default function Home(): JSX.Element {
             </ExternalLink>
           </div>
           <div className="flex flex-row max-[480px]:flex-col gap-10 max-[480px]:gap-0">
-            <span className="w-[75px] text-[#ababab]">LinkedIn</span>
+            <span className="w-[75px] text-gray-darker">LinkedIn</span>
             <ExternalLink
-              className="text-[#e6e6e6] hover:underline"
+              className="text-gray-light hover:underline"
               href={"https://www.linkedin.com/in/bondnicktrinh/"}
               icon={<Launch />}
             >

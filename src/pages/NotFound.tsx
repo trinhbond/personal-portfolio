@@ -14,7 +14,7 @@ export default function NotFound(): JSX.Element {
       <div className="flex flex-col justify-center align-center gap-8 w-max m-auto">
         <div>
           <h1 className="text-5xl font-bold mb-2">Error 404</h1>
-          <p className="text-[#e6e6e6]">This page could not be found. </p>
+          <p className="text-gray-light">This page could not be found. </p>
         </div>
         <Link to="/" className="underline">
           Back to Home
