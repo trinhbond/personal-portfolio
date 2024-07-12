@@ -1,4 +1,4 @@
-import { Launch } from "../icons/Launch";
+import Launch from "../icons/Launch";
 import ExternalLink from "./ExternalLink";
 
 type ProjectItemProps = {

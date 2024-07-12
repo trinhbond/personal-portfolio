@@ -1,1 +1,0 @@
-export { ReactSVG } from "./React";
