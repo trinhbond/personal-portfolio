@@ -30,7 +30,8 @@
       max-width: 100%;
     }
 
-    main {
+    main,
+    footer {
       margin-inline: auto;
       width: min(80ch, 100%);
     }
