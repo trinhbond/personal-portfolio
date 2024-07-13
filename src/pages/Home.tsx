@@ -46,9 +46,9 @@ export default function Home(): JSX.Element {
                 href={"https://www.nuimarkets.com/"}
                 icon={<Launch />}
               >
-                Software Engineer at Nui Markets
+                Nui Markets
               </ExternalLink>
-              <span className="text-gray-dark">Hybrid</span>
+              <span className="text-gray-dark">Software Engineer</span>
             </div>
           </div>
         </div>
