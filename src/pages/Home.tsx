@@ -34,7 +34,7 @@ export default function Home(): JSX.Element {
           </div>
         </div>
 
-        <div className="work w-full py-6 px-3 flex justify-center flex-col flex-wrap gap-6 font-medium">
+        <div className="w-full py-6 px-3 flex justify-center flex-col flex-wrap gap-6 font-medium">
           <h2>Work Experience</h2>
           <div className="flex flex-row justify-between gap-6 flex-wrap">
             <div className="date">
@@ -53,14 +53,14 @@ export default function Home(): JSX.Element {
           </div>
         </div>
 
-        <div className="projects w-full py-6 px-3 flex justify-center flex-col flex-wrap gap-6 font-medium">
+        <div className="w-full py-6 px-3 flex justify-center flex-col flex-wrap gap-6 font-medium">
           <h2>Side Projects</h2>
           {projects.map((project, index) => (
             <ProjectItem {...project} key={index} />
           ))}
         </div>
 
-        <div className="socials w-full py-6 px-3 flex justify-center flex-col flex-wrap gap-6 font-medium">
+        <div className="w-full py-6 px-3 flex justify-center flex-col flex-wrap gap-6 font-medium">
           <h2>Connect</h2>
           <div className="flex flex-row max-[480px]:flex-col gap-10 max-[480px]:gap-0">
             <span className="w-[75px] text-gray-darker">Email</span>
