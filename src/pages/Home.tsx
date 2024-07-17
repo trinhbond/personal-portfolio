@@ -35,8 +35,10 @@ export default function Home(): JSX.Element {
             </div>
             <p className="text-gray-light">
               Hey, I'm Bond. I am a software developer with a year of
-              professional development experience. I am passionate about areas
-              in digital design such as UX/UI and frontend development.
+              professional development experience with exposure to frontend
+              development, automation testing and digital design. I am
+              passionate about building digital experiences that are visually
+              appealing and functional.
             </p>
           </div>
         </motion.section>
