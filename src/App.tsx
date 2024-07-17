@@ -2,10 +2,11 @@ import { BrowserRouter, Outlet, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 
-const App = () => {
+export default function App() {
   const Layout = () => (
     <>
       <Outlet />
+      {/* Footer goes here */}
     </>
   );
 
@@ -19,6 +20,4 @@ const App = () => {
       </Routes>
     </BrowserRouter>
   );
-};
-
-export default App;
+}
