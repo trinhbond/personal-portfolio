@@ -1,7 +1,7 @@
 import Launch from "../icons/Launch";
 import ExternalLink from "./ExternalLink";
 
-type ProjectItemProps = {
+type ProjectProps = {
   name: string;
   year: number;
   description: string;
@@ -9,9 +9,12 @@ type ProjectItemProps = {
   link: string;
 };
 
-export default function ProjectItem(project: ProjectItemProps) {
+export default function Project(project: ProjectProps) {
   return (
-    <div className="flex flex-row justify-between gap-8 flex-wrap">
+    <div
+      className="flex flex-row justify-between gap-8 flex-wrap"
+      key={project.name}
+    >
       <div>
         <span className="text-gray-darker">{project.year}</span>
       </div>

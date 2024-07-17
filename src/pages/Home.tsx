@@ -55,8 +55,8 @@ export default function Home(): JSX.Element {
 
         <div className="w-full py-6 px-3 flex justify-center flex-col flex-wrap gap-6 font-medium">
           <h2>Side Projects</h2>
-          {projects.map((project, index) => (
-            <ProjectItem {...project} key={index} />
+          {projects.map((project) => (
+            <Project {...project} />
           ))}
         </div>
 
