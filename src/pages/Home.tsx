@@ -3,18 +3,15 @@ import { motion } from "framer-motion";
 import projects from "../projects.json";
 import Launch from "../icons/Launch";
 import Footer from "../components/Footer";
-import ProjectItem from "../components/ProjectItem";
+import Project from "../components/Project";
 import ExternalLink from "../components/ExternalLink";
 
 export default function Home(): JSX.Element {
   return (
     <motion.main
-      initial={{ opacity: 0, scale: 0.5, y: 0 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.5 }}
-      viewport={{ once: true }}
-      whileInView="visible"
-      className="relative text-sm"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.75 }}
     >
       <div className="py-6 px-3 flex flex-col justify-center items-center gap-6 leading-[1.6rem] text-sm">
         <div className="profile w-full py-6 px-3 flex justify-center flex-col gap-6 font-medium">
