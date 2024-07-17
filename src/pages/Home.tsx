@@ -16,7 +16,7 @@ export default function Home(): JSX.Element {
       whileInView="visible"
       className="relative text-sm"
     >
-      <div className="w-full py-6 px-3 flex flex-col justify-center items-center gap-6">
+      <div className="py-6 px-3 flex flex-col justify-center items-center gap-6 leading-[1.6rem] text-sm">
         <div className="profile w-full py-6 px-3 flex justify-center flex-col gap-6 font-medium">
           <div className="flex flex-row flex-wrap gap-6 items-center">
             <div className="w-[80px]">
