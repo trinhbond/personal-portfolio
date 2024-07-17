@@ -43,3 +43,7 @@ a,
 span:not(.text-xs) {
   color: white;
 }
+
+::selection {
+  background: #6f8c2b;
+}
