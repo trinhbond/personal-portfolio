@@ -14,11 +14,8 @@
     padding: 0;
   }
 
-  html {
-    color-scheme: dark light;
-  }
-
   body {
+    background: #1a210af7;
     font-family: "Inter", sans-serif;
   }
 
@@ -38,4 +35,11 @@
   display: inline-block;
   vertical-align: top;
   white-space: nowrap;
+}
+
+h1,
+h2,
+a,
+span:not(.text-xs) {
+  color: white;
 }
