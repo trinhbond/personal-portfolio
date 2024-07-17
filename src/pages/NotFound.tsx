@@ -2,14 +2,24 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 export default function NotFound(): JSX.Element {
+  const visible = { opacity: 1, y: 0, transition: { duration: 0.8 } };
+  const variant = {
+    hidden: { opacity: 0 },
+    visible,
+  };
+
   return (
     <motion.main
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.8 }}
       className="h-dvh content-center"
+      initial="hidden"
+      animate="visible"
+      exit={{ opacity: 0, transition: { duration: 1 } }}
+      variants={{ visible: { transition: { staggerChildren: 0.3 } } }}
     >
-      <div className="flex flex-col justify-center align-center gap-8 w-max m-auto leading-[1.6rem] text-sm">
+      <motion.div
+        className="flex flex-col justify-center align-center gap-8 w-max m-auto leading-[1.6rem] text-sm"
+        variants={variant}
+      >
         <div>
           <h1 className="text-5xl font-bold">Error 404</h1>
           <p className="text-gray-light">This page could not be found. </p>
@@ -17,7 +27,7 @@ export default function NotFound(): JSX.Element {
         <Link to="/" className="underline">
           Back to Home
         </Link>
-      </div>
+      </motion.div>
     </motion.main>
   );
 }

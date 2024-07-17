@@ -7,14 +7,24 @@ import Project from "../components/Project";
 import ExternalLink from "../components/ExternalLink";
 
 export default function Home(): JSX.Element {
+  const visible = { opacity: 1, y: 0, transition: { duration: 0.8 } };
+  const variant = {
+    hidden: { opacity: 0 },
+    visible,
+  };
+
   return (
     <motion.main
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.8 }}
+      initial="hidden"
+      animate="visible"
+      exit={{ opacity: 0, transition: { duration: 1 } }}
+      variants={{ visible: { transition: { staggerChildren: 0.3 } } }}
     >
       <div className="py-6 px-3 flex flex-col justify-center items-center gap-6 leading-[1.6rem] text-sm">
-        <div className="profile w-full py-6 px-3 flex justify-center flex-col gap-6 font-medium">
+        <motion.section
+          className="w-full py-6 px-3 flex justify-center flex-col gap-6 font-medium"
+          variants={variant}
+        >
           <div className="flex flex-row flex-wrap gap-6 items-center">
             <div className="w-[80px]">
               <img className="rounded-full" src={avatar} alt="Dumbass" />
@@ -29,9 +39,12 @@ export default function Home(): JSX.Element {
               in digital design such as UX/UI and frontend development.
             </p>
           </div>
-        </div>
+        </motion.section>
 
-        <div className="w-full py-6 px-3 flex justify-center flex-col flex-wrap gap-6 font-medium">
+        <motion.section
+          className="w-full py-6 px-3 flex justify-center flex-col flex-wrap gap-6 font-medium"
+          variants={variant}
+        >
           <h2>Work Experience</h2>
           <div className="flex flex-row justify-between gap-6 flex-wrap">
             <div className="date">
@@ -48,16 +61,22 @@ export default function Home(): JSX.Element {
               <span className="text-gray-dark">Software Engineer</span>
             </div>
           </div>
-        </div>
+        </motion.section>
 
-        <div className="w-full py-6 px-3 flex justify-center flex-col flex-wrap gap-6 font-medium">
+        <motion.section
+          className="w-full py-6 px-3 flex justify-center flex-col flex-wrap gap-6 font-medium"
+          variants={variant}
+        >
           <h2>Side Projects</h2>
           {projects.map((project) => (
             <Project {...project} />
           ))}
-        </div>
+        </motion.section>
 
-        <div className="w-full py-6 px-3 flex justify-center flex-col flex-wrap gap-6 font-medium">
+        <motion.section
+          className="w-full py-6 px-3 flex justify-center flex-col flex-wrap gap-6 font-medium"
+          variants={variant}
+        >
           <h2>Connect</h2>
           <div className="flex flex-row max-[480px]:flex-col gap-10 max-[480px]:gap-0">
             <span className="w-[75px] text-gray-darker">Email</span>
@@ -89,9 +108,12 @@ export default function Home(): JSX.Element {
               Bond Trinh
             </ExternalLink>
           </div>
-        </div>
+        </motion.section>
       </div>
-      <Footer />
+
+      <motion.div variants={variant}>
+        <Footer />
+      </motion.div>
     </motion.main>
   );
 }
