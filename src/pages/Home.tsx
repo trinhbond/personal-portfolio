@@ -28,7 +28,7 @@ export default function Home(): JSX.Element {
             <div className="w-[80px]">
               <img className="rounded-full" src={avatar} alt="Dumbass" />
             </div>
-            <div className="right">
+            <div>
               <h1>Bond Trinh</h1>
               <p className="text-gray-dark">Software Developer</p>
             </div>
@@ -48,9 +48,7 @@ export default function Home(): JSX.Element {
         >
           <h2>Work Experience</h2>
           <div className="flex flex-row justify-between gap-6 flex-wrap">
-            <div className="date">
-              <span className="text-gray-darker">2022 - 2023</span>
-            </div>
+            <span className="block text-gray-darker">2022 - 2023</span>
             <div>
               <ExternalLink
                 className="block hover:underline"
