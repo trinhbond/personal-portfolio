@@ -1,6 +1,5 @@
 import avatar from "../avatar.jpg";
 import { motion } from "framer-motion";
-import projects from "../projects.json";
 import Launch from "../icons/Launch";
 import Footer from "../components/Footer";
 import Project from "../components/Project";
@@ -119,3 +118,30 @@ export default function Home(): JSX.Element {
     </motion.main>
   );
 }
+
+const projects = [
+  {
+    name: "Ecommerce Application",
+    year: 2024,
+    description:
+      "A user-friendly online shopping platform built using modern technologies for users to browse and pay for clothes. Commerce.js is integrated as the backend e-commerce solution to handle functionalities such as product management, shopping cart, checkout, and payment processing. Material UI's themed components achieve styling consistency across the application.",
+    tech: ["React", "React Router", "Material UI", "SCSS", "Commerce.js"],
+    link: "https://github.com/trinhbond/ecommerce-application",
+  },
+  {
+    name: "Jokes",
+    year: 2023,
+    description:
+      "A single page-application built using React to display a list of random jokes. React Query is used for server state management and Axios is used to grab data from an external API.",
+    tech: ["React", "React Query", "Material UI", "SCSS", "TypeScript"],
+    link: "https://github.com/trinhbond/random-jokes",
+  },
+  {
+    name: "Portfolio",
+    year: 2022,
+    description:
+      "Personal website built using React and hosted on Vercel. The application features technologies such as Tailwind CSS for the UI, TypeScript for custom components and Framer Motion for animated properties.",
+    tech: ["React", "Tailwind CSS", "React Router", "SCSS", "TypeScript"],
+    link: "https://github.com/trinhbond/personal-portfolio",
+  },
+];
