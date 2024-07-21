@@ -12,7 +12,7 @@ type ProjectProps = {
 export default function Project(project: ProjectProps) {
   return (
     <div
-      className="flex flex-row justify-between gap-8 flex-wrap"
+      className="flex flex-row justify-between gap-6 flex-wrap"
       key={project.name}
     >
       <div>
@@ -20,11 +20,12 @@ export default function Project(project: ProjectProps) {
       </div>
       <ExternalLink
         href={project.link}
-        className="block hover:underline"
+        className="hover:underline font-semibold"
         icon={<Launch />}
       >
         {project.name}
       </ExternalLink>
+      {/* <span>{project.year}</span> */}
       <p className="text-gray-light">{project.description}</p>
       <div className="flex flex-row gap-2 flex-wrap">
         {project.tech.map((i) => (

@@ -29,7 +29,7 @@ export default function Home(): JSX.Element {
               <img className="rounded-full" src={avatar} alt="Dumbass" />
             </div>
             <div>
-              <h1>Bond Trinh</h1>
+              <h1 className="font-bold">Bond Trinh</h1>
               <p className="text-gray-dark">Software Developer</p>
             </div>
             <p className="text-gray-light">
@@ -46,12 +46,11 @@ export default function Home(): JSX.Element {
           className="w-full py-6 px-3 flex justify-center flex-col flex-wrap gap-6 font-medium"
           variants={variant}
         >
-          <h2>Work Experience</h2>
+          <h2 className="font-bold">Work Experience</h2>
           <div className="flex flex-row justify-between gap-6 flex-wrap">
-            <span className="block text-gray-darker">2022 - 2023</span>
             <div>
               <ExternalLink
-                className="block hover:underline"
+                className="block hover:underline font-semibold"
                 href={"https://www.nuimarkets.com/"}
                 icon={<Launch />}
               >
@@ -66,7 +65,7 @@ export default function Home(): JSX.Element {
           className="w-full py-6 px-3 flex justify-center flex-col flex-wrap gap-6 font-medium"
           variants={variant}
         >
-          <h2>Side Projects</h2>
+          <h2 className="font-bold">Side Projects</h2>
           {projects.map((project) => (
             <Project {...project} />
           ))}
@@ -76,11 +75,11 @@ export default function Home(): JSX.Element {
           className="w-full py-6 px-3 flex justify-center flex-col flex-wrap gap-6 font-medium"
           variants={variant}
         >
-          <h2>Connect</h2>
+          <h2 className="font-bold">Connect</h2>
           <div className="flex flex-row max-[480px]:flex-col gap-10 max-[480px]:gap-0">
             <span className="w-[75px] text-gray-darker">Email</span>
             <ExternalLink
-              className="text-gray-light hover:underline"
+              className="text-gray-light hover:underline font-semibold"
               href={"mailto:bondtrinh.it@gmail.com"}
               icon={<Launch />}
             >
@@ -90,7 +89,7 @@ export default function Home(): JSX.Element {
           <div className="flex flex-row max-[480px]:flex-col gap-10 max-[480px]:gap-0">
             <span className="w-[75px] text-gray-darker">GitHub</span>
             <ExternalLink
-              className="text-gray-light hover:underline"
+              className="text-gray-light hover:underline font-semibold"
               href={"https://www.github.com/trinhbond"}
               icon={<Launch />}
             >
@@ -100,7 +99,7 @@ export default function Home(): JSX.Element {
           <div className="flex flex-row max-[480px]:flex-col gap-10 max-[480px]:gap-0">
             <span className="w-[75px] text-gray-darker">LinkedIn</span>
             <ExternalLink
-              className="text-gray-light hover:underline"
+              className="text-gray-light hover:underline font-semibold"
               href={"https://www.linkedin.com/in/bondnicktrinh/"}
               icon={<Launch />}
             >
