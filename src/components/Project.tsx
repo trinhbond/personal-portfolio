@@ -15,9 +15,6 @@ export default function Project(project: ProjectProps) {
       className="flex flex-row justify-between gap-6 flex-wrap"
       key={project.name}
     >
-      <div>
-        <span className="text-gray-darker">{project.year}</span>
-      </div>
       <ExternalLink
         href={project.link}
         className="hover:underline font-semibold"
