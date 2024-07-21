@@ -6,7 +6,7 @@ import Project from "../components/Project";
 import ExternalLink from "../components/ExternalLink";
 
 export default function Home(): JSX.Element {
-  const visible = { opacity: 1, y: 0, transition: { duration: 0.8 } };
+  const visible = { opacity: 1, y: 0, transition: { duration: 1 } };
   const variant = {
     hidden: { opacity: 0 },
     visible,
