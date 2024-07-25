@@ -58,6 +58,7 @@ export default function Home(): JSX.Element {
               </ExternalLink>
               <span className="text-gray-dark">Software Engineer</span>
             </div>
+            <span>2022 - 2023</span>
           </div>
         </motion.section>
 
