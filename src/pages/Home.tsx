@@ -46,7 +46,7 @@ export default function Home(): JSX.Element {
           className="w-full py-6 px-3 flex justify-center flex-col flex-wrap gap-6 font-medium"
           variants={variant}
         >
-          <h2 className="font-bold">Work Experience</h2>
+          <h2 className="font-bold">Work</h2>
           <div className="flex flex-row justify-between gap-6 flex-wrap">
             <div>
               <ExternalLink
@@ -66,10 +66,12 @@ export default function Home(): JSX.Element {
           className="w-full py-6 px-3 flex justify-center flex-col flex-wrap gap-6 font-medium"
           variants={variant}
         >
-          <h2 className="font-bold">Side Projects</h2>
-          {projects.map((project) => (
-            <Project {...project} />
-          ))}
+          <h2 className="font-bold">Projects</h2>
+          <div className="flex flex-col gap-10">
+            {projects.map((project) => (
+              <Project {...project} />
+            ))}
+          </div>
         </motion.section>
 
         <motion.section
