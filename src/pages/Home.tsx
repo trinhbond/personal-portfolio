@@ -59,6 +59,33 @@ export default function Home(): JSX.Element {
               <span className="text-gray-dark">Software Engineer</span>
             </div>
             <span>2022 - 2023</span>
+            <div className="text-gray-light">
+              <ul className="list-disc">
+                <li className="flex flex-row gap-4 mb-2">
+                  <span>&#10148;</span>
+                  <p>
+                    Collaborated with the product and development team to
+                    convert sketch designs into robust, accessible,
+                    user-friendly web application interfaces.
+                  </p>
+                </li>
+                <li className="flex flex-row gap-4 mb-2">
+                  <span>&#10148;</span>
+                  <p>
+                    Developed end-to-end tests identifying edge cases and
+                    resolving bugs to ensure optimal performance on the Nui
+                    Markets platform.
+                  </p>
+                </li>
+                <li className="flex flex-row gap-4">
+                  <span>&#10148;</span>
+                  <p>
+                    Published release notes for the frontend repository using
+                    Github Docs.
+                  </p>
+                </li>
+              </ul>
+            </div>
           </div>
         </motion.section>
 
