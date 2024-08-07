@@ -5,7 +5,7 @@ type ExternalLinkProps = {
   className: string;
 };
 
-export default function ExternalLink(props: ExternalLinkProps) {
+export default function ExternalLink(props: ExternalLinkProps): JSX.Element {
   const { icon, children, ...rest } = props;
 
   return (

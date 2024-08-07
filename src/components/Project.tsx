@@ -9,7 +9,7 @@ type ProjectProps = {
   link: string;
 };
 
-export default function Project(project: ProjectProps) {
+export default function Project(project: ProjectProps): JSX.Element {
   return (
     <div
       className="flex flex-row justify-between gap-3 flex-wrap"
