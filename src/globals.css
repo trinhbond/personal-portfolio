@@ -24,11 +24,9 @@
     max-width: 100%;
   }
 
-  main,
-  footer {
+  main {
     min-height: 100dvh;
     margin-inline: auto;
-    line-height: 1.6rem !important;
     width: min(80ch, 100%);
   }
 }
