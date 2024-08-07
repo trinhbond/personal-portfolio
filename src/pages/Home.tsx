@@ -1,17 +1,12 @@
-import avatar from "../avatar.jpg";
 import { motion } from "framer-motion";
+
+import avatar from "../avatar.jpg";
 import Launch from "../icons/Launch";
-import Footer from "../components/Footer";
 import Project from "../components/Project";
 import ExternalLink from "../components/ExternalLink";
+import Section from "../components/Section";
 
 export default function Home(): JSX.Element {
-  const visible = { opacity: 1, y: 0, transition: { duration: 1 } };
-  const variant = {
-    hidden: { opacity: 0 },
-    visible,
-  };
-
   return (
     <motion.main
       initial="hidden"
@@ -19,11 +14,8 @@ export default function Home(): JSX.Element {
       exit={{ opacity: 0, transition: { duration: 1 } }}
       variants={{ visible: { transition: { staggerChildren: 0.3 } } }}
     >
-      <div className="py-6 px-3 flex flex-col justify-center items-center gap-6 leading-[1.6rem] text-sm">
-        <motion.section
-          className="w-full py-6 px-3 flex justify-center flex-col gap-6 font-medium"
-          variants={variant}
-        >
+      <div className="py-6 px-3 flex flex-col items-center gap-6 leading-[1.6rem] text-sm font-medium">
+        <Section>
           <div className="flex flex-row flex-wrap gap-6 items-center">
             <div className="w-[80px]">
               <img className="rounded-full" src={avatar} alt="Dumbass" />
@@ -40,12 +32,9 @@ export default function Home(): JSX.Element {
               appealing and functional.
             </p>
           </div>
-        </motion.section>
+        </Section>
 
-        <motion.section
-          className="w-full py-6 px-3 flex justify-center flex-col flex-wrap gap-6 font-medium"
-          variants={variant}
-        >
+        <Section>
           <h2 className="font-bold">Work</h2>
           <div className="flex flex-row justify-between gap-6 flex-wrap">
             <div>
@@ -59,52 +48,44 @@ export default function Home(): JSX.Element {
               <span className="text-gray-dark">Software Engineer</span>
             </div>
             <span>2022 - 2023</span>
-            <div className="text-gray-light">
-              <ul className="list-disc">
-                <li className="flex flex-row gap-4 mb-2">
-                  <span>&#10148;</span>
-                  <p>
-                    Collaborated with the product and development team to
-                    convert sketch designs into robust, accessible,
-                    user-friendly web application interfaces.
-                  </p>
-                </li>
-                <li className="flex flex-row gap-4 mb-2">
-                  <span>&#10148;</span>
-                  <p>
-                    Developed end-to-end tests identifying edge cases and
-                    resolving bugs to ensure optimal performance on the Nui
-                    Markets platform.
-                  </p>
-                </li>
-                <li className="flex flex-row gap-4">
-                  <span>&#10148;</span>
-                  <p>
-                    Published release notes for the frontend repository using
-                    Github Docs.
-                  </p>
-                </li>
-              </ul>
-            </div>
+            <ul className="text-gray-light list-disc">
+              <li className="flex flex-row gap-4 mb-2">
+                <span>&#10148;</span>
+                <p>
+                  Collaborated with the product and development team to convert
+                  sketch designs into robust, accessible, user-friendly web
+                  application interfaces.
+                </p>
+              </li>
+              <li className="flex flex-row gap-4 mb-2">
+                <span>&#10148;</span>
+                <p>
+                  Developed end-to-end tests identifying edge cases and
+                  resolving bugs to ensure optimal performance on the Nui
+                  Markets platform.
+                </p>
+              </li>
+              <li className="flex flex-row gap-4">
+                <span>&#10148;</span>
+                <p>
+                  Published release notes for the frontend repository using
+                  Github Docs.
+                </p>
+              </li>
+            </ul>
           </div>
-        </motion.section>
+        </Section>
 
-        <motion.section
-          className="w-full py-6 px-3 flex justify-center flex-col flex-wrap gap-6 font-medium"
-          variants={variant}
-        >
+        <Section>
           <h2 className="font-bold">Projects</h2>
           <div className="flex flex-col gap-10">
             {projects.map((project) => (
               <Project {...project} />
             ))}
           </div>
-        </motion.section>
+        </Section>
 
-        <motion.section
-          className="w-full py-6 px-3 flex justify-center flex-col flex-wrap gap-6 font-medium"
-          variants={variant}
-        >
+        <Section>
           <h2 className="font-bold">Connect</h2>
           <div className="flex flex-row max-[480px]:flex-col gap-10 max-[480px]:gap-0">
             <span className="w-[75px] text-gray-darker">Email</span>
@@ -136,12 +117,8 @@ export default function Home(): JSX.Element {
               Bond Trinh
             </ExternalLink>
           </div>
-        </motion.section>
+        </Section>
       </div>
-
-      <motion.div variants={variant}>
-        <Footer />
-      </motion.div>
     </motion.main>
   );
 }
@@ -168,7 +145,7 @@ const projects = [
     year: 2022,
     description:
       "Personal website built using React and hosted on Vercel. The application features technologies such as Tailwind CSS for the UI, TypeScript for custom components and Framer Motion for animated properties.",
-    tech: ["React", "Tailwind CSS", "React Router", "SCSS", "TypeScript"],
+    tech: ["React", "Tailwind CSS", "React Router", "TypeScript"],
     link: "https://github.com/trinhbond/personal-portfolio",
   },
 ];
