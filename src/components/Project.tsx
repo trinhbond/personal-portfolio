@@ -26,7 +26,7 @@ export default function Project(project: ProjectProps) {
       <p className="text-gray-light pb-2.5">{project.description}</p>
       <div className="flex flex-row gap-2 flex-wrap">
         {project.tech.map((i) => (
-          <span className="min-w-fit rounded-full text-center text-xs text-gray-dark bg-[#333333] px-[16px] py-[4px]">
+          <span className="min-w-fit rounded-sm text-center text-xs text-gray-dark bg-[#333333] px-4 py-1.5">
             {i}
           </span>
         ))}
