@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 
-import avatar from "../avatar.jpg";
 import Launch from "../icons/Launch";
 import Project from "../components/Project";
 import ExternalLink from "../components/ExternalLink";
@@ -18,7 +17,11 @@ export default function Home(): JSX.Element {
         <Section>
           <div className="flex flex-row flex-wrap gap-6 items-center">
             <div className="w-[80px]">
-              <img className="rounded-full" src={avatar} alt="Dumbass" />
+              <img
+                className="rounded-full"
+                src={require("../assets/images/avatar.jpg")}
+                alt="Bond Trinh"
+              />
             </div>
             <div>
               <h1 className="font-bold">Bond Trinh</h1>
