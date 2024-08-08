@@ -1,3 +1,5 @@
+import Launch from "../icons/Launch";
+
 type ExternalLinkProps = {
   children: React.ReactNode;
   icon?: React.ReactElement;
@@ -6,7 +8,7 @@ type ExternalLinkProps = {
 };
 
 export default function ExternalLink(props: ExternalLinkProps): JSX.Element {
-  const { icon, children, ...rest } = props;
+  const { icon = <Launch />, children, ...rest } = props;
 
   return (
     <a target="_blank" rel="noreferrer" {...rest}>

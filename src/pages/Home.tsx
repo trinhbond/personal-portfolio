@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 
-import Launch from "../icons/Launch";
 import Project from "../components/Project";
 import ExternalLink from "../components/ExternalLink";
 import Section from "../components/Section";
@@ -44,7 +43,6 @@ export default function Home(): JSX.Element {
               <ExternalLink
                 className="block hover:underline font-semibold"
                 href={"https://www.nuimarkets.com/"}
-                icon={<Launch />}
               >
                 Nui Markets
               </ExternalLink>
@@ -95,7 +93,6 @@ export default function Home(): JSX.Element {
             <ExternalLink
               className="text-gray-light hover:underline font-semibold"
               href={"mailto:bondtrinh.it@gmail.com"}
-              icon={<Launch />}
             >
               bondtrinh.it@gmail.com
             </ExternalLink>
@@ -105,7 +102,6 @@ export default function Home(): JSX.Element {
             <ExternalLink
               className="text-gray-light hover:underline font-semibold"
               href={"https://www.github.com/trinhbond"}
-              icon={<Launch />}
             >
               trinhbond
             </ExternalLink>
@@ -115,7 +111,6 @@ export default function Home(): JSX.Element {
             <ExternalLink
               className="text-gray-light hover:underline font-semibold"
               href={"https://www.linkedin.com/in/bondnicktrinh/"}
-              icon={<Launch />}
             >
               Bond Trinh
             </ExternalLink>

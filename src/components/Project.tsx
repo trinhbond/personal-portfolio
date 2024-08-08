@@ -1,4 +1,3 @@
-import Launch from "../icons/Launch";
 import ExternalLink from "./ExternalLink";
 
 type ProjectProps = {
@@ -16,9 +15,8 @@ export default function Project(project: ProjectProps): JSX.Element {
       key={project.name}
     >
       <ExternalLink
-        href={project.link}
         className="hover:underline font-semibold"
-        icon={<Launch />}
+        href={project.link}
       >
         {project.name}
       </ExternalLink>
