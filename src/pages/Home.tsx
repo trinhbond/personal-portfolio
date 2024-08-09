@@ -15,7 +15,7 @@ export default function Home(): JSX.Element {
       <div className="py-6 px-3 flex flex-col items-center gap-6 leading-[1.6rem] text-sm font-medium">
         <Section>
           <div className="flex flex-row flex-wrap gap-6 items-center">
-            <div className="w-[80px]">
+            <div className="w-20">
               <img
                 className="rounded-full"
                 src={require("../assets/images/avatar.jpg")}
@@ -89,7 +89,9 @@ export default function Home(): JSX.Element {
         <Section>
           <h2 className="font-bold">Connect</h2>
           <div className="flex flex-row max-[480px]:flex-col gap-10 max-[480px]:gap-0">
-            <span className="w-[75px] text-gray-darker">Email</span>
+            <span className="w-20 max-[480px]:w-auto text-gray-darker">
+              Email
+            </span>
             <ExternalLink
               className="text-gray-light hover:underline font-semibold"
               href={"mailto:bondtrinh.it@gmail.com"}
@@ -98,7 +100,9 @@ export default function Home(): JSX.Element {
             </ExternalLink>
           </div>
           <div className="flex flex-row max-[480px]:flex-col gap-10 max-[480px]:gap-0">
-            <span className="w-[75px] text-gray-darker">GitHub</span>
+            <span className="w-20 max-[480px]:w-auto text-gray-darker">
+              GitHub
+            </span>
             <ExternalLink
               className="text-gray-light hover:underline font-semibold"
               href={"https://www.github.com/trinhbond"}
@@ -107,7 +111,9 @@ export default function Home(): JSX.Element {
             </ExternalLink>
           </div>
           <div className="flex flex-row max-[480px]:flex-col gap-10 max-[480px]:gap-0">
-            <span className="w-[75px] text-gray-darker">LinkedIn</span>
+            <span className="w-20 max-[480px]:w-auto text-gray-darker">
+              LinkedIn
+            </span>
             <ExternalLink
               className="text-gray-light hover:underline font-semibold"
               href={"https://www.linkedin.com/in/bondnicktrinh/"}
