@@ -3,8 +3,6 @@ import Launch from "../icons/Launch";
 type ExternalLinkProps = {
   children: React.ReactNode;
   icon?: React.ReactElement;
-  href: string;
-  className: string;
 };
 
 export default function ExternalLink(
