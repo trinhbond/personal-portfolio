@@ -7,7 +7,9 @@ type ExternalLinkProps = {
   className: string;
 };
 
-export default function ExternalLink(props: ExternalLinkProps): JSX.Element {
+export default function ExternalLink(
+  props: ExternalLinkProps & React.AnchorHTMLAttributes<HTMLAnchorElement>
+): JSX.Element {
   const { icon = <Launch />, children, ...rest } = props;
 
   return (
