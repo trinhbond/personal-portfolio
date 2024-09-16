@@ -24,7 +24,9 @@ export default function Home(): JSX.Element {
             </div>
             <div>
               <h1 className="font-bold text-xl">Bond Trinh</h1>
-              <span className="block text-gray-dark">Software Developer</span>
+              <span className="block text-gray-dark text-sm">
+                Software Developer
+              </span>
             </div>
             <p className="text-gray-light">
               Hi, I'm Bond, a software developer with experience in frontend
@@ -45,7 +47,7 @@ export default function Home(): JSX.Element {
               >
                 Nui Markets
               </ExternalLink>
-              <span className="text-gray-dark">Software Engineer</span>
+              <span className="text-gray-dark text-sm">Software Engineer</span>
             </div>
             <span>2022 - 2023</span>
           </div>
