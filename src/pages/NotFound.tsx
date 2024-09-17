@@ -2,10 +2,9 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 export default function NotFound(): JSX.Element {
-  const visible = { opacity: 1, y: 0, transition: { duration: 0.8 } };
   const variant = {
     hidden: { opacity: 0 },
-    visible,
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
   };
 
   return (
@@ -17,11 +16,11 @@ export default function NotFound(): JSX.Element {
       variants={{ visible: { transition: { staggerChildren: 0.3 } } }}
     >
       <motion.div
-        className="flex flex-col justify-center align-center gap-8 w-max m-auto leading-[1.6rem] text-sm"
+        className="flex flex-col justify-center align-center gap-8 w-max m-auto leading-[1.6rem] max-[768px]:text-sm"
         variants={variant}
       >
         <div>
-          <h1 className="text-5xl font-bold">Error 404</h1>
+          <h1 className="text-3xl font-bold">Error 404</h1>
           <p className="text-gray-light">This page could not be found. </p>
         </div>
         <Link to="/" className="underline">

@@ -7,7 +7,7 @@ type SectionProps = {
 export default function Section({ children }: SectionProps): JSX.Element {
   const variant = {
     hidden: { opacity: 0 },
-    visible,
+    visible: { opacity: 1, y: 0, transition: { duration: 1 } },
   };
 
   return (
