@@ -12,9 +12,9 @@ export default function Home(): JSX.Element {
       exit={{ opacity: 0, transition: { duration: 1 } }}
       variants={{ visible: { transition: { staggerChildren: 0.3 } } }}
     >
-      <div className="py-8 flex flex-col items-center gap-8 leading-[1.6rem] font-medium">
+      <div className="py-8 flex flex-col items-center gap-8">
         <Section>
-          <div className="flex flex-row flex-wrap gap-6 items-center">
+          <div className="flex flex-row flex-wrap items-center gap-6">
             <div className="w-20">
               <img
                 className="rounded-full"

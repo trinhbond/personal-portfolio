@@ -5,8 +5,6 @@ type SectionProps = {
 };
 
 export default function Section({ children }: SectionProps): JSX.Element {
-  const visible = { opacity: 1, y: 0, transition: { duration: 1 } };
-
   const variant = {
     hidden: { opacity: 0 },
     visible,
@@ -14,7 +12,7 @@ export default function Section({ children }: SectionProps): JSX.Element {
 
   return (
     <motion.section
-      className="w-full py-6 px-3 flex flex-wrap flex-col gap-6"
+      className="w-full py-6 px-3 flex flex-wrap flex-col gap-6 leading-[1.6rem] font-medium max-[768px]:text-sm"
       variants={variant}
     >
       {children}
