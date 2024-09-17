@@ -14,7 +14,7 @@ export default function Home(): JSX.Element {
       variants={{ visible: { transition: { staggerChildren: 0.3 } } }}
     >
       <Section>
-        <div className="flex flex-row flex-wrap items-center gap-6">
+        <div className="flex flex-wrap items-center gap-6">
           <div className="w-20">
             <img
               className="rounded-full"
@@ -39,7 +39,7 @@ export default function Home(): JSX.Element {
 
       <Section>
         <h2 className="font-bold text-xl">Work</h2>
-        <div className="flex flex-row justify-between gap-6 flex-wrap">
+        <div className="flex flex-wrap justify-between gap-6">
           <div>
             <ExternalLink
               className="block hover:underline font-semibold"
