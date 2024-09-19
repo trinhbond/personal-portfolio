@@ -4,7 +4,7 @@ type ProjectProps = {
   name: string;
   year: number;
   description: string;
-  tech: string[];
+  stack: string[];
   link: string;
 };
 
@@ -24,7 +24,7 @@ export default function Project(project: ProjectProps): JSX.Element {
         {project.description}
       </p>
       <div className="flex flex-row gap-4 flex-wrap max-[768px]:mt-8">
-        {project.tech.map((i) => (
+        {project.stack.map((i) => (
           <span className="min-w-fit text-xs text-gray-dark">{i}</span>
         ))}
       </div>

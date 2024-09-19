@@ -108,7 +108,7 @@ const projects = [
     year: 2024,
     description:
       "An eCommerce platform built with React for the frontend and Commerce.js as the backend eCommerce solution to manage functionalities.",
-    tech: ["React", "Commerce.js", "React Router", "Tailwind CSS"],
+    stack: ["React", "Commerce.js", "React Router", "Tailwind CSS"],
     link: "https://github.com/trinhbond/ecommerce-application",
   },
   {
@@ -116,7 +116,7 @@ const projects = [
     year: 2023,
     description:
       "A single page-application built using React to display a list of random jokes. React Query is used for server state management and Axios is used to grab data from an external API.",
-    tech: ["React", "React Query", "Material UI", "SCSS", "TypeScript"],
+    stack: ["React", "React Query", "Material UI", "SCSS", "TypeScript"],
     link: "https://github.com/trinhbond/random-jokes",
   },
 ];
