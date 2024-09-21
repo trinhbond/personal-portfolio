@@ -55,7 +55,7 @@ export default function Home(): JSX.Element {
 
       <Section>
         <h2 className="font-bold text-xl">Projects</h2>
-        <div className="grid grid-cols-2 max-[768px]:grid-cols-1 gap-4">
+        <div className="grid grid-cols-2 max-[768px]:grid-cols-1 gap-2.5">
           {projects.map((project) => (
             <Project {...project} />
           ))}
