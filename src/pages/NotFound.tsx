@@ -25,7 +25,7 @@ export default function NotFound(): JSX.Element {
         </div>
         <Link
           to="/"
-          className="max-w-fit bg-[#4f6913] rounded-full font-medium py-4 px-8 hover:shadow-2xl"
+          className="max-w-fit bg-[#4f6913] hover:bg-[#415610] rounded-full font-medium py-4 px-8 hover:shadow-2xl"
         >
           Home
         </Link>
