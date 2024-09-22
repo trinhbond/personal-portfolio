@@ -16,7 +16,7 @@ export default function NotFound(): JSX.Element {
       variants={{ visible: { transition: { staggerChildren: 0.3 } } }}
     >
       <motion.div
-        className="flex flex-col justify-center align-center gap-12 w-max m-auto leading-[1.6rem] max-[768px]:text-sm"
+        className="flex flex-col justify-center align-center gap-12 w-max m-auto leading-[1.6rem] max-md:text-sm"
         variants={variant}
       >
         <div>

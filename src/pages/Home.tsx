@@ -7,7 +7,7 @@ import Section from "../components/Section";
 export default function Home(): JSX.Element {
   return (
     <motion.main
-      className="py-8 max-[768px]:py-4 px-1 flex flex-col items-center gap-8"
+      className="py-8 max-md:py-4 px-1 flex flex-col items-center gap-8"
       initial="hidden"
       animate="visible"
       exit={{ opacity: 0, transition: { duration: 1 } }}
@@ -61,7 +61,7 @@ export default function Home(): JSX.Element {
           Side projects are an opportunity for me to learn new technologies and
           further improve my existing skill set.
         </p>
-        <div className="grid grid-cols-2 max-[768px]:grid-cols-1 gap-2.5">
+        <div className="grid grid-cols-2 max-md:grid-cols-1 gap-2.5">
           {projects.map((project) => (
             <Project {...project} />
           ))}
