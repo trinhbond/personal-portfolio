@@ -7,7 +7,7 @@ import Section from "../components/Section";
 export default function Home(): JSX.Element {
   return (
     <motion.main
-      className="py-8 max-md:py-4 px-1 flex flex-col items-center gap-8"
+      className="flex flex-col items-center gap-6"
       initial="hidden"
       animate="visible"
       exit={{ opacity: 0, transition: { duration: 1 } }}
@@ -15,18 +15,20 @@ export default function Home(): JSX.Element {
     >
       <Section>
         <div className="flex flex-wrap items-center gap-6">
-          <div className="w-20">
-            <img
-              className="rounded-full"
-              src={require("../assets/images/avatar.jpg")}
-              alt="Bond Trinh"
-            />
-          </div>
-          <div>
-            <h1 className="font-bold text-xl">Bond Trinh</h1>
-            <span className="block text-gray-dark text-sm">
-              Software Developer
-            </span>
+          <div className="w-full inline-flex items-center flex-wrap gap-6">
+            <div className="w-20">
+              <img
+                className="rounded-full"
+                src={require("../assets/images/avatar.jpg")}
+                alt="Bond Trinh"
+              />
+            </div>
+            <div>
+              <h1 className="font-bold text-xl">Bond Trinh</h1>
+              <span className="block text-gray-dark text-sm">
+                Software Developer
+              </span>
+            </div>
           </div>
           <p className="text-gray-light">
             Hi, I'm Bond, a software developer with experience in frontend
