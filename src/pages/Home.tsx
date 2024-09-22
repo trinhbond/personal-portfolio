@@ -32,7 +32,9 @@ export default function Home(): JSX.Element {
             Hi, I'm Bond, a software developer with experience in frontend
             development, automation testing, and digital design. I am passionate
             about creating digital experiences that are both visually appealing
-            and highly functional.
+            and highly functional. I am currently focused on frontend
+            development, but I'm always open to learning new skills and
+            exploring new areas.
           </p>
         </div>
       </Section>
@@ -55,6 +57,10 @@ export default function Home(): JSX.Element {
 
       <Section>
         <h2 className="font-bold text-xl">Projects</h2>
+        <p className="text-gray-light">
+          Side projects are an opportunity for me to learn new technologies and
+          further improve my existing skill set.
+        </p>
         <div className="grid grid-cols-2 max-[768px]:grid-cols-1 gap-2.5">
           {projects.map((project) => (
             <Project {...project} />
