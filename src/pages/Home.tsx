@@ -63,52 +63,52 @@ export default function Home(): JSX.Element {
           Side projects are an opportunity for me to learn new technologies and
           further improve my existing skill set.
         </p>
-        <div className="grid grid-cols-2 max-md:grid-cols-1 gap-2.5">
+        <ul className="grid grid-cols-2 max-md:grid-cols-1 gap-2.5">
           {projects.map((project) => (
-            <Project {...project} />
+            <li>
+              <Project {...project} />
+            </li>
           ))}
-        </div>
+        </ul>
       </Section>
 
       <Section>
         <h2 className="font-bold text-xl">Connect</h2>
-        <div className="flex flex-row max-[480px]:flex-col gap-10 max-[480px]:gap-0">
-          <span className="w-20 max-[480px]:w-auto text-gray-darker font-semibold">
-            Email
-          </span>
-          <ExternalLink
-            className="text-gray-light hover:underline"
-            href={"mailto:bondtrinh.it@gmail.com"}
-          >
-            bondtrinh.it@gmail.com
-          </ExternalLink>
-        </div>
-        <div className="flex flex-row max-[480px]:flex-col gap-10 max-[480px]:gap-0">
-          <span className="w-20 max-[480px]:w-auto text-gray-darker font-semibold">
-            LinkedIn
-          </span>
-          <ExternalLink
-            className="text-gray-light hover:underline"
-            href={"https://www.linkedin.com/in/bondnicktrinh/"}
-          >
-            Bond Trinh
-          </ExternalLink>
-        </div>
-        <div className="flex flex-row max-[480px]:flex-col gap-10 max-[480px]:gap-0">
-          <span className="w-20 max-[480px]:w-auto text-gray-darker font-semibold">
-            GitHub
-          </span>
-          <ExternalLink
-            className="text-gray-light hover:underline"
-            href={"https://www.github.com/trinhbond"}
-          >
-            trinhbond
-          </ExternalLink>
-        </div>
+        {socials.map(({ platform, username, link }) => (
+          <div className="flex flex-row max-[480px]:flex-col gap-10 max-[480px]:gap-0">
+            <span className="w-20 max-[480px]:w-auto text-gray-darker font-semibold">
+              {platform}
+            </span>
+            <ExternalLink
+              className="text-gray-light hover:underline"
+              href={link}
+            >
+              {username}
+            </ExternalLink>
+          </div>
+        ))}
       </Section>
     </motion.main>
   );
 }
+
+const socials = [
+  {
+    platform: "Email",
+    username: "bondtrinh.it@gmail.com",
+    link: "mailto:bondtrinh.it@gmail.com",
+  },
+  {
+    platform: "LinkedIn",
+    username: "Bond Trinh",
+    link: "https://www.linkedin.com/in/bondnicktrinh/",
+  },
+  {
+    platform: "GitHub",
+    username: "trinhbond",
+    link: "https://www.github.com/trinhbond",
+  },
+];
 
 const projects = [
   {
