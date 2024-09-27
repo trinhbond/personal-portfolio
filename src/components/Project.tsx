@@ -19,11 +19,11 @@ export default function Project(project: ProjectProps): JSX.Element {
       <p className="text-gray-light text-sm h-[160px] max-md:h-auto mt-4">
         {project.description}
       </p>
-      <div className="flex flex-row gap-4 flex-wrap max-md:mt-8">
+      <ul className="flex gap-4 max-md:mt-12">
         {project.stack.map((i) => (
-          <span className="min-w-fit text-xs text-gray-dark">{i}</span>
+          <li className="min-w-fit text-xs text-gray-dark">{i}</li>
         ))}
-      </div>
+      </ul>
     </ExternalLink>
   );
 }
