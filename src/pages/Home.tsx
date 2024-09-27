@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Project from "../components/Project";
 import ExternalLink from "../components/ExternalLink";
 import Section from "../components/Section";
+import Launch from "../icons/Launch";
 
 export default function Home(): JSX.Element {
   return (
@@ -48,6 +49,7 @@ export default function Home(): JSX.Element {
             <ExternalLink
               className="block hover:underline font-semibold"
               href={"https://www.nuimarkets.com/"}
+              icon={<Launch />}
             >
               Nui Markets
             </ExternalLink>
@@ -82,6 +84,7 @@ export default function Home(): JSX.Element {
             <ExternalLink
               className="text-gray-light hover:underline"
               href={link}
+              icon={<Launch />}
             >
               {username}
             </ExternalLink>
