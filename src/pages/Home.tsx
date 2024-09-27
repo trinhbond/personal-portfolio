@@ -4,6 +4,8 @@ import Project from "../components/Project";
 import ExternalLink from "../components/ExternalLink";
 import Section from "../components/Section";
 import Launch from "../icons/Launch";
+import { SiFramer, SiTypescript, SiVercel } from "react-icons/si";
+import { RiReactjsFill, RiTailwindCssFill } from "react-icons/ri";
 
 export default function Home(): JSX.Element {
   return (
@@ -98,6 +100,32 @@ export default function Home(): JSX.Element {
             </ExternalLink>
           </div>
         ))}
+      </Section>
+      <Section>
+        <div className="text-[#fff] flex flex-wrap justify-between items-center max-sm:gap-8 max-sm:flex-col-reverse">
+          <h3 className="text-gray-light">
+            &copy; Bond Trinh {new Date().getFullYear()}
+          </h3>
+          <div className="bg-[#4f6913] rounded-full px-6 py-5 max-sm:w-full">
+            <ul className="font-medium flex gap-6 max-sm:justify-evenly">
+              <li>
+                <RiReactjsFill size={"1.5rem"} title="React" />
+              </li>
+              <li>
+                <SiTypescript size={"1.5rem"} title="TypeScript" />
+              </li>
+              <li>
+                <RiTailwindCssFill size={"1.5rem"} title="Tailwind CSS" />
+              </li>
+              <li>
+                <SiFramer size={"1.5rem"} title="Framer" />
+              </li>
+              <li>
+                <SiVercel size={"1.5rem"} title="Vercel" />
+              </li>
+            </ul>
+          </div>
+        </div>
       </Section>
     </motion.main>
   );
