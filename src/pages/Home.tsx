@@ -8,14 +8,14 @@ import Launch from "../icons/Launch";
 export default function Home(): JSX.Element {
   return (
     <motion.main
-      className="flex flex-col items-center gap-6"
+      className="flex flex-col items-center gap-8"
       initial="hidden"
       animate="visible"
       exit={{ opacity: 0, transition: { duration: 1 } }}
       variants={{ visible: { transition: { staggerChildren: 0.3 } } }}
     >
       <Section>
-        <div className="flex flex-wrap items-center gap-6">
+        <div className="flex flex-wrap items-center gap-8">
           <div className="w-full inline-flex items-center flex-wrap gap-6">
             <div className="w-20">
               <img
@@ -44,7 +44,7 @@ export default function Home(): JSX.Element {
 
       <Section>
         <h2 className="font-bold text-xl">Work</h2>
-        <div className="flex flex-wrap justify-between gap-6">
+        <div className="flex flex-wrap justify-between">
           <div>
             <ExternalLink
               className="block hover:underline font-semibold"
@@ -65,11 +65,19 @@ export default function Home(): JSX.Element {
           Side projects are an opportunity for me to learn new technologies and
           further improve my existing skill set.
         </p>
-        <ul className="grid grid-cols-2 max-md:grid-cols-1 gap-2.5">
+        <ul className="grid grid-cols-2 max-md:grid-cols-1 gap-4">
           {projects.map((project) => (
-            <li>
+            <motion.li
+              transition={{
+                duration: 0.5,
+                ease: "easeInOut",
+              }}
+              whileHover={{
+                translateY: -8,
+              }}
+            >
               <Project {...project} />
-            </li>
+            </motion.li>
           ))}
         </ul>
       </Section>
