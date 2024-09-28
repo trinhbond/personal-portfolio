@@ -4,7 +4,9 @@ type SectionProps = {
   children: React.ReactNode;
 };
 
-export default function Section({ children }: SectionProps): JSX.Element {
+export default function Section({
+  children,
+}: SectionProps & React.HTMLAttributes<HTMLDivElement>): JSX.Element {
   const variant = {
     hidden: { opacity: 0 },
     visible: { opacity: 1, y: 0, transition: { duration: 1.5 } },
