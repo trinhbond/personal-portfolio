@@ -19,7 +19,7 @@ export default function Project(project: ProjectProps): JSX.Element {
       <p className="text-gray-light text-sm h-[160px] max-md:h-auto mt-4">
         {project.description}
       </p>
-      <ul className="flex gap-4 max-md:mt-12">
+      <ul className="flex flex-wrap gap-4 max-md:mt-12">
         {project.stack.map((i) => (
           <li className="min-w-fit text-xs text-gray-dark">{i}</li>
         ))}
