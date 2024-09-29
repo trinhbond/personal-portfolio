@@ -114,6 +114,7 @@ export default function Home(): JSX.Element {
           ))}
         </Section>
       </motion.div>
+
       <Section>
         <div className="border-t pt-9 text-[#fff] flex flex-wrap justify-between items-center max-sm:gap-8 max-sm:flex-col-reverse">
           <h3 className="text-gray-light">
