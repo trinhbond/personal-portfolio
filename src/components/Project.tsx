@@ -11,15 +11,13 @@ type ProjectProps = {
 export default function Project(project: ProjectProps): JSX.Element {
   return (
     <ExternalLink
-      className="bg-[#4f6913] flex flex-col space-between place-content-evenly px-3.5 py-4 rounded-md"
+      className="bg-[#4f6913] flex flex-col gap-4 w-full p-3.5 rounded-md shadow-2xl"
       href={project.link}
       key={project.name}
     >
-      <h3 className="font-semibold w-full">{project.name}</h3>
-      <p className="text-gray-light text-sm h-[160px] max-md:h-auto mt-4">
-        {project.description}
-      </p>
-      <ul className="flex flex-wrap gap-4 max-md:mt-12">
+      <span className="font-semibold w-full text-sm">{project.name}</span>
+      <p className="text-gray-light text-sm">{project.description}</p>
+      <ul className="flex flex-wrap gap-4 mt-auto">
         {project.stack.map((i) => (
           <li className="min-w-fit text-xs text-gray-dark">{i}</li>
         ))}

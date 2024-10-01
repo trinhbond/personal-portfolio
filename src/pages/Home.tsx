@@ -33,7 +33,7 @@ export default function Home(): JSX.Element {
             <div className="w-full inline-flex items-center flex-wrap gap-6">
               <div className="w-20">
                 <img
-                  className="rounded-full"
+                  className="rounded-md"
                   src={require("../assets/images/avatar.jpg")}
                   alt="Bond Trinh"
                 />
@@ -79,9 +79,10 @@ export default function Home(): JSX.Element {
             Side projects are an opportunity for me to learn new technologies
             and further improve my existing skill set.
           </p>
-          <ul className="grid grid-cols-2 max-md:grid-cols-1 gap-4">
+          <ul className="flex justify-stretch gap-4 max-md:flex-col">
             {projects.map((project) => (
               <motion.li
+                className="flex flex-1 items-stretch w-full"
                 transition={{
                   duration: 0.5,
                   ease: "easeInOut",
