@@ -12,8 +12,14 @@ export default function NotFound(): JSX.Element {
       className="h-dvh content-center"
       initial="hidden"
       animate="visible"
-      exit={{ opacity: 0, transition: { duration: 1 } }}
-      variants={{ visible: { transition: { staggerChildren: 0.3 } } }}
+      variants={{
+        hidden: { opacity: 0, y: 0 },
+        visible: {
+          opacity: 1,
+          y: 0,
+          transition: { duration: 0.85, staggerChildren: 0.25 },
+        },
+      }}
     >
       <motion.div
         className="flex flex-col justify-center align-center gap-12 w-max m-auto leading-[1.6rem] max-md:text-sm"
