@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 export default function NotFound(): JSX.Element {
   const variant = {
-    hidden: { opacity: 0 },
-    visible: { opacity: 1, y: 0, transition: { duration: 1.5 } },
+    hidden: { opacity: 0, y: -30 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.85 } },
   };
 
   return (
