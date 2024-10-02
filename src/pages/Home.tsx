@@ -24,7 +24,7 @@ export default function Home(): JSX.Element {
           visible: {
             opacity: 1,
             y: 0,
-            transition: { duration: 0.85, staggerChildren: 0.3 },
+            transition: { duration: 0.85, staggerChildren: 0.25 },
           },
         }}
       >
