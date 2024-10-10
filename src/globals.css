@@ -17,6 +17,7 @@
   body {
     background: #0c1005;
     font-family: "Inter", sans-serif;
+    line-height: 1.6rem;
   }
 
   img {
@@ -28,6 +29,10 @@
     min-height: 100dvh;
     margin-inline: auto;
     width: min(80ch, 100%);
+  }
+
+  h2 {
+    @apply font-bold text-xl;
   }
 }
 

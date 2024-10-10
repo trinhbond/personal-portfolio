@@ -22,11 +22,11 @@ export default function NotFound(): JSX.Element {
       }}
     >
       <motion.div
-        className="flex flex-col justify-center align-center gap-12 w-max m-auto leading-[1.6rem] max-md:text-sm"
+        className="flex flex-col justify-center align-center gap-8 w-max m-auto max-md:text-sm"
         variants={variant}
       >
         <div>
-          <h1 className="text-3xl font-bold">Error 404</h1>
+          <h1 className="text-2xl font-bold">Error 404</h1>
           <p className="text-gray-light">This page could not be found. </p>
         </div>
         <Link

@@ -57,7 +57,7 @@ export default function Home(): JSX.Element {
         </Section>
 
         <Section variant={variant}>
-          <h2 className="font-bold text-xl">Work</h2>
+          <h2>Work</h2>
           <div className="flex flex-wrap justify-between">
             <div>
               <ExternalLink
@@ -74,7 +74,7 @@ export default function Home(): JSX.Element {
         </Section>
 
         <Section variant={variant}>
-          <h2 className="font-bold text-xl">Projects</h2>
+          <h2>Projects</h2>
           <p className="text-gray-light">
             Side projects are an opportunity for me to learn new technologies
             and further improve my existing skill set.
@@ -98,7 +98,7 @@ export default function Home(): JSX.Element {
         </Section>
 
         <Section variant={variant}>
-          <h2 className="font-bold text-xl">Connect</h2>
+          <h2>Connect</h2>
           {socials.map(({ platform, username, link }) => (
             <div className="flex flex-wrap flex-row max-[480px]:flex-col gap-10 max-[480px]:gap-0">
               <span className="w-20 max-[480px]:w-auto text-gray-darker font-semibold">
@@ -118,9 +118,9 @@ export default function Home(): JSX.Element {
 
       <Section>
         <div className="border-t pt-9 text-[#fff] flex flex-wrap justify-between items-center max-sm:gap-8 max-sm:flex-col-reverse">
-          <h3 className="text-gray-light">
+          <span className="text-gray-light">
             &copy; Bond Trinh {new Date().getFullYear()}
-          </h3>
+          </span>
           <ul className="flex flex-wrap gap-6 max-sm:justify-evenly">
             <li>
               <RiReactjsFill size={"1.25rem"} title="React" />
