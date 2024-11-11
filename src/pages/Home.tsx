@@ -31,13 +31,6 @@ export default function Home(): JSX.Element {
         <Section>
           <div className="flex flex-wrap items-center gap-8">
             <div className="w-full inline-flex items-center flex-wrap gap-6">
-              <div className="w-20">
-                <img
-                  className="rounded-md"
-                  src={require("../assets/images/avatar.jpg")}
-                  alt="Bond Trinh"
-                />
-              </div>
               <div>
                 <h1 className="font-bold text-xl">Bond Trinh</h1>
                 <span className="block text-gray-dark text-sm">
@@ -71,6 +64,7 @@ export default function Home(): JSX.Element {
             </div>
             <span className="font-semibold">2022 - 2023</span>
           </div>
+          <p className="text-[#fff]">UX Development</p>
         </Section>
 
         <Section variant={variant}>
@@ -117,26 +111,31 @@ export default function Home(): JSX.Element {
       </motion.div>
 
       <Section>
-        <div className="border-t pt-9 text-[#fff] flex flex-wrap justify-between items-center max-sm:gap-8 max-sm:flex-col-reverse">
+        <div className="text-[#fff] flex flex-wrap justify-between items-center max-sm:gap-8 max-sm:flex-col-reverse">
           <span className="text-gray-light">
             &copy; Bond Trinh {new Date().getFullYear()}
           </span>
-          <ul className="flex flex-wrap gap-6 max-sm:justify-evenly">
-            <li>
-              <RiReactjsFill size={"1.25rem"} title="React" />
-            </li>
-            <li>
-              <SiTypescript size={"1.25rem"} title="TypeScript" />
-            </li>
-            <li>
-              <RiTailwindCssFill size={"1.25rem"} title="Tailwind CSS" />
-            </li>
-            <li>
-              <SiFramer size={"1.25rem"} title="Framer" />
-            </li>
-            <li>
-              <SiVercel size={"1.25rem"} title="Vercel" />
-            </li>
+          <ul className="flex flex-wrap gap-4 max-sm:justify-evenly">
+            {[
+              <RiReactjsFill size={"1.25rem"} title="React" />,
+              <SiTypescript size={"1.25rem"} title="TypeScript" />,
+              <RiTailwindCssFill size={"1.25rem"} title="Tailwind CSS" />,
+              <SiFramer size={"1.25rem"} title="Framer" />,
+              <SiVercel size={"1.25rem"} title="Vercel" />,
+            ].map((logo) => (
+              <motion.li
+                className="flex flex-1 items-stretch w-full"
+                transition={{
+                  duration: 0.5,
+                  ease: "easeInOut",
+                }}
+                whileHover={{
+                  translateY: -8,
+                }}
+              >
+                {logo}
+              </motion.li>
+            ))}
           </ul>
         </div>
       </Section>
