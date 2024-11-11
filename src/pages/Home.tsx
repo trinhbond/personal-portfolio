@@ -64,7 +64,6 @@ export default function Home(): JSX.Element {
             </div>
             <span className="font-semibold">2022 - 2023</span>
           </div>
-          <p className="text-[#fff]">UX Development</p>
         </Section>
 
         <Section variant={variant}>
