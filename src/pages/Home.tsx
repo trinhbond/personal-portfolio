@@ -68,10 +68,6 @@ export default function Home(): JSX.Element {
 
         <Section variant={variant}>
           <h2>Projects</h2>
-          <p className="text-gray-light">
-            Side projects are an opportunity for me to learn new technologies
-            and further improve my existing skill set.
-          </p>
           <ul className="flex justify-stretch gap-4 max-md:flex-col">
             {projects.map((project) => (
               <motion.li
