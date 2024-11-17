@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 import Project from "../components/Project";
 import ExternalLink from "../components/ExternalLink";
 import Section from "../components/Section";
-import Launch from "../icons/Launch";
 import { SiFramer, SiTypescript, SiVercel } from "react-icons/si";
 import { RiReactjsFill, RiTailwindCssFill } from "react-icons/ri";
+import { GrLinkUp } from "react-icons/gr";
 
 export default function Home(): JSX.Element {
   const variant = {
@@ -56,7 +56,7 @@ export default function Home(): JSX.Element {
               <ExternalLink
                 className="block hover:underline font-semibold"
                 href={"https://www.nuimarkets.com/"}
-                icon={<Launch />}
+                icon={<GrLinkUp className="rotate-45" fontSize={12} />}
               >
                 Nui Markets
               </ExternalLink>
@@ -100,7 +100,7 @@ export default function Home(): JSX.Element {
               <ExternalLink
                 className="text-gray-light hover:underline"
                 href={link}
-                icon={<Launch />}
+                icon={<GrLinkUp className="rotate-45" fontSize={12} />}
               >
                 {username}
               </ExternalLink>
