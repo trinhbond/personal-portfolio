@@ -8,10 +8,10 @@ module.exports = {
   ],
   theme: {
     colors: {
-      gray: {
-        light: "#e6e6e6",
-        dark: "#cdcdcd",
-        darker: "#ababab",
+      green: {
+        light: "#E5F0D0",
+        dark: "#CAE2A2",
+        darker: "#749B31",
       },
     },
   },

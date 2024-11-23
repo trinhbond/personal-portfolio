@@ -32,13 +32,15 @@ export default function Home(): JSX.Element {
           <div className="flex flex-wrap items-center gap-8">
             <div className="w-full inline-flex items-center flex-wrap gap-6">
               <div>
-                <h1 className="font-bold text-xl">Bond Trinh</h1>
-                <span className="block text-gray-dark text-sm">
+                <h1 className="text-green-darker font-bold text-xl">
+                  Bond Trinh
+                </h1>
+                <span className="block text-green-dark text-sm">
                   Software Developer
                 </span>
               </div>
             </div>
-            <motion.p className="text-gray-light" variants={variant}>
+            <motion.p className="text-green-light" variants={variant}>
               Hi, I'm Bond, a software developer with experience in frontend
               development, automation testing, and digital design. I am
               passionate about creating digital experiences that are both
@@ -50,24 +52,32 @@ export default function Home(): JSX.Element {
         </Section>
 
         <Section variant={variant}>
-          <h2>Work</h2>
+          <h2 className="text-green-darker">Work</h2>
           <div className="flex flex-wrap justify-between">
             <div>
               <ExternalLink
-                className="block hover:underline font-semibold"
+                className="block hover:underline text-green-dark font-semibold"
                 href={"https://www.nuimarkets.com/"}
-                icon={<GrLinkUp className="rotate-45" fontSize={12} />}
+                icon={
+                  <GrLinkUp
+                    className="rotate-45"
+                    fontSize={12}
+                    color="#CAE2A2"
+                  />
+                }
               >
                 Nui Markets
               </ExternalLink>
-              <span className="text-gray-dark text-sm">Software Engineer</span>
+              <span className="text-green-light text-sm">
+                Software Engineer
+              </span>
             </div>
-            <span className="font-semibold">2022 - 2023</span>
+            <span className="text-green-light font-semibold">2022 - 2023</span>
           </div>
         </Section>
 
         <Section variant={variant}>
-          <h2>Projects</h2>
+          <h2 className="text-green-darker">Projects</h2>
           <ul className="flex justify-stretch gap-4 max-md:flex-col">
             {projects.map((project) => (
               <motion.li
@@ -87,16 +97,22 @@ export default function Home(): JSX.Element {
         </Section>
 
         <Section variant={variant}>
-          <h2>Connect</h2>
+          <h2 className="text-green-darker">Connect</h2>
           {socials.map(({ platform, username, link }) => (
             <div className="flex flex-wrap flex-row max-[480px]:flex-col gap-10 max-[480px]:gap-0">
-              <span className="w-20 max-[480px]:w-auto text-gray-darker font-semibold">
+              <span className="w-20 max-[480px]:w-auto text-green-dark font-semibold">
                 {platform}
               </span>
               <ExternalLink
-                className="text-gray-light hover:underline"
+                className="text-green-light hover:underline"
                 href={link}
-                icon={<GrLinkUp className="rotate-45" fontSize={12} />}
+                icon={
+                  <GrLinkUp
+                    className="rotate-45"
+                    fontSize={12}
+                    color="#E5F0D0"
+                  />
+                }
               >
                 {username}
               </ExternalLink>
@@ -107,10 +123,10 @@ export default function Home(): JSX.Element {
 
       <Section>
         <div className="text-[#fff] flex flex-wrap justify-between items-center max-sm:gap-8 max-sm:flex-col-reverse">
-          <span className="text-gray-light">
+          <span className="text-green-light">
             &copy; Bond Trinh {new Date().getFullYear()}
           </span>
-          <ul className="flex flex-wrap gap-4 max-sm:justify-evenly">
+          <ul className="flex flex-wrap gap-4 max-sm:justify-evenly text-green-light">
             {[
               <RiReactjsFill size={"1.25rem"} title="React" />,
               <SiTypescript size={"1.25rem"} title="TypeScript" />,

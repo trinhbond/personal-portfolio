@@ -27,7 +27,7 @@ export default function NotFound(): JSX.Element {
       >
         <div>
           <h1 className="text-2xl font-bold">Error 404</h1>
-          <p className="text-gray-light">This page could not be found. </p>
+          <p className="text-green-light">This page could not be found. </p>
         </div>
         <Link
           to="/"
