@@ -72,7 +72,7 @@ export default function Home(): JSX.Element {
                 Software Engineer
               </span>
             </div>
-            <span className="text-green-light font-semibold">2022 - 2023</span>
+            <span className="text-green-dark font-semibold">2022 - 2023</span>
           </div>
         </Section>
 
