@@ -20,11 +20,6 @@
     line-height: 1.6rem;
   }
 
-  img {
-    display: block;
-    max-width: 100%;
-  }
-
   main {
     min-height: 100dvh;
     margin-inline: auto;
@@ -34,14 +29,6 @@
   h2 {
     @apply font-bold text-xl;
   }
-}
-
-h1,
-h2,
-h3,
-a,
-span:not(.text-xs) {
-  color: white;
 }
 
 ::selection {
