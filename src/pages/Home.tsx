@@ -32,9 +32,7 @@ export default function Home(): JSX.Element {
           <div className="flex flex-wrap items-center gap-8">
             <div className="w-full inline-flex items-center flex-wrap gap-6">
               <div>
-                <h1 className="text-green-darker font-bold text-xl">
-                  Bond Trinh
-                </h1>
+                <h1 className="text-green-dark font-bold">Bond Trinh</h1>
                 <span className="block text-green-dark text-sm">
                   Software Developer
                 </span>
@@ -52,7 +50,7 @@ export default function Home(): JSX.Element {
         </Section>
 
         <Section variant={variant}>
-          <h2 className="text-green-darker">Work</h2>
+          <h2 className="text-green-dark">Work</h2>
           <div className="flex flex-wrap justify-between">
             <div>
               <ExternalLink
@@ -77,7 +75,7 @@ export default function Home(): JSX.Element {
         </Section>
 
         <Section variant={variant}>
-          <h2 className="text-green-darker">Projects</h2>
+          <h2 className="text-green-dark">Projects</h2>
           <ul className="flex justify-stretch gap-4 max-md:flex-col">
             {projects.map((project) => (
               <motion.li
@@ -97,7 +95,7 @@ export default function Home(): JSX.Element {
         </Section>
 
         <Section variant={variant}>
-          <h2 className="text-green-darker">Connect</h2>
+          <h2 className="text-green-dark">Connect</h2>
           {socials.map(({ platform, username, link }) => (
             <div className="flex flex-wrap flex-row max-[480px]:flex-col gap-10 max-[480px]:gap-0">
               <span className="w-20 max-[480px]:w-auto text-green-dark font-semibold">
