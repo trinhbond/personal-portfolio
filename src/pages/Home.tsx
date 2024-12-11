@@ -33,12 +33,12 @@ export default function Home(): JSX.Element {
             <div className="w-full inline-flex items-center flex-wrap gap-6">
               <div>
                 <h1 className="text-green-dark font-bold">Bond Trinh</h1>
-                <span className="block text-green-dark text-sm">
+                <span className="block text-green-light text-sm">
                   Software Developer
                 </span>
               </div>
             </div>
-            <motion.p className="text-green-light" variants={variant}>
+            <motion.p variants={variant}>
               Hi, I'm Bond, a software developer with experience in frontend
               development, automation testing, and digital design. I am
               passionate about creating digital experiences that are both
@@ -54,13 +54,13 @@ export default function Home(): JSX.Element {
           <div className="flex flex-wrap justify-between">
             <div>
               <ExternalLink
-                className="block hover:underline text-green-dark font-semibold"
+                className="text-green-light hover:underline font-semibold"
                 href={"https://www.nuimarkets.com/"}
                 icon={
                   <GrLinkUp
                     className="rotate-45"
                     fontSize={12}
-                    color="#CAE2A2"
+                    color="#E5F0D0"
                   />
                 }
               >
@@ -70,7 +70,7 @@ export default function Home(): JSX.Element {
                 Software Engineer
               </span>
             </div>
-            <span className="text-green-dark font-semibold">2022 - 2023</span>
+            <span className="text-green-light font-semibold">2022 - 2023</span>
           </div>
         </Section>
 
@@ -102,7 +102,7 @@ export default function Home(): JSX.Element {
                 {platform}
               </span>
               <ExternalLink
-                className="text-green-light hover:underline"
+                className="hover:underline text-green-light"
                 href={link}
                 icon={
                   <GrLinkUp
@@ -120,8 +120,8 @@ export default function Home(): JSX.Element {
       </motion.div>
 
       <Section>
-        <div className="text-[#fff] flex flex-wrap justify-between items-center max-sm:gap-8 max-sm:flex-col-reverse">
-          <span className="text-green-light">
+        <div className="flex flex-wrap justify-between items-center max-sm:gap-8 max-sm:flex-col-reverse">
+          <span className="text-green-dark">
             &copy; Bond Trinh {new Date().getFullYear()}
           </span>
           <ul className="flex flex-wrap gap-4 max-sm:justify-evenly text-green-light">

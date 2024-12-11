@@ -9,9 +9,11 @@ export default function ExternalLink(
   const { icon, children, ...rest } = props;
 
   return (
-    <a target="_blank" rel="noreferrer" {...rest}>
-      {children}{" "}
+    <div className="flex flex-row gap-1 nowrap">
+      <a target="_blank" rel="noreferrer" {...rest}>
+        {children}
+      </a>
       {icon && <span className="inline-block align-top">{icon}</span>}
-    </a>
+    </div>
   );
 }

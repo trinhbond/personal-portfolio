@@ -32,6 +32,11 @@
   }
 }
 
+a,
+p {
+  @apply text-green-light;
+}
+
 ::selection {
   background: #6f8c2b;
 }

@@ -1,4 +1,3 @@
-import { GrLinkUp } from "react-icons/gr";
 import ExternalLink from "./ExternalLink";
 
 type ProjectProps = {
@@ -20,10 +19,9 @@ export default function Project(project: ProjectProps): JSX.Element {
           {project.name}
         </span>
         <ExternalLink
-          className="bg-[#0c1005] text-xs inline-flex gap-1 px-3 py-1.5 rounded-full"
+          className="bg-[#0c1005] text-xs inline-flex gap-1 px-3.5 py-1.5 rounded-full"
           href={project.link}
           key={project.name}
-          icon={<GrLinkUp className="rotate-45" fontSize={12} />}
         >
           View
         </ExternalLink>
