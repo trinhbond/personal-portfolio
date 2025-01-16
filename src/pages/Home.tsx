@@ -172,19 +172,11 @@ const socials = [
 
 const projects = [
   {
-    name: "Ecommerce Application",
-    year: 2024,
+    name: "Job Application Tracker",
+    year: 2025,
     description:
-      "An eCommerce platform built with React for the frontend and Commerce.js as the backend eCommerce solution to manage functionalities.",
-    stack: ["React", "Commerce.js", "React Router", "Tailwind CSS"],
-    link: "https://github.com/trinhbond/ecommerce-application",
-  },
-  {
-    name: "Jokes",
-    year: 2023,
-    description:
-      "A single page-application built using React to display a list of random jokes. React Query is used for server state management and Axios is used to grab data from an external API.",
-    stack: ["React", "React Query", "Material UI", "SCSS", "TypeScript"],
-    link: "https://github.com/trinhbond/random-jokes",
+      "A React-based web application to allow users to create and manage job application listings. Firebase is leveraged for user authentication and data management, with integration into server-side logic.",
+    stack: ["React", "TypeScript", "Firebase", "React Router", "Tailwind CSS"],
+    link: "https://job-tracker-app-delta.vercel.app/",
   },
 ];
