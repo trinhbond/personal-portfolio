@@ -39,12 +39,11 @@ export default function Home(): JSX.Element {
               </div>
             </div>
             <motion.p variants={variant}>
-              Hi, I'm Bond, a software developer with experience in frontend
-              development, automation testing, and digital design. I am
-              passionate about creating digital experiences that are both
-              visually appealing and highly functional. I am currently focused
-              on frontend development, but I'm always open to learning new
-              skills and exploring new areas.
+              Hi, I'm Bond, a software developer with hands-on experience in
+              developing web-based applications. I am passionate about creating
+              digital experiences that are both visually appealing and highly
+              functional. I am currently focused on frontend development, but
+              I'm always open to learning new skills and exploring new areas.
             </motion.p>
           </div>
         </Section>
