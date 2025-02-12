@@ -198,13 +198,13 @@ const socials = [
   },
 ];
 
-const projects = [
-  {
-    name: "Job Application Tracker",
-    year: 2025,
-    description:
-      "A React-based web application to allow users to create and manage job application listings. Firebase is leveraged for user authentication and data management, with integration into server-side logic.",
-    stack: ["React", "TypeScript", "Firebase", "React Router", "Tailwind CSS"],
-    link: "https://job-tracker-app-delta.vercel.app/",
-  },
-];
+// const projects = [
+//   {
+//     name: "Job Application Tracker",
+//     year: 2025,
+//     description:
+//       "A React-based web application to allow users to create and manage job application listings. Firebase is leveraged for user authentication and data management, with integration into server-side logic.",
+//     stack: ["React", "TypeScript", "Firebase", "React Router", "Tailwind CSS"],
+//     link: "https://job-tracker-app-delta.vercel.app/",
+//   },
+// ];
