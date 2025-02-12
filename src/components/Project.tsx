@@ -1,5 +1,4 @@
 import ExternalLink from "./ExternalLink";
-import jobtracker from "../images/job-tracker-ss-2.png";
 
 type ProjectProps = {
   name: string;
@@ -7,6 +6,7 @@ type ProjectProps = {
   description: string;
   stack: string[];
   link: string;
+  image?: string;
 };
 
 export default function Project(project: ProjectProps): JSX.Element {
@@ -16,13 +16,10 @@ export default function Project(project: ProjectProps): JSX.Element {
       href={project.link}
       key={project.name}
     >
-      <img className="rounded-md" src={jobtracker} alt="yo" />
-      <div className="pt-6">
-        <h2 className="pb-1">jobtracker</h2>
-        <p>
-          A React-based web application that enables users to create and manage
-          job application listings.
-        </p>
+      <img className="rounded-md" src={project.image} alt={project.name} />
+      <div className="mt-6">
+        <h2 className="mb-1">{project.name}</h2>
+        <p>{project.description}</p>
       </div>
       {/* <div className="p-3.5">
         <span className="font-semibold text-green-light">{project.name}</span>
