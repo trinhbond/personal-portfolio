@@ -1,35 +1,39 @@
-import ExternalLink from "./ExternalLink";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 type ProjectProps = {
+  id: string;
   name: string;
   year: number;
   description: string;
   stack: string[];
+  features: string[];
   link: string;
-  image?: string;
+  repo: string;
+  images: string[];
 };
 
 export default function Project(project: ProjectProps): JSX.Element {
+  const image = project.images.map((img) => img);
+
   return (
-    <ExternalLink
-      className="text-green-light rounded-md cursor-pointer"
-      href={project.link}
-      key={project.name}
-    >
-      <img className="rounded-md" src={project.image} alt={project.name} />
-      <div className="mt-6">
-        <h2 className="mb-1">{project.name}</h2>
-        <p>{project.description}</p>
-      </div>
-      {/* <div className="p-3.5">
-        <span className="font-semibold text-green-light">{project.name}</span>
-        <p className="text-sm">{project.description}</p>
-        <ul className="flex flex-wrap gap-4 mt-auto">
-          {project.stack.map((i) => (
-            <li className="min-w-fit text-xs">{i}</li>
-          ))}
-        </ul>
-      </div> */}
-    </ExternalLink>
+    <Link to={`project/${project.id}`}>
+      <motion.li
+        className="project flex flex-1 items-stretch w-full group"
+        transition={{
+          duration: 0.5,
+          ease: "easeInOut",
+        }}
+        whileHover={{
+          translateY: -8,
+        }}
+      >
+        <img
+          className="rounded-md"
+          src={image[0]}
+          alt="Screenshot of project"
+        />
+      </motion.li>
+    </Link>
   );
 }

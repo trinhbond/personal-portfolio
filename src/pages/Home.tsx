@@ -4,7 +4,8 @@ import Section from "../components/Section";
 import { SiFramer, SiTypescript, SiVercel } from "react-icons/si";
 import { RiReactjsFill, RiTailwindCssFill } from "react-icons/ri";
 import { GrLinkUp } from "react-icons/gr";
-import jobtracker from "../images/job-tracker-ss-2.png";
+import { projects } from "../project-data";
+import Project from "../components/Project";
 
 export default function Home(): JSX.Element {
   const variant = {
@@ -74,51 +75,10 @@ export default function Home(): JSX.Element {
 
         <Section variant={variant}>
           <h2 className="text-green-dark">Projects</h2>
-          {/* <ul className="flex justify-stretch gap-4 max-md:flex-col">
-            {projects.map((project) => (
-              <motion.li
-                className="flex flex-1 items-stretch w-full"
-                transition={{
-                  duration: 0.5,
-                  ease: "easeInOut",
-                }}
-                whileHover={{
-                  translateY: -8,
-                }}
-              >
-                <Project {...project} />
-              </motion.li>
-            ))}
-          </ul> */}
           <ul className="flex justify-stretch gap-4 max-md:flex-col">
-            <motion.li
-              className="flex flex-1 items-stretch w-full"
-              transition={{
-                duration: 0.5,
-                ease: "easeInOut",
-              }}
-              whileHover={{
-                translateY: -8,
-              }}
-            >
-              <ExternalLink
-                className="text-green-light rounded-md cursor-pointer"
-                href="https://job-tracker-app-delta.vercel.app/"
-              >
-                <img
-                  className="rounded-md"
-                  src={jobtracker}
-                  alt="Screenshot of project"
-                />
-                <div className="mt-6">
-                  <h2 className="text-base mb-1">jobtracker</h2>
-                  <p className="text-sm">
-                    A React-based web application that enables users to create
-                    and manage job application listings.
-                  </p>
-                </div>
-              </ExternalLink>
-            </motion.li>
+            {projects.map((project) => (
+              <Project {...project} />
+            ))}
           </ul>
         </Section>
 
@@ -197,14 +157,3 @@ const socials = [
     link: "https://www.github.com/trinhbond",
   },
 ];
-
-// const projects = [
-//   {
-//     name: "Job Application Tracker",
-//     year: 2025,
-//     description:
-//       "A React-based web application to allow users to create and manage job application listings. Firebase is leveraged for user authentication and data management, with integration into server-side logic.",
-//     stack: ["React", "TypeScript", "Firebase", "React Router", "Tailwind CSS"],
-//     link: "https://job-tracker-app-delta.vercel.app/",
-//   },
-// ];
