@@ -18,6 +18,8 @@ export const projects = [
       "../assets/images/job-tracker-1.png",
       "../assets/images/job-tracker-2.png",
       "../assets/images/job-tracker-3.png",
+      "../assets/images/job-tracker-4.png",
+      "../assets/images/job-tracker-5.png",
     ],
   },
 ];
