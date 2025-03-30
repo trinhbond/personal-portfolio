@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-type ProjectProps = {
+interface ProjectProps {
   id: string;
   name: string;
   year: number;
@@ -11,7 +11,7 @@ type ProjectProps = {
   link: string;
   repo: string;
   images: string[];
-};
+}
 
 export default function Project(project: ProjectProps): JSX.Element {
   const image = project.images.map((img) => img);
