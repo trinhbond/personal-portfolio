@@ -1,19 +1,18 @@
-type ExternalLinkProps = {
+import { forwardRef } from "react";
+
+interface ExternalLinkProps
+  extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   children: React.ReactNode;
   icon?: React.ReactElement;
-};
+}
 
-export default function ExternalLink(
-  props: ExternalLinkProps & React.AnchorHTMLAttributes<HTMLAnchorElement>
-): JSX.Element {
-  const { icon, children, ...rest } = props;
-
-  return (
+export const ExternalLink = forwardRef<HTMLAnchorElement, ExternalLinkProps>(
+  ({ children, icon, ...props }, ref) => (
     <div className="flex flex-row gap-1 nowrap">
-      <a target="_blank" rel="noreferrer" {...rest}>
+      <a ref={ref} target="_blank" rel="noreferrer" {...props}>
         {children}
       </a>
       {icon && <span className="inline-block align-top">{icon}</span>}
     </div>
-  );
-}
+  )
+);

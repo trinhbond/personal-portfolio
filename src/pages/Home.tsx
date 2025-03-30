@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import ExternalLink from "../components/ExternalLink";
-import Section from "../components/Section";
+import { ExternalLink } from "../components/ExternalLink";
+import { Section } from "../components/Section";
 import { SiFramer, SiTypescript, SiVercel } from "react-icons/si";
 import { RiReactjsFill, RiTailwindCssFill } from "react-icons/ri";
 import { GrLinkUp } from "react-icons/gr";
@@ -40,10 +40,8 @@ export default function Home(): JSX.Element {
             </div>
             <motion.p variants={variant}>
               Hi, I'm Bond, a software developer with hands-on experience in
-              developing web-based applications. I am passionate about creating
-              digital experiences that are both visually appealing and highly
-              functional. I am currently focused on frontend development, but
-              I'm always open to learning new skills and exploring new areas.
+              building web applications. I am passionate about creating digital
+              experiences that are intuitive and highly functional.
             </motion.p>
           </div>
         </Section>
