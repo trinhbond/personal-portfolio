@@ -1,8 +1,8 @@
 import { useParams } from "react-router-dom";
 import { projects } from "../project-data";
 import { AnimatePresence, motion, wrap } from "framer-motion";
-import Section from "./Section";
-import ExternalLink from "./ExternalLink";
+import { Section } from "./Section";
+import { ExternalLink } from "./ExternalLink";
 import { useState } from "react";
 
 export default function ProjectPage() {
