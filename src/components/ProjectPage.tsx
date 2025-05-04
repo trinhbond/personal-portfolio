@@ -41,6 +41,8 @@ export default function ProjectPage() {
     },
   };
 
+  if (!id) return null;
+
   return (
     <motion.main className="flex flex-col items-center gap-8">
       <motion.div
@@ -57,7 +59,7 @@ export default function ProjectPage() {
         }}
       >
         {projects
-          .filter((project) => project.id === id)
+          .filter((project) => project.id === parseInt(id))
           .map((project) => (
             <Section variant={variant}>
               <h1 className="text-green-dark">

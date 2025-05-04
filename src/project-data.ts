@@ -1,16 +1,19 @@
 export const projects = [
   {
-    id: "1",
-    name: "Job Tracker",
+    id: 1,
+    name: "Ontrack",
     year: 2025,
     description:
-      "A React-based web application that enables users to create and manage job application listings.",
-    stack: ["React", "TypeScript", "Firebase", "React Router", "Tailwind CSS"],
-    features: [
-      "Create and manage applications",
-      "Filter through applications",
-      "Dark mode toggle",
+      "A full-scale CMS web application that allows users to create and manage their job applications",
+    stack: [
+      "React",
+      "TypeScript",
+      "Firebase",
+      "React Router",
+      "Material UI",
+      "Tailwind CSS",
     ],
+    features: ["Create and manage applications", "Sorting", "Dark mode toggle"],
     link: "https://job-tracker-app-delta.vercel.app/",
     repo: "https://github.com/trinhbond/job-tracker-app",
     images: [
