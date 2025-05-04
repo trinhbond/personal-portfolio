@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 interface ProjectProps {
-  id: string;
+  id: number;
   name: string;
   year: number;
   description: string;
