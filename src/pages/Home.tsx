@@ -39,9 +39,12 @@ export default function Home(): JSX.Element {
               </div>
             </div>
             <motion.p variants={variant}>
-              Hi, I'm Bond, a software developer with hands-on experience in
-              building web applications. I am passionate about creating digital
-              experiences that are intuitive and highly functional.
+              Software Developer with a Bachelor's degree in Computer and
+              Information Sciences. I have commercial experience in frontend
+              development, end-to-end testing, documentation, and collaborating
+              with cross-functional teams in an agile environment. I am
+              passionate about leveraging modern technologies to create real,
+              meaningful business impact.
             </motion.p>
           </div>
         </Section>
