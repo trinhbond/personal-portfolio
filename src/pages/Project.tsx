@@ -1,11 +1,10 @@
 import { useParams } from "react-router-dom";
 import { projects } from "../project-data";
 import { AnimatePresence, motion, wrap } from "framer-motion";
-import { Section } from "./Section";
-import { ExternalLink } from "./ExternalLink";
+import { ExternalLink } from "../components/ExternalLink";
 import { useState } from "react";
 
-export default function ProjectPage() {
+export default function Project() {
   const { id } = useParams();
   const [[page, direction], setPage] = useState([0, 0]);
   const swipeConfidenceThreshold = 10000;
@@ -44,7 +43,7 @@ export default function ProjectPage() {
   if (!id) return null;
 
   return (
-    <motion.main className="flex flex-col items-center gap-8">
+    <main>
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -59,13 +58,18 @@ export default function ProjectPage() {
         }}
       >
         {projects
-          .filter((project) => project.id === parseInt(id))
+          .filter((project) => project.id === id)
           .map((project) => (
-            <Section variant={variant}>
-              <h1 className="text-green-dark">
-                {project.name} ({project.year})
-              </h1>
-              <div className="relative flex items-center justify-center">
+            <motion.div
+              className="w-full py-9 px-3 max-md:px-4 font-medium max-md:text-sm"
+              variants={variant}
+            >
+              <div className="mb-10">
+                <h1 className="text-green-dark">{project.name}</h1>
+                <p>{project.date}</p>
+              </div>
+              <p className="mb-2 text-green-light">{project.description}</p>
+              <div className="mb-10 relative flex flex-col items-center justify-center overflow-hidden">
                 <AnimatePresence initial={false} custom={direction}>
                   <motion.img
                     className="rounded-md"
@@ -76,8 +80,8 @@ export default function ProjectPage() {
                     initial="enter"
                     animate="center"
                     transition={{
-                      x: { type: "spring", stiffness: 300, damping: 30 },
-                      opacity: { duration: 0.2 },
+                      x: { type: "tween", stiffness: 300, damping: 30 },
+                      opacity: { duration: 0.5 },
                     }}
                     drag="x"
                     dragConstraints={{ left: 0, right: 0 }}
@@ -93,54 +97,59 @@ export default function ProjectPage() {
                     }}
                   />
                 </AnimatePresence>
-                <div
-                  className="next absolute right-[10px] top-[calc(50%-20px)] bg-[#4f6913] text-[#fff] rounded-[30px] w-[30px] h-[30px] flex justify-center items-center select-none cursor-pointer font-bold z-10"
-                  onClick={() => paginate(1)}
-                >
-                  {">"}
-                </div>
-                <div
-                  className="prev absolute left-[10px] top-[calc(50%-20px)] bg-[#4f6913] text-[#fff] text-white rounded-[30px] w-[30px] h-[30px] flex justify-center items-center select-none cursor-pointer font-bold z-10"
-                  onClick={() => paginate(-1)}
-                >
-                  {"<"}
-                </div>
+                {project.images.length > 1 && (
+                  <div className="mt-2 w-full flex flex-row justify-between">
+                    <div
+                      className="px-2 py-1 bg-[#4f6913] text-sm text-green-light select-none cursor-pointer rounded-md font-semibold"
+                      onClick={() => paginate(-1)}
+                    >
+                      prev
+                    </div>
+                    <div
+                      className="px-2 py-1 bg-[#4f6913] text-sm text-green-light select-none cursor-pointer rounded-md font-semibold"
+                      onClick={() => paginate(1)}
+                    >
+                      next
+                    </div>
+                  </div>
+                )}
               </div>
-              <div className="text-green-light">{project.description}</div>
-              <div className="flex flex-col gap-3 mt-6">
-                <h2 className="text-green-dark">Features</h2>
-                {project.features.map((feature) => (
-                  <div className="text-green-light">{feature}</div>
-                ))}
-              </div>
-              <div className="flex flex-col gap-3 mt-6">
-                <h2 className="text-green-dark">Tech Stack</h2>
-                <div>
-                  {project.stack.map((element) => (
-                    <span className="text-green-light mr-3">{element}</span>
+              <div className="mb-10">
+                <h2 className="mb-2 text-green-dark">Features</h2>
+                <ul className="[&>*:not(:last-child)]:mb-1">
+                  {project.features.map((feature) => (
+                    <li className="text-green-light">{feature}</li>
                   ))}
-                </div>
+                </ul>
               </div>
-              <div className="flex flex-col gap-3 mt-6">
-                <h2 className="text-green-dark">Find out more</h2>
-                <div className="flex gap-3 items-center mt-3">
+              <div className="mb-10">
+                <h2 className="mb-2 text-green-dark">Tech Stack</h2>
+                <ul className="[&>*:not(:last-child)]:mb-1">
+                  {project.stack.map((element) => (
+                    <li className="text-green-light">{element}</li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <h2 className="mb-3 text-green-dark">Links</h2>
+                <div className="flex flex-row nowrap space-x-2">
                   <ExternalLink
-                    className="text-lg text-green-light bg-[#4f6913] hover:bg-[#415610] rounded-full font-semibold py-4 px-8 cursor-pointer"
+                    className="text-sm text-green-light bg-[#4f6913] hover:bg-[#415610] rounded-full font-semibold py-2 px-4 cursor-pointer"
                     href={project.link}
                   >
-                    Visit Project
+                    {project.name}
                   </ExternalLink>
                   <ExternalLink
-                    className="text-lg text-green-light bg-[#4f6913] hover:bg-[#415610] rounded-full font-semibold py-4 px-8 cursor-pointer"
+                    className="text-sm text-green-light bg-[#4f6913] hover:bg-[#415610] rounded-full font-semibold py-2 px-4 cursor-pointer"
                     href={project.repo}
                   >
-                    Repository
+                    GitHub
                   </ExternalLink>
                 </div>
               </div>
-            </Section>
+            </motion.div>
           ))}
       </motion.div>
-    </motion.main>
+    </main>
   );
 }

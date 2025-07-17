@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 interface ProjectProps {
-  id: number;
+  id: string;
   name: string;
-  year: number;
+  date: string;
   description: string;
   stack: string[];
   features: string[];
@@ -13,7 +13,7 @@ interface ProjectProps {
   images: string[];
 }
 
-export default function Project(project: ProjectProps): JSX.Element {
+export default function ProjectCard(project: ProjectProps): JSX.Element {
   const image = project.images.map((img) => img);
 
   return (

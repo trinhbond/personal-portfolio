@@ -5,7 +5,7 @@ import { SiFramer, SiTypescript, SiVercel } from "react-icons/si";
 import { RiReactjsFill, RiTailwindCssFill } from "react-icons/ri";
 import { GrLinkUp } from "react-icons/gr";
 import { projects } from "../project-data";
-import Project from "../components/Project";
+import ProjectCard from "../components/ProjectCard";
 
 export default function Home(): JSX.Element {
   const variant = {
@@ -78,7 +78,7 @@ export default function Home(): JSX.Element {
           <h2 className="text-green-dark">Projects</h2>
           <ul className="flex justify-stretch gap-4 max-md:flex-col">
             {projects.map((project) => (
-              <Project {...project} />
+              <ProjectCard {...project} />
             ))}
           </ul>
         </Section>
