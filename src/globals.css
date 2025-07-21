@@ -26,6 +26,11 @@
     width: min(80ch, 100%);
   }
 
+  .container-width {
+    margin-inline: auto;
+    width: min(80ch, 100%);
+  }
+
   h1,
   h2 {
     @apply font-bold text-xl;

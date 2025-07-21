@@ -10,7 +10,7 @@ export const Section = forwardRef<HTMLElement, SectionProps>(
   ({ children, variant }, ref) => (
     <motion.section
       ref={ref}
-      className="w-full py-9 px-3 max-md:px-4 flex flex-wrap flex-col gap-6 font-medium max-md:text-sm"
+      className="w-full py-9 px-3 flex flex-wrap flex-col gap-6 font-medium"
       variants={variant}
     >
       {children}

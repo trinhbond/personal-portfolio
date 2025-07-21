@@ -1,8 +1,6 @@
 import { motion } from "framer-motion";
 import { ExternalLink } from "../components/ExternalLink";
 import { Section } from "../components/Section";
-import { SiFramer, SiTypescript, SiVercel } from "react-icons/si";
-import { RiReactjsFill, RiTailwindCssFill } from "react-icons/ri";
 import { GrLinkUp } from "react-icons/gr";
 import { projects } from "../project-data";
 import ProjectCard from "../components/ProjectCard";
@@ -30,20 +28,19 @@ export default function Home(): JSX.Element {
       >
         <Section>
           <div className="flex flex-wrap items-center gap-8">
-            <div className="w-full inline-flex items-center flex-wrap gap-6">
-              <div>
-                <h1 className="text-green-dark font-bold">Bond Trinh</h1>
-                <span className="block text-green-light text-sm">
-                  Software Developer
-                </span>
-              </div>
+            <div className="w-full">
+              <h1 className="text-green-dark font-bold">Bond Trinh</h1>
+              <span className="text-green-light block text-sm">
+                Software Developer
+              </span>
             </div>
             <motion.p variants={variant}>
-              Software Developer with a Bachelor's degree in Computer and
-              Information Sciences. I have commercial experience in frontend
-              development, end-to-end testing, documentation, and collaborating
-              with cross-functional teams in an agile environment. I am
-              passionate about leveraging modern technologies to create real,
+              I am a graduate with a Bachelor's degree in Computer and
+              Information Sciences, with commercial experience in software
+              development and exposure to modern web technologies. I have
+              collaborated with cross-functional teams in an agile working
+              environment to deliver production code in a business context. I am
+              passionate about crafting digital applications with real,
               meaningful business impact.
             </motion.p>
           </div>
@@ -107,36 +104,6 @@ export default function Home(): JSX.Element {
           ))}
         </Section>
       </motion.div>
-
-      <Section>
-        <div className="flex flex-wrap justify-between items-center max-sm:gap-8 max-sm:flex-col-reverse">
-          <span className="text-green-dark">
-            &copy; Bond Trinh {new Date().getFullYear()}
-          </span>
-          <ul className="flex flex-wrap gap-4 max-sm:justify-evenly text-green-light">
-            {[
-              <RiReactjsFill size={"1.25rem"} title="React" />,
-              <SiTypescript size={"1.25rem"} title="TypeScript" />,
-              <RiTailwindCssFill size={"1.25rem"} title="Tailwind CSS" />,
-              <SiFramer size={"1.25rem"} title="Framer" />,
-              <SiVercel size={"1.25rem"} title="Vercel" />,
-            ].map((logo) => (
-              <motion.li
-                className="flex flex-1 items-stretch w-full"
-                transition={{
-                  duration: 0.5,
-                  ease: "easeInOut",
-                }}
-                whileHover={{
-                  translateY: -8,
-                }}
-              >
-                {logo}
-              </motion.li>
-            ))}
-          </ul>
-        </div>
-      </Section>
     </motion.main>
   );
 }

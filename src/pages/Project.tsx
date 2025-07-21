@@ -61,12 +61,12 @@ export default function Project() {
           .filter((project) => project.id === id)
           .map((project) => (
             <motion.div
-              className="w-full py-9 px-3 max-md:px-4 font-medium max-md:text-sm"
+              className="w-full py-9 px-3 font-medium"
               variants={variant}
             >
               <div className="mb-10">
                 <h1 className="text-green-dark">{project.name}</h1>
-                <p>{project.date}</p>
+                <p className="text-sm">{project.date}</p>
               </div>
               <p className="mb-2 text-green-light">{project.description}</p>
               <div className="mb-10 relative flex flex-col items-center justify-center overflow-hidden">
@@ -100,13 +100,13 @@ export default function Project() {
                 {project.images.length > 1 && (
                   <div className="mt-2 w-full flex flex-row justify-between">
                     <div
-                      className="px-2 py-1 bg-[#4f6913] text-sm text-green-light select-none cursor-pointer rounded-md font-semibold"
+                      className="px-2 py-1 bg-[#4f6913] hover:bg-[#415610] text-sm text-green-light select-none cursor-pointer rounded-md font-semibold"
                       onClick={() => paginate(-1)}
                     >
                       prev
                     </div>
                     <div
-                      className="px-2 py-1 bg-[#4f6913] text-sm text-green-light select-none cursor-pointer rounded-md font-semibold"
+                      className="px-2 py-1 bg-[#4f6913] hover:bg-[#415610] text-sm text-green-light select-none cursor-pointer rounded-md font-semibold"
                       onClick={() => paginate(1)}
                     >
                       next
