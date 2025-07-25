@@ -6,13 +6,15 @@ import { Section } from "./components/Section";
 
 export default function App() {
   const Layout = () => (
-    <div className="container-width">
+    <div className="container-width relative">
       <Outlet />
-      <Section>
-        <div className="text-green-dark">
-          &copy; Bond Trinh {new Date().getFullYear()}
-        </div>
-      </Section>
+      <div className="absolute bottom-0 mt-12">
+        <Section>
+          <div className="text-green-dark">
+            &copy; Bond Trinh {new Date().getFullYear()}
+          </div>
+        </Section>
+      </div>
     </div>
   );
 

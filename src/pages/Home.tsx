@@ -12,7 +12,7 @@ export default function Home(): JSX.Element {
   };
 
   return (
-    <motion.main className="flex flex-col items-center gap-8">
+    <motion.main className="flex flex-col items-center gap-8 pb-16">
       <motion.div
         initial="hidden"
         whileInView="visible"

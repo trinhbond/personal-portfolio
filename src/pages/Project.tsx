@@ -43,7 +43,7 @@ export default function Project() {
   if (!id) return null;
 
   return (
-    <main>
+    <main className="pb-16">
       <motion.div
         initial="hidden"
         whileInView="visible"
