@@ -43,7 +43,7 @@ export default function Project() {
   if (!id) return null;
 
   return (
-    <main className="pb-16">
+    <main className="pb-[80px]">
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -65,10 +65,10 @@ export default function Project() {
               variants={variant}
             >
               <div className="mb-10">
-                <h1 className="text-green-dark">{project.name}</h1>
+                <h1>{project.name}</h1>
                 <p className="text-sm">{project.date}</p>
               </div>
-              <p className="mb-2 text-green-light">{project.description}</p>
+              <p className="mb-2">{project.description}</p>
               <div className="mb-10 relative flex flex-col items-center justify-center overflow-hidden">
                 <AnimatePresence initial={false} custom={direction}>
                   <motion.img
@@ -100,13 +100,13 @@ export default function Project() {
                 {project.images.length > 1 && (
                   <div className="mt-2 w-full flex flex-row justify-between">
                     <div
-                      className="px-2 py-1 bg-[#4f6913] hover:bg-[#415610] text-sm text-green-light select-none cursor-pointer rounded-md font-semibold"
+                      className="px-2 py-1 bg-[#fff] text-[#162914] hover:opacity-75 text-sm select-none cursor-pointer rounded-md font-semibold"
                       onClick={() => paginate(-1)}
                     >
                       prev
                     </div>
                     <div
-                      className="px-2 py-1 bg-[#4f6913] hover:bg-[#415610] text-sm text-green-light select-none cursor-pointer rounded-md font-semibold"
+                      className="px-2 py-1 bg-[#fff] text-[#162914] hover:opacity-75 text-sm select-none cursor-pointer rounded-md font-semibold"
                       onClick={() => paginate(1)}
                     >
                       next
@@ -115,32 +115,32 @@ export default function Project() {
                 )}
               </div>
               <div className="mb-10">
-                <h2 className="mb-2 text-green-dark">Features</h2>
+                <h2 className="mb-2">Features</h2>
                 <ul className="[&>*:not(:last-child)]:mb-1">
                   {project.features.map((feature) => (
-                    <li className="text-green-light">{feature}</li>
+                    <li>{feature}</li>
                   ))}
                 </ul>
               </div>
               <div className="mb-10">
-                <h2 className="mb-2 text-green-dark">Tech Stack</h2>
+                <h2 className="mb-2">Tech Stack</h2>
                 <ul className="[&>*:not(:last-child)]:mb-1">
                   {project.stack.map((element) => (
-                    <li className="text-green-light">{element}</li>
+                    <li>{element}</li>
                   ))}
                 </ul>
               </div>
               <div>
-                <h2 className="mb-3 text-green-dark">Links</h2>
+                <h2 className="mb-3">Links</h2>
                 <div className="flex flex-row nowrap space-x-2">
                   <ExternalLink
-                    className="text-sm text-green-light bg-[#4f6913] hover:bg-[#415610] rounded-full font-semibold py-2 px-4 cursor-pointer"
+                    className="text-sm bg-[#fff] text-[#162914] hover:opacity-75 rounded-full font-semibold py-2 px-4 cursor-pointer"
                     href={project.link}
                   >
                     {project.name}
                   </ExternalLink>
                   <ExternalLink
-                    className="text-sm text-green-light bg-[#4f6913] hover:bg-[#415610] rounded-full font-semibold py-2 px-4 cursor-pointer"
+                    className="text-sm bg-[#fff] text-[#162914] hover:opacity-75 rounded-full font-semibold py-2 px-4 cursor-pointer"
                     href={project.repo}
                   >
                     GitHub

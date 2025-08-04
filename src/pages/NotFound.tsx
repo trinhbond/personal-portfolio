@@ -9,7 +9,7 @@ export default function NotFound(): JSX.Element {
 
   return (
     <motion.main
-      className="h-dvh content-center"
+      className="content-center"
       initial="hidden"
       animate="visible"
       variants={{
@@ -26,12 +26,12 @@ export default function NotFound(): JSX.Element {
         variants={variant}
       >
         <div>
-          <h1 className="text-green-dark">Error 404</h1>
+          <h1>Error 404</h1>
           <p>This page could not be found.</p>
         </div>
         <Link
           to="/"
-          className="max-w-fit bg-[#4f6913] text-green-light hover:bg-[#415610] rounded-full font-semibold py-4 px-8 hover:shadow-2xl"
+          className="max-w-fit bg-[#fff] text-[#162914] hover:opacity-75 rounded-full font-semibold py-4 px-8 shadow-xl"
         >
           Home
         </Link>

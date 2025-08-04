@@ -15,7 +15,8 @@
   }
 
   body {
-    background: #0c1005;
+    background: #162914;
+    color: #f2f8f1;
     font-family: "Inter", sans-serif;
     line-height: 1.6rem;
   }
@@ -35,11 +36,6 @@
   h2 {
     @apply font-bold text-xl;
   }
-}
-
-a,
-p {
-  @apply text-green-light;
 }
 
 ::selection {
