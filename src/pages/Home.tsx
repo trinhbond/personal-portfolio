@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import { ExternalLink } from "../components/ExternalLink";
 import { Section } from "../components/Section";
+import ProjectCard from "../components/ProjectCard";
 import { GrLinkUp } from "react-icons/gr";
 import { projects } from "../project-data";
-import ProjectCard from "../components/ProjectCard";
 
 export default function Home(): JSX.Element {
   const variant = {
@@ -29,7 +29,7 @@ export default function Home(): JSX.Element {
         <Section>
           <div className="flex flex-wrap items-center gap-8">
             <div className="w-full">
-              <h1 className="font-bold">Bond Trinh</h1>
+              <h1>Bond Trinh</h1>
               <span className="block text-sm">Software Developer</span>
             </div>
             <motion.p variants={variant}>
@@ -49,7 +49,7 @@ export default function Home(): JSX.Element {
           <div className="flex flex-wrap justify-between">
             <div>
               <ExternalLink
-                className="hover:underline font-semibold"
+                className="hover:underline"
                 href={"https://www.nuimarkets.com/"}
                 icon={
                   <GrLinkUp
@@ -63,13 +63,13 @@ export default function Home(): JSX.Element {
               </ExternalLink>
               <span className="text-sm">Software Engineer</span>
             </div>
-            <span className="font-semibold">2022 - 2023</span>
+            <span>2022 - 2023</span>
           </div>
         </Section>
 
         <Section variant={variant}>
           <h2>Projects</h2>
-          <ul className="flex justify-stretch gap-4 max-md:flex-col">
+          <ul className="flex flex-col gap-6">
             {projects.map((project) => (
               <ProjectCard {...project} />
             ))}
@@ -79,10 +79,8 @@ export default function Home(): JSX.Element {
         <Section variant={variant}>
           <h2>Connect</h2>
           {socials.map(({ platform, username, link }) => (
-            <div className="flex flex-wrap flex-row max-[480px]:flex-col gap-10 max-[480px]:gap-0">
-              <span className="w-20 max-[480px]:w-auto font-semibold">
-                {platform}
-              </span>
+            <div>
+              <span className="font-semibold">{platform}</span>
               <ExternalLink
                 className="hover:underline"
                 href={link}
