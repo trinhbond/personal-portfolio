@@ -7,8 +7,10 @@ export default function App() {
   const Layout = () => (
     <div className="container-width relative">
       <Outlet />
-      <div className="w-full absolute bottom-0 pb-9 px-3">
-        <div>&copy; Bond Trinh {new Date().getFullYear()}</div>
+      <div className="text-sm absolute bottom-0 left-0 right-0 m-auto mx-6 pb-8 pt-3 border-t border-[#e5e7eb]">
+        <div>
+          &copy; Bond Trinh {new Date().getFullYear()} | Auckland, New Zealand
+        </div>
       </div>
     </div>
   );

@@ -43,7 +43,7 @@ export default function Project() {
   if (!id) return null;
 
   return (
-    <main className="pb-[80px]">
+    <main className="pb-[120px]">
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -60,10 +60,7 @@ export default function Project() {
         {projects
           .filter((project) => project.id === id)
           .map((project) => (
-            <motion.div
-              className="w-full py-9 px-3 font-medium"
-              variants={variant}
-            >
+            <motion.div className="w-full p-6 font-medium" variants={variant}>
               <div className="mb-10">
                 <h1>{project.name}</h1>
                 <p className="text-sm">{project.date}</p>
