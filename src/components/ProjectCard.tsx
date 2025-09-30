@@ -13,8 +13,8 @@ interface ProjectProps {
   images: string[];
 }
 
-export default function ProjectCard(project: ProjectProps): JSX.Element {
-  const image = project.images.map((img) => img);
+export const ProjectCard = (project: ProjectProps): JSX.Element => {
+  const images = project.images.map((img) => img);
 
   return (
     <Link to={`project/${project.id}`}>
@@ -30,10 +30,10 @@ export default function ProjectCard(project: ProjectProps): JSX.Element {
       >
         <img
           className="rounded-md"
-          src={image[0]}
+          src={images[0]}
           alt="Screenshot of project"
         />
       </motion.li>
     </Link>
   );
-}
+};

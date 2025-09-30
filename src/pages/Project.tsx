@@ -1,23 +1,27 @@
 import { useParams } from "react-router-dom";
-import { projects } from "../project-data";
+import { projects } from "../data";
 import { AnimatePresence, motion, wrap } from "framer-motion";
-import { ExternalLink } from "../components/ExternalLink";
+import { ExternalLink } from "../components";
 import { useState } from "react";
 
-export default function Project() {
+export default function Project(): JSX.Element {
   const { id } = useParams();
   const [[page, direction], setPage] = useState([0, 0]);
   const swipeConfidenceThreshold = 10000;
+
   const swipePower = (offset: number, velocity: number) => {
     return Math.abs(offset) * velocity;
   };
+
   const paginate = (newDirection: number) => {
     setPage([page + newDirection, newDirection]);
   };
+
   const variant = {
     hidden: { opacity: 0, y: -30 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.85 } },
   };
+
   const variant2 = {
     enter: (direction: number) => {
       return {
@@ -39,8 +43,6 @@ export default function Project() {
       };
     },
   };
-
-  if (!id) return null;
 
   return (
     <main className="pb-[120px]">

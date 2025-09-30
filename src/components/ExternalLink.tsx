@@ -7,7 +7,7 @@ interface ExternalLinkProps
 }
 
 export const ExternalLink = forwardRef<HTMLAnchorElement, ExternalLinkProps>(
-  ({ children, icon, ...props }, ref) => (
+  ({ children, icon, ...props }, ref): JSX.Element => (
     <div className="flex flex-row gap-1 nowrap">
       <a ref={ref} target="_blank" rel="noreferrer" {...props}>
         {children}

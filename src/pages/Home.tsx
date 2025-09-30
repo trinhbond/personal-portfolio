@@ -1,9 +1,7 @@
 import { motion } from "framer-motion";
-import { ExternalLink } from "../components/ExternalLink";
-import { Section } from "../components/Section";
-import ProjectCard from "../components/ProjectCard";
+import { ExternalLink, Section, ProjectCard } from "../components";
 import { GrLinkUp } from "react-icons/gr";
-import { projects } from "../project-data";
+import { projects } from "../data";
 
 export default function Home(): JSX.Element {
   const variant = {
@@ -33,18 +31,17 @@ export default function Home(): JSX.Element {
               <span className="block text-sm">Software Developer</span>
             </div>
             <motion.p variants={variant}>
-              I am a graduate with a Bachelor's degree in Computer and
-              Information Sciences, with commercial experience in software
-              development and exposure to modern web technologies. I have
-              collaborated with cross-functional teams in an agile working
-              environment to deliver production code in a business context. I am
-              passionate about crafting digital applications with real,
-              meaningful business impact.
+              I have commercial experience in software development, specializing
+              in frontend development, testing, and technical documentation. I
+              have exposure to modern web technologies and collaborated with
+              cross-functional teams in Agile environments to deliver robust
+              production code. I am passionate about crafting digital
+              applications that drive real, meaningful business impact.
             </motion.p>
           </div>
         </Section>
 
-        <Section variant={variant}>
+        <Section variants={variant}>
           <h2>Work</h2>
           <div className="flex flex-wrap justify-between">
             <div>
@@ -67,7 +64,7 @@ export default function Home(): JSX.Element {
           </div>
         </Section>
 
-        <Section variant={variant}>
+        <Section variants={variant}>
           <h2>Projects</h2>
           <ul className="flex flex-col gap-6">
             {projects.map((project) => (
@@ -76,7 +73,7 @@ export default function Home(): JSX.Element {
           </ul>
         </Section>
 
-        <Section variant={variant}>
+        <Section variants={variant}>
           <h2>Connect</h2>
           {socials.map(({ platform, username, link }) => (
             <div>
