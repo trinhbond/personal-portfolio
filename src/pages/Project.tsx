@@ -17,12 +17,12 @@ export default function Project(): JSX.Element {
     setPage([page + newDirection, newDirection]);
   };
 
-  const variant = {
+  const variants = {
     hidden: { opacity: 0, y: -30 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.85 } },
   };
 
-  const variant2 = {
+  const variants2 = {
     enter: (direction: number) => {
       return {
         x: direction > 0 ? 1000 : -1000,
@@ -62,20 +62,20 @@ export default function Project(): JSX.Element {
         {projects
           .filter((project) => project.id === id)
           .map((project) => (
-            <motion.div className="w-full p-6 font-medium" variants={variant}>
+            <motion.div className="w-full p-6 font-medium" variants={variants}>
               <div className="mb-10">
                 <h1>{project.name}</h1>
                 <p className="text-sm">{project.date}</p>
               </div>
               <p className="mb-2">{project.description}</p>
-              <div className="mb-10 relative flex flex-col items-center justify-center overflow-hidden">
+              <div className="mb-10 relative flex flex-col items-center overflow-hidden">
                 <AnimatePresence initial={false} custom={direction}>
                   <motion.img
                     className="rounded-md"
                     key={page}
                     src={project.images[wrap(0, project.images.length, page)]}
                     custom={direction}
-                    variants={variant2}
+                    variants={variants2}
                     initial="enter"
                     animate="center"
                     transition={{

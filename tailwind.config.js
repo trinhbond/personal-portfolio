@@ -7,6 +7,7 @@ module.exports = {
     "./src/components/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+    borderColor: "#E5E7EB",
     colors: {
       green: {
         light: "#F2F8F1",

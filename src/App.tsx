@@ -1,20 +1,23 @@
-import { BrowserRouter, Outlet, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Outlet,
+  Route,
+  Routes,
+} from "react-router-dom";
 import { Home, NotFound, Project } from "./pages";
 
 export default function App() {
   const Layout = () => (
     <div className="container-width relative">
       <Outlet />
-      <div className="text-sm absolute bottom-0 left-0 right-0 m-auto mx-6 pb-8 pt-3 border-t border-[#e5e7eb]">
-        <div>
-          &copy; Bond Trinh {new Date().getFullYear()} | Auckland, New Zealand
-        </div>
+      <div className="absolute bottom-0 left-0 right-0 mx-6 pb-8 pt-3 border-t">
+        &copy; Bond Trinh {new Date().getFullYear()} | Auckland, New Zealand
       </div>
     </div>
   );
 
   return (
-    <BrowserRouter>
+    <Router>
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
@@ -22,6 +25,6 @@ export default function App() {
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 }
