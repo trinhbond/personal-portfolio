@@ -71,7 +71,6 @@ export default function Project(): JSX.Element {
               <div className="mb-10 relative flex flex-col items-center overflow-hidden">
                 <AnimatePresence initial={false} custom={direction}>
                   <motion.img
-                    className="rounded-md"
                     key={page}
                     src={project.images[wrap(0, project.images.length, page)]}
                     custom={direction}
@@ -118,14 +117,6 @@ export default function Project(): JSX.Element {
                 <ul className="[&>*:not(:last-child)]:mb-1">
                   {project.features.map((feature) => (
                     <li>{feature}</li>
-                  ))}
-                </ul>
-              </div>
-              <div className="mb-10">
-                <h2 className="mb-2">Tech Stack</h2>
-                <ul className="[&>*:not(:last-child)]:mb-1">
-                  {project.stack.map((element) => (
-                    <li>{element}</li>
                   ))}
                 </ul>
               </div>

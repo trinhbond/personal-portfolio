@@ -5,15 +5,7 @@ export const projects = [
     date: "March 2024",
     description:
       "A robust and responsive web application to manage your job applications.",
-    stack: [
-      "React",
-      "TypeScript",
-      "Firebase",
-      "React Router",
-      "Material UI",
-      "Tailwind CSS",
-      "Playwright",
-    ],
+    stack: ["React", "Firebase", "Material UI", "Playwright"],
     features: [
       "Create, edit, and delete applications",
       "Option to filter applications",

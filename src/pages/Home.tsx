@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ExternalLink, Section, ProjectCard } from "../components";
-import { GrLinkUp } from "react-icons/gr";
+import { GrLinkUp as LinkUpIcon } from "react-icons/gr";
 import { projects } from "../data";
 
 export default function Home(): JSX.Element {
@@ -10,7 +10,7 @@ export default function Home(): JSX.Element {
   };
 
   return (
-    <motion.main className="flex flex-col items-center gap-8 pb-[120px]">
+    <motion.main className="pb-[120px]">
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -49,7 +49,7 @@ export default function Home(): JSX.Element {
                 className="hover:underline"
                 href={"https://www.nuimarkets.com/"}
                 icon={
-                  <GrLinkUp
+                  <LinkUpIcon
                     className="rotate-45"
                     fontSize={12}
                     color="#F2F8F1"
@@ -82,7 +82,7 @@ export default function Home(): JSX.Element {
                 className="hover:underline"
                 href={link}
                 icon={
-                  <GrLinkUp
+                  <LinkUpIcon
                     className="rotate-45"
                     fontSize={12}
                     color="#F2F8F1"
