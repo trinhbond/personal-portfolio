@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { GrGithub } from "react-icons/gr";
+import { FaExternalLinkAlt } from "react-icons/fa";
+import { ExternalLink } from "./ExternalLink";
 
 interface ProjectProps {
   id: string;
@@ -14,30 +16,34 @@ interface ProjectProps {
 }
 
 export const ProjectCard = (project: ProjectProps): JSX.Element => {
-  const images = project.images.map((img) => img);
+  const coverImage = project.images.map((image) => image)[0];
 
   return (
-    <div>
-      <Link to={`project/${project.id}`}>
-        <motion.li
-          transition={{
-            duration: 0.5,
-            ease: "easeInOut",
-          }}
-          whileHover={{
-            translateY: -8,
-          }}
-        >
-          <img src={images[0]} alt="Screenshot of project" />
-        </motion.li>
-      </Link>
-      <div className="mt-3 inline-flex flex-wrap space-x-1.5">
-        {project.stack.map((item) => (
-          <span className="text-[#162914] bg-[#fff] text-xs rounded-md py-1 px-2 font-semibold select-none">
-            {item}
-          </span>
-        ))}
+    <>
+      <motion.li
+        transition={{
+          duration: 0.5,
+          ease: "easeInOut",
+        }}
+        whileHover={{
+          translateY: -8,
+        }}
+      >
+        <img
+          src={coverImage}
+          className="shadow-md"
+          alt="Screenshot of project"
+        />
+      </motion.li>
+      <div className="mt-3 w-full inline-flex flex-wrap justify-center space-x-4">
+        <ExternalLink href={project.repo}>
+          <GrGithub size={26} />
+        </ExternalLink>
+        <span>{" | "}</span>
+        <ExternalLink href={project.link}>
+          <FaExternalLinkAlt size={26} />
+        </ExternalLink>
       </div>
-    </div>
+    </>
   );
 };

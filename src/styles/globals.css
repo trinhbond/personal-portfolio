@@ -15,7 +15,7 @@
   }
 
   body {
-    background: #162914;
+    background: #3a5f39f0;
     color: #f2f8f1;
     font-family: "Inter", sans-serif;
     font-weight: 500;
@@ -24,8 +24,6 @@
 
   main {
     min-height: 100dvh;
-    margin-inline: auto;
-    width: min(80ch, 100%);
   }
 
   h1,
