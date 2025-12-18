@@ -31,7 +31,7 @@ export const ProjectCard = (project: ProjectProps): JSX.Element => {
       >
         <img
           src={coverImage}
-          className="shadow-md"
+          className="shadow-md m-auto"
           alt="Screenshot of project"
         />
       </motion.li>
